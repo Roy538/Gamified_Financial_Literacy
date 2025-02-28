@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Hero - The Money Management Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1><i class="fas fa-coins"></i> Budget Hero</h1>
+            <div class="player-stats">
+                <div class="balance stat-card">
+                    <span class="label">Balance:</span>
+                    <span class="amount">Ksh <span id="currentBalance">0</span></span>
+                </div>
+                <div class="score stat-card">
+                    <span class="label">Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="level stat-card">
+                    <span class="label">Level:</span>
+                    <span id="level">1</span>
+                </div>
+                <div class="streak stat-card">
+                    <span class="label">Weekly Streak:</span>
+                    <div class="streak-display">
+                        <span id="streakCount">0</span>
+                        <span id="streakFire" class="streak-fire">🔥</span>
+                    </div>
+                </div>
+                <button id="resetButton" class="reset-button">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+        </header>
+
+        <div id="savingsReminder" class="savings-reminder">
+            <div class="reminder-content">
+                <i class="fas fa-bell"></i>
+                <span id="reminderText">Don't forget to save today!</span>
+                <button class="close-reminder" title="Close">×</button>
+            </div>
+        </div>
+
+        <div id="resetModal" class="modal">
+            <div class="modal-content">
+                <h2>Reset Budget?</h2>
+                <p>Are you sure you want to clear all your budget data?</p>
+                <p class="warning">⚠️ This cannot be undone!</p>
+                <div class="modal-buttons">
+                    <button id="confirmReset" class="btn-primary">Yes, Clear All</button>
+                    <button id="cancelReset" class="btn-secondary">No, Keep Data</button>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="game-board">
+                <div class="daily-savings-card">
+                    <h3><i class="fas fa-piggy-bank"></i> Savings Progress</h3>
+                    <div class="savings-status">
+                        <span class="label">Daily Target:</span>
+                        <span>Ksh <span id="dailyTarget">20</span></span>
+                    </div>
+                    <div class="savings-status">
+                        <span class="label">Weekly Total:</span>
+                        <span>Ksh <span id="weeklySavingsTotal">0</span></span>
+                    </div>
+                    <div class="savings-status">
+                        <span class="label">Weekly Progress:</span>
+                        <div class="progress-bar">
+                            <div id="weeklyProgress" class="progress"></div>
+                        </div>
+                        <span id="savingsDaysCount">0/7 days</span>
+                    </div>
+                    <!-- <div class="savings-input">
+                        <input type="number" id="savingsAmount" min="20" placeholder="Amount (min. Ksh 20)">
+                        <button onclick="addDailySavings()">Save Today</button>
+                    </div> -->
+
+
+                   <!-- Header Section Enhancement -->
+<header class="header-section">
+    <h1 class="header-title">🏆 Budgeting Hero</h1>
+    <p class="header-subtitle">Master your finances with gamified budgeting and savings</p>
+</header>
+
+<!-- Updated Savings Input Section -->
+<div class="savings-input">
+    <input type="number" id="savingsAmount" min="20" placeholder="Amount (min. Ksh 20)" class="styled-input savings-input-field">
+    <button onclick="addDailySavings()" class="save-button savings-input-button">Save Today</button>
+    <button onclick="suggestSavings()" class="suggest-button savings-input-button">💡 Suggest</button>
+    <label class="toggle-container savings-input-toggle">
+        <input type="checkbox" id="autoSaveReminder" onchange="toggleAutoSaveReminder()">
+        <span class="toggle-slider savings-input-toggle-slider"></span>
+        <span class="toggle-text savings-input-toggle-text">Auto-Save Reminder</span>
+    </label>
+    <audio id="coughSound" src="https://assets.mixkit.co/active_storage/sfx/2880/2880-preview.mp3"></audio>
+</div>
+
+<script>
+    function suggestSavings() {
+        const suggestedAmount = Math.min(gameState.balance, gameState.dailyTarget);
+        document.getElementById('savingsAmount').value = suggestedAmount;
+    }
+
+    function toggleAutoSaveReminder() {
+        const autoSaveReminder = document.getElementById('autoSaveReminder');
+        if (autoSaveReminder.checked) {
+            showNotification('Auto-Save reminder turned on! 💡', 'success');
+        } else {
+            showNotification('Auto-Save reminder turned off! 🔇', 'info');
+        }
+    }
+
+    function addDailySavings() {
+        const amount = parseFloat(document.getElementById('savingsAmount').value);
+
+        if (amount > gameState.balance) {
+            showNotification('Insufficient balance! 💸', 'error');
+            document.getElementById('coughSound').play();
+            return;
+        }
+
+        const today = new Date().toDateString();
+        if (gameState.lastSavingsDate === today) {
+            showNotification('You have already saved today! See yah Tomorrow Same Place', 'warning');
+            document.getElementById('coughSound').play();
+            return;
+        }
+
+        gameState.balance -= amount;
+        gameState.weeklySavings.push({
+            amount: amount,
+            date: today
+        });
+        gameState.lastSavingsDate = today;
+        gameState.streak++;
+
+        savingsSound.play();
+        showNotification(`Added ${amount} KSH to savings!`, 'success');
+
+        document.getElementById('savingsAmount').value = '';
+
+        updateUI();
+        saveGameState();
+    }
+</script>
+
+<div id="notification" class="notification"></div>
+<audio id="errorSound" src="https://assets.mixkit.co/active_storage/sfx/2881/2881-preview.mp3"></audio>
+
+
+<!-- Recent Transactions Section -->
+<div class="transactions">
+    <h3>Recent Transactions</h3>
+    <div id="transactionsList" class="transactions-list"></div>
+</div>
+
+<style>
+    /* Background Color Change with Better Contrast */
+    body {
+        background: #1e2a38;
+        color: #dad60d;
+    }
+    
+    .header-section {
+        text-align: center;
+        /* background: linear-gradient(135deg, #3e4a5a, #2b3a4a); */
+        background: linear-gradient(135deg, #3e4a5a, #ca6c14d8);
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-bottom: 25px;
+    }
+    .header-title {
+        font-size: 34px;
+        font-weight: bold;
+        /* color: #ffffff; */
+        color: linear-gradient(135deg, #3e4a5a, #ca6c14d8);
+        margin-bottom: 5px;
+    }
+    .header-subtitle {
+        font-size: 20px;
+        color: #0fc71f;
+    }
+
+    .savings-input, .transactions, .goals-section {
+        background: #263343;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-bottom: 25px;
+    }
+
+    .savings-input {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .progress-bar-container {
+        margin-bottom: 20px;
+    }
+    .progress-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #37495a;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+    .progress {
+        height: 100%;
+        background-color: #1abc9c;
+        transition: width 0.3s ease;
+    }
+    .challenges ul {
+        list-style: none;
+        padding: 0;
+    }
+    .challenges li {
+        background: #1f2c3a;
+        padding: 14px;
+        margin-bottom: 8px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #b0bec5;
+    }
+    .challenges button {
+        background: #ff9800;
+        color: white;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .challenges button:hover {
+        background: #f57c00;
+    }
+    .badges {
+        margin-top: 20px;
+    }
+    .badge-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .badge {
+        background: #ffcc80;
+        color: #2c3e50;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="savings-history">
+                        <h4>This Week's Savings</h4>
+                        <div id="savingsHistory" class="savings-list"></div>
+                    </div>
+                </div>
+                
+                <div class="budget-actions">
+                    <style>
+                        .budget-actions > div {
+                            flex: 1;
+                            margin: 10px;
+                        }
+                        .income {
+                            background-color: #2ecc71;
+                        }
+                        .expense {
+                            background-color: #e74c3c;
+                        }
+                    </style>
+                    <div class="action-card income">
+                        <h3><i class="fas fa-plus-circle"></i> Add Income</h3>
+                        <input type="number" id="incomeAmount" placeholder="Amount">
+                        <input type="text" id="incomeSource" placeholder="Source">
+                        <button onclick="addIncome()">Add</button>
+                    </div>
+                    <div class="action-card expense">
+                        <h3><i class="fas fa-minus-circle"></i> Add Expense</h3>
+                        <audio id="expenseSound" src="https://assets.mixkit.co/active_storage/sfx/2961/2961-preview.mp3"></audio>
+                        <input type="number" id="expenseAmount" placeholder="Amount">
+                        <input type="text" id="expenseCategory" placeholder="Category">
+                        <button onclick="addExpense()">Add</button>
+                    </div>
+                </div>
+
+                <div class="budget-goals">
+                    <h3><i class="fas fa-trophy"></i> Goals</h3>
+                    <div class="goals-list" id="goalsList">
+                        <!-- Goals will be added here dynamically -->
+
+                        <div class="goals-section">
+                            <h3>🎯 Financial Literacy Goals</h3>
+                            <div class="progress-bar-container">
+                                <span>Level: <span id="userLevel">1</span></span>
+                                <div class="progress-bar">
+                                    <div id="goalProgress" class="progress"></div>
+                                </div>
+                                <span>Next Reward: <span id="nextReward">Smart Saver Badge</span></span>
+                            </div>
+                            <div class="challenges">
+                                <h4>Complete Challenges & Earn Badges</h4>
+                                <ul>
+                                    <li>💰 Save Ksh 50 daily <button onclick="completeChallenge(1)">Complete</button></li>
+                                    <li>📊 Track expenses for a week <button onclick="completeChallenge(2)">Complete</button></li>
+                                    <li>🏆 Maintain a weekly saving streak <button onclick="completeChallenge(3)">Complete</button></li>
+                                </ul>
+                            </div>
+                            <div class="badges">
+                                <h4>🏅 Your Badges</h4>
+                                <div id="badgeContainer" class="badge-container">
+                                    <span class="badge">🔰 New Saver</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transactions">
+                    <h3><i class="fas fa-history"></i> Recent Transactions</h3>
+                    <div class="transactions-list" id="transactionsList">
+                        <!-- Transactions will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements-panel">
+                <h3><i class="fas fa-medal"></i> Achievements</h3>
+                <div class="achievements-grid" id="achievementsGrid">
+                    <!-- Achievements will be added here dynamically -->
+                </div>
+            </div>
+
+            <div class="weekly-summary">
+                <h3>Weekly Progress</h3>
+                <div class="weekly-total">
+                    <span>Total Saved:</span>
+                    <span class="amount">Ksh <span id="weeklyTotal">0</span></span>
+                </div>
+                <div class="weekly-progress">
+                    <div class="progress-bar">
+                        <div id="weeklyProgressBar" class="progress"></div>
+                    </div>
+                    <span class="progress-text">Goal: Ksh <span id="weeklyGoal">140</span></span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="notification" class="notification"></div>
+    <audio id="expenseSound" src="https://assets.mixkit.co/active_storage/sfx/2961/2961-preview.mp3"></audio>
+    <audio id="errorSound" src="https://assets.mixkit.co/active_storage/sfx/2881/2881-preview.mp3"></audio>
+    <audio id="coinSound" src="https://assets.mixkit.co/active_storage/sfx/2075/2075-preview.mp3"></audio>
+    <audio id="achievementSound" src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"></audio>
+    <audio id="savingsSound" src="https://assets.mixkit.co/active_storage/sfx/2019/2019-preview.mp3"></audio>
+    
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-display {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 2px solid gray;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #cancelButton {
+            background-color: #dc3545;
+        }
+
+        #cancelButton:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        .circle {
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          pointer-events: none;
+          background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
+          transition: transform 0.1s, left 0.1s, top 0.1s;
+        }
+      
+        .circle-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 9999;
+        }
+      </style>
+      
+      <body>
+        <div class="circle-container">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const coords = { x: 0, y: 0 };
+            const circles = document.querySelectorAll(".circle");
+      
+            circles.forEach(function (circle) {
+              circle.x = 0;
+              circle.y = 0;
+            });
+      
+            window.addEventListener("mousemove", function (e) {
+              coords.x = e.pageX;
+              coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+            });
+      
+            function animateCircles() {
+              let x = coords.x;
+              let y = coords.y;
+      
+              circles.forEach(function (circle, index) {
+                circle.style.left = `${x - 12}px`;
+                circle.style.top = `${y - 12}px`;
+                circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+      
+                const nextCircle = circles[index + 1] || circles[0];
+                circle.x = x;
+                circle.y = y;
+      
+                x += (nextCircle.x - x) * 0.3;
+                y += (nextCircle.y - y) * 0.3;
+              });
+      
+              requestAnimationFrame(animateCircles);
+            }
+      
+            animateCircles();
+          });
+      
+        </script>
+      
+      </body>
+      
+    <div class="container">
+        <h1>User Profile</h1>
+        <div id="profileDisplay" class="profile-display">
+            <img id="profileImage" src="no-profile-photo.png" alt="Profile Image" class="profile-img">
+            <div class="profile-info">
+                <p><strong>Username:</strong> <span id="displayUsername">john_doe</span></p>
+                <p><strong>Email:</strong> <span id="displayEmail">john@example.com</span></p>
+                <p><strong>Bio:</strong> <span id="displayBio">Welcome to my profile!</span></p>
+            </div>
+        </div>
+
+        <div id="profileEdit" style="display: none;">
+            <form id="profileForm">
+                <div class="form-group">
+                    <label for="imageUpload">Profile Image:</label>
+                    <input type="file" id="imageUpload" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="john_doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio">Welcome to my profile!</textarea>
+                </div>
+                <button type="submit">Save</button>
+                <button type="button" id="cancelButton">Cancel</button>
+            </form>
+        </div>
+
+        <button id="editButton">Edit Profile</button>
+    </div>
+
+    <script>
+        const editButton = document.getElementById('editButton');
+        const profileDisplay = document.getElementById('profileDisplay');
+        const profileEdit = document.getElementById('profileEdit');
+        const cancelButton = document.getElementById('cancelButton');
+        const profileForm = document.getElementById('profileForm');
+
+        // Function to toggle between display and edit mode
+        editButton.addEventListener('click', function() {
+            profileDisplay.style.display = 'none';
+            profileEdit.style.display = 'block';
+            document.getElementById('username').focus(); // Set focus to the username field
+        });
+
+        cancelButton.addEventListener('click', function() {
+            resetProfileForm();
+        });
+
+        // Handle form submission
+        profileForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page refresh
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const bio = document.getElementById('bio').value;
+            const imageUpload = document.getElementById('imageUpload').files[0];
+
+            // Update profile display
+            document.getElementById('displayUsername').textContent = username;
+            document.getElementById('displayEmail').textContent = email;
+            document.getElementById('displayBio').textContent = bio;
+
+            // Update profile image if an image is uploaded
+            if (imageUpload) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('profileImage').src = e.target.result; // Set the uploaded image as profile image
+                };
+                reader.readAsDataURL(imageUpload);
+            }
+
+            // Show profile display and hide edit form
+            profileDisplay.style.display = 'flex';
+            profileEdit.style.display = 'none';
+        });
+
+        // Reset the form and return to profile display
+        function resetProfileForm() {
+            // Reset form values
+            document.getElementById('username').value = document.getElementById('displayUsername').textContent;
+            document.getElementById('email').value = document.getElementById('displayEmail').textContent;
+            document.getElementById('bio').value = document.getElementById('displayBio').textContent;
+
+            // Hide edit form and show profile display
+            profileEdit.style.display = 'none';
+            profileDisplay.style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

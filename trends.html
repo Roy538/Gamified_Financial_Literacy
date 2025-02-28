@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <title>Trends - FinVeda</title>
+  <meta name="description"
+    content="Explore insightful trends and analyses in finance and economics on FinVeda's Trends page. Discover curated content and data-driven insights to stay informed." />
+  <meta name="author" content="Ayush Singh">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/assets/images/favicon2.webp" type="image/png" />
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+  <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+  <link rel="stylesheet" href="./assets/css/slick.css" />
+  <link rel="stylesheet" href="./assets/css/LineIcons.css" />
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/default.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/quiz.css" />
+  <link rel="stylesheet" href="./assets/css/popup.css" />
+  <link rel="stylesheet" href="./assets/css/about.css" />
+  <link rel="stylesheet" href="./assets/css/trends.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/market-time.css">
+
+  <style>
+
+    .theme-toggle2.dark {
+      background-color: #eceae0;
+      color: #000;
+    }
+
+    body.dark-mode {
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-dark);
+    }
+
+    * {
+      cursor: url('/assets/images/ads_click_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg'), auto;
+    }
+
+
+    .circle {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
+      transition: transform 0.1s, left 0.1s, top 0.1s;
+    }
+
+    .circle-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    @media (max-width: 720px) {
+      .circle-container {
+        display: none;
+      }
+    }
+  </style>
+
+<body>
+  <div class="circle-container">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const coords = { x: 0, y: 0 };
+      const circles = document.querySelectorAll(".circle");
+
+      circles.forEach(function (circle) {
+        circle.x = 0;
+        circle.y = 0;
+      });
+
+      window.addEventListener("mousemove", function (e) {
+        coords.x = e.pageX;
+        coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+      });
+
+      function animateCircles() {
+        let x = coords.x;
+        let y = coords.y;
+
+        circles.forEach(function (circle, index) {
+          circle.style.left = `${x - 12}px`;
+          circle.style.top = `${y - 12}px`;
+          circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+
+          const nextCircle = circles[index + 1] || circles[0];
+          circle.x = x;
+          circle.y = y;
+
+          x += (nextCircle.x - x) * 0.3;
+          y += (nextCircle.y - y) * 0.3;
+        });
+
+        requestAnimationFrame(animateCircles);
+      }
+
+      animateCircles();
+    });
+
+  </script>
+  <header class="header-area">
+    <div style="display: flex; justify-content: center;" class="navbar-area">
+      <div style="display: flex; justify-content: center;" class="container">
+        <div class="row">
+          <div style="display: flex; justify-content: center;" class="">
+            <nav class="navbar navbar-expand-lg" style="display: flex; background-color: #2c3e50;">
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                  <div class="icon1">
+                      <a href="./index.html">
+                          <img src="./assets/images/FinvedaLogo.png" alt="Finveda Logo" style="width: 13rem;">
+                      </a>
+                  </div>
+                  <ul id="nav" class="navbar-nav ml-auto" style="margin: auto;">
+                      <li class="nav-item">
+                          <a class="page-scroll" href="./index.html">
+                              <i class="fas fa-home icon-hover" style="margin: 5px;"></i> Home
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="page-scroll" href="./about.html">
+                              <i class="fas fa-info-circle icon-hover" style="margin: 5px;"></i> About Us
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="page-scroll" href="./finance.html">
+                              <i class="fas fa-graduation-cap icon-hover" style="margin: 5px;"></i> Courses
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="page-scroll" href="./contact.html">
+                              <i class="fas fa-envelope icon-hover" style="margin: 5px;"></i> Contact
+                          </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="page-scroll" href="./faq.html">
+                              <i class="fas fa-question-circle icon-hover" style="margin: 5px;"></i> Help
+                          </a>
+                      </li>
+                      <!-- Dropdown for Explore -->
+                      <li class="nav-item dropdown" onmouseover="toggleDropdown(true)" onmouseout="toggleDropdown(false)">
+                          <a class="page-scroll dropdown-toggle" href="#">
+                              <i class="fas fa-chevron-down icon-hover" style="margin: 5px;"></i> Explore More
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="./finance.html">
+                                <i class="fas fa-graduation-cap icon-hover" style="margin: 5px;"></i> Courses
+                              </a>
+                            </li>
+                              <li><a class="active-link" href="./trends.html"><i class="fas fa-chart-line icon-hover" style="margin: 5px;"></i> Trends</a></li>
+                              <li><a href="./tools/sip.html"><i class="fas fa-tools icon-hover" style="margin: 5px;"></i> Tools</a></li>
+                              <li><a href="./blog.html"><i class="fas fa-blog icon-hover" style="margin: 5px;"></i> Blogs</a></li>
+                              <li><a href="./quiz.html"><i class="fas fa-question icon-hover" style="margin: 5px;"></i> Quiz</a></li>
+                              <li><a href="./Games/Games.html"><i class="fas fa-gamepad icon-hover" style="margin: 5px;"></i>
+                                Games</a>
+                            </li>
+                              <li><a href="./maps.html"><i class="fas fa-map icon-hover" style="margin: 5px;"></i> MAPS</a></li>
+                          </ul>
+                      </li>
+                      <!-- Navigation item placeholder for Login/Register or Logout button -->
+                      <!-- <li class="nav-item no-underline" id="auth-btn-container">
+                          <a class="main-btn navbar-btn" style="padding: 2px 20px;" data-scroll-nav="0" href="./loginPage.html">
+                              <i class="fas fa-user-circle icon-hover" style="margin: 5px;"></i> Login/Register
+                          </a>
+                      </li> -->
+                      <li class="nav-item no-underline align-self-center">
+                          <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                            <span>🌞</span>
+                          </button>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+      <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        var body = document.body;
+        var currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme === 'dark') {
+          body.classList.add('dark-mode');
+          toggleButton.classList.add('dark');
+          toggleButton.querySelector('span').textContent = '🌞';
+        }
+
+        toggleButton.addEventListener('click', function () {
+          body.classList.toggle('dark-mode');
+          toggleButton.classList.toggle('dark');
+
+          // Update button icon based on mode
+          if (body.classList.contains('dark-mode')) {
+            toggleButton.querySelector('span').textContent = '🌙';  // Light mode icon
+            localStorage.setItem('theme', 'dark');
+          } else {
+            toggleButton.querySelector('span').textContent = '🌞';  // Dark mode icon
+            localStorage.setItem('theme', 'light');
+          }
+          loadShow();
+        });
+      </script>
+              <style>
+                h3 {
+                  color: #fff;
+                }
+
+                .toggle-button {
+                  padding: 0.5em 1em;
+                  cursor: pointer;
+                  border: none;
+                  background-color: #0c0a0a;
+                  color: #fff;
+                  border-radius: 5px;
+                  transition: background-color 0.3s;
+                }
+
+                .toggle-button:hover {
+                  background-color: #555;
+                }
+
+                .content {
+                  padding: 2em;
+                  text-align: center;
+                }
+
+                h1 {
+                  font-size: 2.5rem;
+                  color: whitesmoke;
+                  margin-top: 130px;
+                }
+
+                p {
+                  font-size: 1.2rem;
+                }
+
+                /* body.dark-mode {
+                  background-color: #000000;
+                  color: #f1f1f1;
+                }
+
+                .dark-mode .para {
+                  color: white;
+                }
+
+                .toggle-button.dark {
+                  background-color: #000000;
+                  color: #333;
+                }
+
+                .toggle-button.dark:hover {
+                  background-color: #000000;
+                } */
+              </style>
+
+            </nav>
+
+
+
+            <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+            <nav class="mobile-menu ">
+              <a class="page-scroll active-link" href="./index.html">Home 🏡</a>
+              <a class="page-scroll" href="./about.html">About Us 📖</a>
+              <a class="page-scroll" href="./trends.html">Trends 📈</a>
+              <a class="page-scroll" href="./tools/sip.html">Tools 🔧</a>
+              <a class="page-scroll" href="./blog.html">Blogs 📰</a>
+              <a class="page-scroll" href="./quiz.html">Quiz 🤔</a>
+              <a class="page-scroll" href="./contact.html">Contact🤔</a>
+              <li class="nav-item no-underline">
+                <a class="main-btn navbar-btn" style="padding: 2px 20px; transform: none; border: none;" href="#"
+                  onclick="openModal()" onmouseout="this.style.color='white'">Login/Register 💻</a>
+              </li>
+
+              <li class="nav-item no-underline">
+                <button id="theme-toggle2" class="theme-toggle2" style="margin-right: 2px;">
+                  🌙
+                </button>
+              </li>
+              <div class="mobile-menu__trigger"><span></span></div>
+            </nav>
+            <script>
+              const toggleBtn = document.getElementById('theme-toggle2');
+              var body = document.body;
+              var currentTheme = localStorage.getItem('theme');
+
+              if (currentTheme === 'dark') {
+                body.classList.add('dark-mode');
+                toggleBtn.classList.add('dark');
+                toggleBtn.textContent = '🌞';
+              }
+
+              toggleBtn.addEventListener('click', function () {
+                body.classList.toggle('dark-mode');
+                toggleBtn.classList.toggle('dark');
+
+                // Update button icon based on mode
+                if (body.classList.contains('dark-mode')) {
+                  toggleBtn.textContent = '🌞';  // Light mode icon
+                  localStorage.setItem('theme', 'dark');
+                } else {
+                  toggleBtn.textContent = '🌙';  // Dark mode icon
+                  localStorage.setItem('theme', 'light');
+                }
+              });
+            </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <link href="./navbar.css" rel="stylesheet">
+    <script type="text/javascript" src="./navbar.js"></script>
+
+    </div>
+
+    <div id="particles-1" class="particles"></div>
+    </div>
+  </header>
+  <div id="progressBar"></div>
+  <div class="preloader">
+    <div class="loader">
+      <div class="ytp-spinner">
+        <div class="ytp-spinner-container">
+          <div class="ytp-spinner-rotator">
+            <div class="ytp-spinner-left">
+              <div class="ytp-spinner-circle"></div>
+            </div>
+            <div class="ytp-spinner-right">
+              <div class="ytp-spinner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br><br><br><br>
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --primary-glow: #00ffff;
+      --secondary-glow: #ff6bff;
+      --text-primary: #e0e0e0;
+      --card-bg: #1e1e1e;
+      --accent-color: #00ffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Space Grotesk', 'Arial', sans-serif;
+      /* background-color: var(--bg-dark); */
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .market-status-section-unique {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      background: #fff;
+        /* radial-gradient(circle at top left, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at bottom right, rgba(255, 107, 255, 0.1) 0%, transparent 50%); */
+    }
+
+    .market-status-heading-unique {
+  text-align: center;
+  font-size: 3rem;
+  background: linear-gradient(45deg, var(--primary-glow), var(--secondary-glow)); /* Gradient text effect */
+  
+  -webkit-text-fill-color: transparent; /* Makes the text transparent to show gradient */
+  margin-bottom: 2rem;
+  position: relative;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Glowing text effect */
+}
+
+    .market-status-heading-unique::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(to right, var(--primary-glow), var(--secondary-glow));
+    }
+
+    .finlogix-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      perspective: 1000px;
+    }
+
+    .market-card {
+      background-color: var(--card-bg);
+      border-radius: 15px;
+      padding: 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transform-style: preserve-3d;
+      transform: rotateX(10deg) rotateY(-10deg);
+    }
+
+    .market-card:hover {
+      transform: scale(1.05) rotateX(0) rotateY(0);
+      border-color: var(--accent-color);
+      box-shadow: 0 15px 50px rgba(0, 255, 255, 0.2);
+    }
+
+    .market-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at center,
+          rgba(0, 255, 255, 0.1) 0%,
+          transparent 70%);
+      transform: rotate(-45deg);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .market-card:hover::before {
+      opacity: 1;
+    }
+
+    .market-card-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, var(--primary-glow), var(--secondary-glow));
+    
+      -webkit-text-fill-color: transparent;
+    }
+
+    .market-card-name {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .market-card-value {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    
+
+    
+
+    .glitch-effect::before {
+      left: 2px;
+      text-shadow: -2px 0 red;
+      clip: rect(44px, 450px, 56px, 0);
+      animation: glitch-anim 5s infinite linear alternate-reverse;
+    }
+
+    .glitch-effect::after {
+      left: -2px;
+      text-shadow: -2px 0 blue;
+      clip: rect(44px, 450px, 56px, 0);
+      animation: glitch-anim2 5s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitch-anim {
+      0% {
+        clip: rect(30px, 9999px, 10px, 0);
+      }
+
+      5% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      10% {
+        clip: rect(10px, 9999px, 50px, 0);
+      }
+
+      15% {
+        clip: rect(40px, 9999px, 20px, 0);
+      }
+
+      20% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      25% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+
+      30% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      35% {
+        clip: rect(30px, 9999px, 50px, 0);
+      }
+
+      40% {
+        clip: rect(10px, 9999px, 20px, 0);
+      }
+
+      45% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      50% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+
+      55% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      60% {
+        clip: rect(30px, 9999px, 50px, 0);
+      }
+
+      65% {
+        clip: rect(10px, 9999px, 20px, 0);
+      }
+
+      70% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      75% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+
+      80% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      85% {
+        clip: rect(30px, 9999px, 50px, 0);
+      }
+
+      90% {
+        clip: rect(10px, 9999px, 20px, 0);
+      }
+
+      95% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      100% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+    }
+
+    @keyframes glitch-anim2 {
+      0% {
+        clip: rect(30px, 9999px, 10px, 0);
+      }
+
+      5% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      10% {
+        clip: rect(10px, 9999px, 50px, 0);
+      }
+
+      15% {
+        clip: rect(40px, 9999px, 20px, 0);
+      }
+
+      20% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      25% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+
+      30% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      35% {
+        clip: rect(30px, 9999px, 50px, 0);
+      }
+
+      40% {
+        clip: rect(10px, 9999px, 20px, 0);
+      }
+
+      45% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      50% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+
+      55% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      60% {
+        clip: rect(30px, 9999px, 50px, 0);
+      }
+
+      65% {
+        clip: rect(10px, 9999px, 20px, 0);
+      }
+
+      70% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      75% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+
+      80% {
+        clip: rect(20px, 9999px, 30px, 0);
+      }
+
+      85% {
+        clip: rect(30px, 9999px, 50px, 0);
+      }
+
+      90% {
+        clip: rect(10px, 9999px, 20px, 0);
+      }
+
+      95% {
+        clip: rect(50px, 9999px, 40px, 0);
+      }
+
+      100% {
+        clip: rect(70px, 9999px, 10px, 0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .market-status-section-unique {
+        padding: 1rem;
+      }
+
+      .market-status-heading-unique {
+        font-size: 2rem;
+      }
+
+      .finlogix-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <section class="market-status-section-unique">
+    <h2 class="market-status-heading-unique glitch-effect" data-text="Market Pulse">Market Pulse</h2>
+
+    <!-- Finlogix Widget Container -->
+    <div class="finlogix-container" id="marketWidgets" style="width: 100%; height: 100%">
+      <!-- Widgets will be dynamically inserted here -->
+    <iframe src="https://widget.finlogix.com" referrerpolicy="origin" scrolling="yes" sandbox="allow-modals allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-downloads allow-presentation allow-popups-to-escape-sandbox" style="
+    border: none;
+    visibility: visible;
+    background: none transparent;
+    pointer-events: auto;
+    touch-action: auto;
+    z-index: 1;
+  width: 100%; height: 56px; min-height: undefined;"></iframe></div>
+
+    <script type="text/javascript" src="https://widget.finlogix.com/Widget.js"></script>
+    <script type="text/javascript">
+      const symbols = [
+        { id: "83", name: "INDIA50", icon: "fas fa-chart-line" },
+        { id: "20273", name: "HDFC Bank", icon: "fas fa-university" },
+        { id: "20281", name: "ICICI Bank", icon: "fas fa-piggy-bank" },
+        { id: "20070", name: "Infosys", icon: "fas fa-laptop-code" },
+        { id: "20199", name: "AXIS Capital", icon: "fas fa-building" },
+        { id: "10029", name: "Microsoft", icon: "fab fa-microsoft" },
+        { id: "66", name: "BTC/USD", icon: "fab fa-bitcoin" },
+        { id: "20317", name: "Reliance Steel", icon: "fas fa-industry" },
+        { id: "10007", name: "Apple", icon: "fab fa-apple" },
+        { id: "19", name: "EUR/USD", icon: "fas fa-euro-sign" }
+      ];
+
+      Widget.init({
+        widgetId: "720e589b-b9f1-40f8-904d-79ecc0ff2d18",
+        type: "StripBar",
+        language: "en",
+        symbolPairs: symbols.map(sym => ({
+          symbolId: sym.id,
+          symbolName: sym.name
+        })),
+        isAdaptive: true,
+        onDataReceived: function (data) {
+          const container = document.getElementById('marketWidgets');
+          symbols.forEach((sym, index) => {
+            const widget = data[sym.name];
+            if (widget) {
+              const card = document.createElement('div');
+              card.className = 'market-card';
+              card.innerHTML = `
+                          <div class="market-card-icon">
+                              <i class="${sym.icon}"></i>
+                          </div>
+                          <div class="market-card-name">${sym.name}</div>
+                          <div class="market-card-value">${widget.price || 'N/A'}</div>
+                      `;
+              container.appendChild(card);
+            }
+          });
+        }
+      });
+    </script>
+    <div class="container-main">
+
+      <div class="container"><br><br>
+        <!-- TradingView Widget BEGIN -->
+        <br><br>
+        <div class="tradingview-widget-container" style="height: 445px;">
+          <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/timeline/#%7B%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22utm_source%22%3A%22deploy-preview-2932--getfinveda.netlify.app%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22timeline%22%2C%22page-uri%22%3A%22deploy-preview-2932--getfinveda.netlify.app%2Ftrends%22%7D" title="timeline TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+          
+        <style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+        <!-- TradingView Widget END -->
+      </div>
+      <br><br><br>
+      <div class="container">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="width: auto; height: 500px;">
+          <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/crypto-coins-heatmap/?locale=in#%7B%22dataSource%22%3A%22Crypto%22%2C%22blockSize%22%3A%22market_cap_calc%22%2C%22blockColor%22%3A%22change%22%2C%22symbolUrl%22%3A%22%22%2C%22colorTheme%22%3A%22light%22%2C%22hasTopBar%22%3Afalse%2C%22isDataSetEnabled%22%3Afalse%2C%22isZoomEnabled%22%3Atrue%2C%22hasSymbolTooltip%22%3Atrue%2C%22width%22%3A%22auto%22%2C%22height%22%3A500%2C%22utm_source%22%3A%22deploy-preview-2932--getfinveda.netlify.app%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22crypto-coins-heatmap%22%7D" title="crypto coins-heatmap TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+          
+        <style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+        <!-- TradingView Widget END -->
+      </div>
+      <br><br><br>
+
+      <div class="container">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="width: auto; height: 500px;">
+          <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/stock-heatmap/?locale=in#%7B%22exchanges%22%3A%5B%5D%2C%22dataSource%22%3A%22SENSEX%22%2C%22grouping%22%3A%22sector%22%2C%22blockSize%22%3A%22market_cap_basic%22%2C%22blockColor%22%3A%22change%22%2C%22symbolUrl%22%3A%22%22%2C%22colorTheme%22%3A%22light%22%2C%22hasTopBar%22%3Afalse%2C%22isDataSetEnabled%22%3Afalse%2C%22isZoomEnabled%22%3Atrue%2C%22hasSymbolTooltip%22%3Atrue%2C%22width%22%3A%22auto%22%2C%22height%22%3A500%2C%22utm_source%22%3A%22deploy-preview-2932--getfinveda.netlify.app%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22stock-heatmap%22%7D" title="stock heatmap TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+          
+        <style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div> <br><br><br>
+
+        <div class="container">
+
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container" style="width: auto; height: 500px;">
+            <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/forex-heat-map/?locale=in#%7B%22width%22%3A%22auto%22%2C%22height%22%3A500%2C%22currencies%22%3A%5B%22EUR%22%2C%22USD%22%2C%22JPY%22%2C%22GBP%22%2C%22AUD%22%2C%22CAD%22%2C%22NZD%22%2C%22CNY%22%2C%22INR%22%5D%2C%22isTransparent%22%3Afalse%2C%22colorTheme%22%3A%22light%22%2C%22utm_source%22%3A%22deploy-preview-2932--getfinveda.netlify.app%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22forex-heat-map%22%2C%22page-uri%22%3A%22deploy-preview-2932--getfinveda.netlify.app%2Ftrends%22%7D" title="forex heat-map TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+            
+          <style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+          <!-- TradingView Widget END -->
+        </div>
+      </div>
+
+    </div>
+    <!-- Timed popup that will appear after succesful submission of feebback form! -->
+    <button class="notification" id="successnotification" style="display:none;">
+      <span class="message" id="successmsg">Submitted successfully!</span>
+      <span class="closenotif" id="closeSuccessNotification">✖</span>
+      <div class="timerline" id="timerline"></div>
+    </button>
+  </section>
+  
+<footer id="footer" class="footer-area pt-120">
+      <div class="container">
+        <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="height: 265px;">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="subscribe-content mt-45">
+                <h2 class="subscribe-title">
+                  Subscribe Our Newsletter <span style="font-size: 28px;"> Get regular updates</span>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="subscribe-form mt-50">
+                <form id="unique-subscribe-form">
+                  <input type="email" id="unique-news-email" placeholder="Enter Email" required="">
+                  <button class="unique-main-btn" id="unique-subscribe-btn" type="submit">Subscribe</button>
+                </form>
+                <div id="unique-message" class="unique-popup-message" style="display: none;">
+                  <div class="border-animation"></div>
+                  Thank You for the subscription!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-widget pb-100">
+        <div class="row" id="footer">
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="footer-about mt-50 ml-45 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <img src="./assets/images/FinvedaLogo.png" alt="FinVeda Logo" style="height: 80px; width: auto; margin-bottom: 15px;">
+              <p class="text custom-margin">
+                We at FinTech aim to make you a stock market Guru easily with our AI-powered teaching and financial
+                blogs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-7 col-sm-7">
+            <div class="footer-link d-flex mt-50 justify-content-md-between" style="justify-content: space-around !important;">
+              <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                <div class="footer-title">
+                  <h3 class="title custom-margin">Quick Links</h3>
+                </div>
+                <ul class="link custom-margin">
+                  <li><a href="/blogs/privacy-policy"><i class="fas fa-user-secret"></i> Privacy Policy</a></li>
+                  <li><a href="/blogs/refund-policy"><i class="fas fa-undo-alt"></i> Refund Policy</a></li>
+                  <li><a href="/licensing"><i class="fas fa-file-contract"></i> Licensing</a></li>
+                  <li><a href="/blogs/terms-of-service"><i class="fas fa-file-alt"></i> Terms of Service</a></li>
+                  <li><a href="/contributors"><i class="fas fa-users"></i> Our Contributors</a></li>
+                  <li><a href="/blogs/sitemap"><i class="fa-solid fa-sitemap"></i> Site Map</a></li>
+                </ul>
+              </div>
+              <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                <div class="footer-title">
+                  <h4 class="title custom-margin">Resources</h4>
+                </div>
+                <ul class="link custom-margin">
+                  <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                  <li><a href="/about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                  <li><a href="/trends"><i class="fas fa-chart-line"></i> Trends</a></li>
+                  <li><a href="/tools/sip"><i class="fas fa-tools"></i> Tools</a></li>
+                  <li><a href="/blog"><i class="fas fa-blog"></i> Blog</a></li>
+                  <li><a href="/quiz"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-5">
+            <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+              <div class="footer-title">
+                <h4 class="title custom-margin">Contact Us</h4>
+              </div>
+              <ul class="contact custom-margin-big" style="justify-content: space-around;">
+                <li class="d-sm-flex justify-content-center">
+                  <i class="fa fa-envelope d-sm-flex align-items-center white" style="font-size: 16px; width: 10%;"></i>
+                  <p style="width: 80%;">
+                    <a href="mailto:mauriceroy538@gmail.com" target="_blank" style="color: white; text-decoration: underline;">
+                      mauriceroy538@gmail.com
+                    </a>
+                  </p>
+                </li>
+                <li class="d-sm-flex justify-content-center">
+                  <i class="fa fa-globe d-sm-flex align-items-center white" style="font-size: 16px; width: 10%;"></i>
+                  <div style="width: 80%;">
+                    <a href="https://fin-veda.vercel.app/" style="color: #fff ;" target="_blank">
+                      fin-veda.vercel.app
+                    </a>
+                  </div>
+                </li>
+                <li class="d-sm-flex justify-content-center">
+                  <!-- Modified: Inline CSS to adjust logo size and sync with other pages -->
+                  <i class="fa fa-location-dot d-sm-flex align-items-center white" style="font: 12px; width: 10%;"></i>
+                  <div style="width: 80%;">
+                    <a href="https://www.google.com/maps/place/Delhi/@28.6436846,76.7635778,10z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x37205b715389640!8m2!3d28.7040592!4d77.1024902!16zL20vMDlmMDc?entry=ttu" style="color:#fff">
+                      Embu, Kenya
+                    </a>
+                  </div>
+                </li>
+                <!-- Added: Social Media Redirects -->
+                <div class="social-icons">
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a>
+                  <a href="https://github.com/#/FinVeda"><i class="fa-brands fa-github"></i></a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s" style="text-align: center">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copyright d-sm-flex justify-content-center" style="
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+              ">
+              <div class="copyright-content" style="text-align: center">
+                <p class="text" style="text-align: center">
+                  © <span id="copyright-year">2025</span> FinTech. All rights are
+                  reserved<br>
+                  Made with ♥ DevRoy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div id="particles-2"></div>
+    </footer>
+    <script>document.getElementById("copyright-year").textContent = new Date().getFullYear();</script>
+
+    <button id="scrollToTopBtn" class="scroll-top" aria-label="Scroll to top">
+      <div class="scroll-top-icon">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+      <svg class="progress-ring" width="60" height="60">
+        <circle class="progress-ring__circle" stroke="#ffffff" stroke-width="4" fill="transparent" r="28" cx="30"
+          cy="30"></circle>
+      </svg>
+    </button>
+    <style>
+      .scroll-top {
+        position: fixed;
+        right: 1.6%;
+        background: #635adc;
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 5px 15px rgba(255, 69, 159, 0.4);
+        overflow: visible;
+        z-index: 10;
+        bottom: 110px;
+        margin-right: 10px;
+        /* Ensure button is on top */
+      }
+
+      .scroll-top.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .scroll-top:hover {
+        transform: scale(1.1);
+        /* Subtle scaling instead of expanding */
+        box-shadow: 0 8px 20px rgba(255, 69, 159, 0.6);
+        /* Slightly larger shadow */
+      }
+
+      .scroll-top:active {
+        transform: scale(1.05);
+        /* Minor scale reduction on click */
+      }
+
+      .scroll-top-icon {
+        position: relative;
+        z-index: 2;
+        transition: transform 0.3s ease;
+      }
+
+      .scroll-top:hover .scroll-top-icon {
+        transform: translateY(-3px);
+      }
+
+      /* Progress Ring Styling */
+      .progress-ring {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+        /* To start from the top */
+      }
+
+      .progress-ring__circle {
+        transition: stroke-dashoffset 0.35s;
+        transform-origin: 50% 50%;
+      }
+
+      /* Pulse Animation */
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 5px 15px rgba(255, 69, 159, 0.4);
+        }
+
+        50% {
+          box-shadow: 0 5px 15px rgba(255, 69, 159, 0.7);
+        }
+
+        100% {
+          box-shadow: 0 5px 15px rgba(255, 69, 159, 0.4);
+        }
+      }
+
+      .scroll-top:hover {
+        animation: pulse 1.5s infinite;
+      }
+
+      .scroll-top.show {
+        animation: none;
+        /* No animation when showing the button */
+      }
+
+      .scroll-top.show:hover {
+        animation: pulse 1.5s infinite;
+        /* Pulse on hover */
+      }
+    </style>
+    <script>
+      // Get the button
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      const progressCircle = document.querySelector(".progress-ring__circle");
+      const radius = progressCircle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius;
+
+      // Set the circle progress properties
+      progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+      progressCircle.style.strokeDashoffset = circumference;
+
+      // Function to show or hide the button based on scroll position
+      function toggleScrollButton() {
+        if (window.scrollY > 100) {
+          scrollToTopBtn.classList.add("show");
+        } else {
+          scrollToTopBtn.classList.remove("show");
+        }
+      }
+
+      // Function to set the scroll progress on the button ring
+      function setProgress(percent) {
+        const offset = circumference - (percent / 100) * circumference;
+        progressCircle.style.strokeDashoffset = offset;
+      }
+
+      // Listen for scroll events to update button visibility and progress
+      window.addEventListener("scroll", () => {
+        toggleScrollButton();
+        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        setProgress(scrollPercent);
+      });
+
+      // Smooth scroll to top when the button is clicked
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
+    <script src="./assets/js/trends.js"></script>
+    <script src="./assets/js/market-time.js"></script>
+    <script src="./assets/js/subscribe.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/popup.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/ajax-contact.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/scrolling-nav.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/popup.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/5e160793-5606-4412-ba4c-337e416f14fe/webchat/config.js"
+      defer></script>
+    <script defer src="./assets/js/arthsathi-style.js"></script>
+    <script src="./assets/js/botpress.js"></script>
+    <script src="./assets/js/trendsmodals.js"></script>
+    <script src="./tools/smoothScroll.js"></script>
+
+    <!-- <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = { "default_language": "en", "detect_browser_language": true, "wrapper_selector": ".gtranslate_wrapper" }</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="shortcut icon"  href="/assets/images/favicon2.webp" type="image/png" />  
+    <link rel="shortcut icon" href="./assets/images/favicon2.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="./assets/css/slick.css" />
+    <link rel="stylesheet" href="./assets/css/LineIcons.css" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/quiz.css" />
+    <link rel="stylesheet" href="./assets/css/popup.css" />
+    <link rel="stylesheet" href="./assets/css/cookiepopup.css">
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/preloader.css" />
+    <link rel="stylesheet" type="text/css" href="sipcalculatorCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/about(inlines).css" />
+    <link rel="stylesheet" href="navbar.css">
+  
+    <style>
+      * {
+        cursor: url('/assets/images/ads_click_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg'), auto;
+      }
+  
+  
+      .circle {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        pointer-events: none;
+        background: radial-gradient(circle, rgba(73, 232, 247, 0.466), rgba(141, 38, 172, 0.5));
+        transition: transform 0.1s, left 0.1s, top 0.1s;
+      }
+  
+      .circle-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+      }
+  
+      @media (max-width: 720px) {
+        .circle-container {
+          display: none;
+        }
+      }
+
+/* Style for Financial Literacy Rates heading */
+.financial-literacy-rate {
+    color: black; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for Financial Literacy Rates heading */
+.financial-literacy-rate:hover {
+    background-color: orange; 
+    color: white; 
+    padding: 5px; 
+    border-radius: 5px; 
+}
+
+/* Card styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; 
+    padding: 20px; 
+    max-width: 800px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    opacity: 0; 
+    animation: fadeIn 0.5s forwards; 
+}
+
+/* Card heading styling */
+.card h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+/* Button styles */
+button, 
+input[type="submit"], 
+input[type="button"], 
+.quiz-button {
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+/* Hover effects for buttons */
+button:hover, 
+input[type="submit"]:hover, 
+input[type="button"]:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.quiz-button:hover {
+    background-color: #218838; 
+    transform: translateY(-2px); 
+}
+
+/* Input field styles */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea, 
+select {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Hover effects for input fields */
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+input[type="password"]:hover, 
+textarea:hover, 
+select:hover {
+    border-color: #007BFF; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+/* Focus effects for input fields */
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+textarea:focus, 
+select:focus {
+    border-color: #0056b3; 
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.5); 
+    outline: none; 
+}
+
+/* Styling for educational resources */
+.educational-resources {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+/* State initiative card styling */
+.state-initiative {
+    margin: 20px 0; 
+    padding: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: #ffffff; 
+}
+
+/* Hover effect for state initiative cards */
+.state-initiative:hover {
+    background-color: #f1f1f1; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Resource card styling */
+.resource {
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 15px; 
+    margin: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Hover effect for resource cards */
+.resource:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Text color change on resource hover */
+.resource:hover p {
+    color: #333; 
+}
+
+/* Resource heading styling */
+.resource h2 {
+    color: #007BFF; 
+    transition: color 0.3s ease; 
+}
+
+/* Change resource heading color on hover */
+.resource:hover h2 {
+    color: #0056b3; 
+}
+
+/* Fade-in animation for cards */
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+    </style>
+    
+</head>
+<body>
+    <div id="progressBar"></div>
+    <script>
+      window.onscroll = function () {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      };
+    </script>
+    <div class="circle-container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  
+    <div id="progressBar"></div>
+   
+    <header class="header-area">
+      <div class="navbar-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg" style="display: flex; background-color: #2c3e50;">
+                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                    <div class="icon1">
+                        <a href="./index.html">
+                            <img src="./assets/images/FinvedaLogo.png" alt="Finveda Logo" style="width: 13rem;">
+                        </a>
+                    </div>
+                    <ul id="nav" class="navbar-nav ml-auto" style="margin: auto;">
+                        <li class="nav-item">
+                            <a class="page-scroll" href="./index.html">
+                                <i class="fas fa-home icon-hover" style="margin: 5px;"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll" href="./about.html">
+                                <i class="fas fa-info-circle icon-hover" style="margin: 5px;"></i> About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll" href="./finance.html">
+                                <i class="fas fa-graduation-cap icon-hover" style="margin: 5px;"></i> Courses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll" href="./contact.html">
+                                <i class="fas fa-envelope icon-hover" style="margin: 5px;"></i> Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="page-scroll" href="./faq.html">
+                                <i class="fas fa-question-circle icon-hover" style="margin: 5px;"></i> Help
+                            </a>
+                        </li>
+                        <!-- Dropdown for Explore -->
+                        <li class="nav-item dropdown" onmouseover="toggleDropdown(true)" onmouseout="toggleDropdown(false)">
+                            <a class="page-scroll dropdown-toggle" href="#">
+                                <i class="fas fa-chevron-down icon-hover" style="margin: 5px;"></i> Explore More
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="./finance.html">
+                                  <i class="fas fa-graduation-cap icon-hover" style="margin: 5px;"></i> Courses
+                                </a>
+                              </li>
+                                <li><a href="./trends.html"><i class="fas fa-chart-line icon-hover" style="margin: 5px;"></i> Trends</a></li>
+                                <li><a href="./tools/sip.html"><i class="fas fa-tools icon-hover" style="margin: 5px;"></i> Tools</a></li>
+                                <li><a href="./blog.html"><i class="fas fa-blog icon-hover" style="margin: 5px;"></i> Blogs</a></li>
+                                <li><a href="./quiz.html"><i class="fas fa-question icon-hover" style="margin: 5px;"></i> Quiz</a></li>
+                                <li><a href="./Games/Games.html"><i class="fas fa-gamepad icon-hover" style="margin: 5px;"></i>
+                                  Games</a>
+                              </li>
+                                <li><a class="active-link" href="./maps.html"><i class="fas fa-map icon-hover" style="margin: 5px;"></i> MAPS</a></li>
+                            </ul>
+                        </li>
+                        <!-- Navigation item placeholder for Login/Register or Logout button -->
+                        <li class="nav-item no-underline" id="auth-btn-container">
+                            <a class="main-btn navbar-btn" style="padding: 2px 20px;" data-scroll-nav="0" href="./loginPage.html">
+                                <i class="fas fa-user-circle icon-hover" style="margin: 5px;"></i> Login/Register
+                            </a>
+                        </li>
+                        <li class="nav-item no-underline align-self-center">
+                            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                              <span>🌞</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <script>
+          // Function to initialize theme based on localStorage
+          function initializeTheme() {
+            const body = document.body;
+            const toggleButton = document.getElementById('theme-toggle');
+            const currentTheme = localStorage.getItem('theme');
+        
+            // Apply saved theme
+            if (currentTheme === 'dark') {
+              body.classList.add('dark-mode');
+              toggleButton.classList.add('dark');
+              toggleButton.querySelector('span').textContent = '🌙'; // Dark mode icon
+            } else {
+              toggleButton.querySelector('span').textContent = '🌞'; // Light mode icon
+            }
+          }
+        
+          // Call initializeTheme on page load
+          document.addEventListener('DOMContentLoaded', () => {
+            initializeTheme();
+        
+            const toggleButton = document.getElementById('theme-toggle');
+            const body = document.body;
+        
+            // Event listener for theme toggle
+            toggleButton.addEventListener('click', () => {
+              body.classList.toggle('dark-mode');
+              toggleButton.classList.toggle('dark');
+        
+              // Update icon and save theme
+              if (body.classList.contains('dark-mode')) {
+                toggleButton.querySelector('span').textContent = '🌙'; // Dark mode icon
+                localStorage.setItem('theme', 'dark');
+              } else {
+                toggleButton.querySelector('span').textContent = '🌞'; // Light mode icon
+                localStorage.setItem('theme', 'light');
+              }
+        
+              loadShow(); // Call any additional function if needed
+            });
+          });
+        
+          // Function placeholder for additional operations (if needed)
+          function loadShow() {
+            // Additional actions can go here
+          }
+        </script>
+                  <!-- Login Modal -->
+                  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span
+                        class="close"
+                        style="display: flex; justify-content: right"
+                        >&times;</span
+                      >
+                      <div class="mt-3">
+                        <h3 class="join">Login to join us....</h3>
+                        <form class="px-3 py-4">
+                          <div class="form-group">
+                            <label class="d-flex">Username</label>
+                            <input
+                              type="text"
+                              placeholder="Username"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              class="form-control"
+                            />
+                            <button type="button" class="toggle-password-btn">
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </div>
+                          <div class="form-check d-flex">
+                            <input type="checkbox" class="form-check-input" />
+                            <label class="form-check-label">Remember me</label>
+                          </div>
+                        </form>
+                        <button class="main-btn mt-2 w-100 mb-3">
+                          Sign in
+                        </button>
+                        <p class="text-center">
+                          Don't have an account?
+                          <a href="#" id="registerLink">Register</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Register Modal -->
+                  <div id="registerModal" class="modal">
+                    <div class="modal-content">
+                      <span
+                        class="close"
+                        style="display: flex; justify-content: right"
+                        >&times;</span
+                      >
+                      <div class="mt-3">
+                        <h3 class="join">Register to join us....</h3>
+                        <form class="px-3 py-4">
+                          <div class="form-group">
+                            <label class="d-flex">Email</label>
+                            <input
+                              type="email"
+                              placeholder="Email"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label class="d-flex">Username</label>
+                            <input
+                              type="text"
+                              placeholder="Username"
+                              class="form-control"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              class="form-control"
+                              required
+                            />
+                            <button type="button" class="toggle-password-btn">
+                              <i class="fa-solid fa-eye"></i>
+                            </button>
+                          </div>
+                        </form>
+                        <button class="main-btn mt-2 w-100 mb-3">
+                          Register
+                        </button>
+                        <p class="text-center">
+                          Already have an account?
+                          <a href="#" id="loginLink">Login</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  
+              <nav class="mobile-menu ">
+                <a class="page-scroll" href="../index.html">Home 🏡</a>
+                <a class="page-scroll" href="../about.html">About Us 📖</a>
+                <a class="page-scroll" href="../trends.html">Trends 📈</a>
+                <a class="page-scroll" href="../tools/sip.html">Tools 🔧</a>
+                <a class="page-scroll active-link" href="../blog.html">Blogs 📰</a>
+                <a class="page-scroll" href="../quiz.html">Quiz 🤔</a>
+                <a class="page-scroll main-btn" href="#" onclick="openModal()" onmouseout="this.style.color='white'">Login/Register 💻</a>
+                <div class="mobile-menu__trigger" onclick="toggleMobileMenu()">
+                  <span></span>
+                </div>
+              </nav>
+  
+                  
+                <link href="../navbar.css" rel="stylesheet">
+                <script type="text/javascript" src="../navbar.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </header>
+  
+    
+    <h1>Financial Literacy Dashboard</h1>
+    <div id="map"></div>
+    <h2>Financial Literacy Rates</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>Literacy Rate</th>
+            </tr>
+        </thead>
+        <tbody id="literacy-data"></tbody>
+    </table>
+    <style>
+      *{
+        margin: 0px;
+      }
+        body{
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+        }
+      
+      
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+    <style>
+        /* Styling for the Financial Literacy Dashboard title */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color:#007BFF; /* A catchy green background */
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+h1:hover {
+    background-color: white; /* Darker green on hover */
+    color: #007BFF;
+  
+   margin-left: 20px;
+   margin-right: 20px;
+   border:2px solid #007BFF;
+}
+
+/* Styling for the map section */
+#map {
+  height: 300px;
+   width: 97%;
+   z-index: -100;
+   display: flex;
+   justify-items: center;
+    margin: 20px;
+    border: 2px solid #007BFF; /* Teal border */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#map:hover {
+  border: 2px solid white; /* Teal border */
+    border-radius: 20px;
+}
+
+/* Styling for the Financial Literacy Rates subtitle */
+h2 {
+  font-size: 2.5rem;
+    text-align: center;
+    background-color:#007BFF; /* A catchy green background */
+    color: white;
+   margin:  15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+}
+
+
+h2:hover {
+  background-color: white;
+    color: #007BFF;
+  
+   margin-left: 20px;
+   margin-right: 20px;
+   border:2px solid #007BFF;
+}
+
+/* Table styling */
+table {
+ 
+    width: 97%;
+    border-collapse: collapse;
+    margin: 20px;
+    border: 3px solid #007BFF; /* Vibrant indigo border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+table:hover {
+    border-color:white; 
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    border-right: 2px solid #3fb557; /* Indigo borders for each cell */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Header row styling */
+th {
+    background-color: #007BFF; /* A vibrant indigo background */
+    color: white;
+    text-transform: uppercase;
+    border-right: 2px solid #007BFF; /* Darker border for the header cells */
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e3f2fd;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+    background-color: white; /* Light blue on hover */
+}
+
+/* Hover effect for table cells */
+td:hover {
+    border-color:white; 
+    color: #007BFF;
+}
+
+/* Interactive colors for Literacy Rate data */
+td {
+    color: #424242;
+}
+
+
+
+    </style>
+           <!-- Section: Educational Resources and Initiatives -->
+    <section id="educational-resources" style="margin: 20px;width: 90%; max-width: 1200px;align-items: center; text-align: center; padding: 30px; background-color: white; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);margin-left: 170px;border: 10px #007BFF solid;">
+      <h2 style="color: #007BFF; background-color: white; font-size: 28px; margin: 20px; padding: 10px;">Educational Resources and Initiatives by State</h2>
+      <p style="color: #718096; font-size: 16px; margin-bottom: 30px;">Explore financial education programs and initiatives available across different states DevRoy to enhance financial literacy and economic empowerment.</p>
+      
+      <div class="state-resources">
+          <!-- Punjab -->
+          <div class="resource" style="background-color: white; border: 3px solid #007BFF; padding: 15px; margin-bottom: 20px; border-radius: 8px; transition: transform 0.3s;">
+              <h3 style="color: #007BFF; font-size: 20px; margin-bottom: 10px;">Punjab</h3>
+              <ul style="list-style-type: square; padding-left: 20px; color: #2d3748; text-align: left;">
+                  <li><strong>Punjab Financial Literacy Drive:</strong> State-sponsored workshops for rural youth covering basics of banking, savings, and digital finance.</li>
+                  <li><strong>Women Empowerment Program:</strong> Financial literacy courses specifically for women, helping them manage finances, loans, and small business funds.</li>
+                  <li><strong>Farmers’ Financial Guidance:</strong> Programs teaching farmers about loans, subsidies, and sustainable financial planning for agriculture.</li>
+              </ul>
+          </div>
+
+          <!-- Uttarakhand -->
+          <div class="resource" style="background-color: white;border: 3px solid #007BFF; padding: 15px; margin-bottom: 20px; border-radius: 8px; transition: transform 0.3s;">
+              <h3 style="color: #007BFF; font-size: 20px; margin-bottom: 10px;">Uttarakhand</h3>
+              <ul style="list-style-type: square; padding-left: 20px; color: #2d3748; text-align: left;">
+                  <li><strong>Rural Finance Initiative:</strong> Education sessions focused on rural families to understand savings, credit management, and small investment options.</li>
+                  <li><strong>Eco-Finance Awareness:</strong> Workshops teaching financial planning for eco-tourism workers, including budgeting and sustainable investment options.</li>
+              </ul>
+          </div>
+
+          <!-- Tamil Nadu -->
+          <div class="resource" style="background-color: white; border: 3px solid #007BFF; padding: 15px; margin-bottom: 20px; border-radius: 8px; transition: transform 0.3s;">
+              <h3 style="color: #007BFF; font-size: 20px; margin-bottom: 10px;">Tamil Nadu</h3>
+              <ul style="list-style-type: square; padding-left: 20px; color: #2d3748; text-align: left;">
+                  <li><strong>Financial Literacy for Fishermen:</strong> Local government program teaching coastal communities about saving, loans, and investment for fishing businesses.</li>
+                  <li><strong>Women’s Self-Help Finance Groups:</strong> Self-help groups (SHGs) that provide financial training and micro-financing options for women entrepreneurs.</li>
+              </ul>
+          </div>
+
+          <!-- Uttar Pradesh -->
+          <div class="resource" style="background-color: white; border: 3px solid #007BFF; padding: 15px; margin-bottom: 20px; border-radius: 8px; transition: transform 0.3s;">
+              <h3 style="color: #007BFF; font-size: 20px; margin-bottom: 10px;">Uttar Pradesh</h3>
+              <ul style="list-style-type: square; padding-left: 20px; color: #2d3748; text-align: left;">
+                  <li><strong>UP Banking Literacy Campaign:</strong> Initiative in collaboration with banks to educate people on account management, digital transactions, and loan applications.</li>
+                  <li><strong>Youth Employment Finance Workshops:</strong> Programs for young adults on financial planning, personal savings, and career-based investment options.</li>
+              </ul>
+          </div>
+
+          <!-- Assam -->
+          <div class="resource" style="background-color: white; border: 3px solid #007BFF; padding: 15px; margin-bottom: 20px; border-radius: 8px; transition: transform 0.3s;">
+              <h3 style="color: #007BFF; font-size: 20px; margin-bottom: 10px;">Assam</h3>
+              <ul style="list-style-type: square; padding-left: 20px; color: #2d3748; text-align: left;">
+                  <li><strong>Tea Workers’ Financial Education:</strong> Workshops on savings, credit, and health insurance for tea plantation workers and their families.</li>
+                  <li><strong>Digital Finance in Rural Assam:</strong> Program introducing rural communities to digital banking and safe online transactions.</li>
+              </ul>
+          </div>
+
+          <!-- Maharashtra -->
+          <div class="resource" style="background-color: white; border: 3px solid #007BFF; padding: 15px; margin-bottom: 20px; border-radius: 8px; transition: transform 0.3s;">
+              <h3 style="color: #007BFF; font-size: 20px; margin-bottom: 10px;">Maharashtra</h3>
+              <ul style="list-style-type: square; padding-left: 20px; color: #2d3748; text-align: left;">
+                  <li><strong>Mumbai Financial Literacy Drive:</strong> City-wide initiative promoting personal finance education, debt management, and retirement planning for urban youth.</li>
+                  <li><strong>Rural Maharashtra Finance Program:</strong> Workshops for rural families focusing on saving schemes, micro-financing, and insurance literacy.</li>
+                  <li><strong>Agricultural Finance Training:</strong> Programs for farmers on financial products available for agriculture, crop insurance, and subsidies.</li>
+              </ul>
+          </div>
+      </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback" style="margin-left: 150px; margin-top: 50px; width: 90%; max-width: 600px; background-color: white; border-radius: 8px; padding: 20px;border:3px solid #007BFF; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+    <h2 style="color: #2c5282; font-size: 24px; text-align: center; padding: 10px;">Share Your Feedback</h2>
+    <p style="color: #4a5568; font-size: 16px; text-align: center;">Help us improve our financial education platform by sharing your thoughts!</p>
+    
+    <form style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px; ">
+        <label style="font-size: 14px; color: #2d3748;">
+            Name:
+            <input type="text" style="width: 100%; padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px;" placeholder="Enter your name" />
+        </label>
+
+        <label style="font-size: 14px; color: #2d3748;">
+            Email:
+            <input type="email" style="width: 100%; padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px;" placeholder="Enter your email" />
+        </label>
+
+        <label style="font-size: 14px; color: #2d3748;">
+            Feedback:
+            <textarea style="width: 100%; padding: 8px; border: 1px solid #cbd5e0; border-radius: 4px;" rows="4" placeholder="Share your feedback..."></textarea>
+        </label>
+
+        <button type="submit" style="padding: 10px; background-color: #007BFF; color: #ffffff; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+            Submit Feedback
+        </button>
+    </form>
+</section>
+
+<!-- Quiz Section -->
+<section id="quiz" style="top: 3650px;left:680px;position: absolute;width: 90%; max-width: 500px; background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); border: 2px solid #007BFF; margin-top: 120px; margin-left: 100px;">
+    <h2 style="color: #2c5282; padding: 10px; font-size: 24px; text-align: center;">Financial Literacy Quiz</h2>
+    <p style="color: #4a5568; font-size: 16px; text-align: center;">Test your knowledge on basic financial concepts!</p>
+    
+    <form style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+        <!-- Question 1 -->
+        <div style="text-align: left;">
+            <p style="color: #2d3748; font-size: 16px; margin: 0;">1. What is the best definition of a budget?</p>
+            <label style="font-size: 14px; color: #2d3748;">
+                <input type="radio" name="q1" style="margin-right: 5px;"> A plan for how to spend money.
+            </label>
+            <label style="font-size: 14px; color: #2d3748;">
+                <input type="radio" name="q1" style="margin-right: 5px;"> A way to keep track of expenses.
+            </label>
+        </div>
+
+        <!-- Question 2 -->
+        <div style="text-align: left;">
+            <p style="color: #2d3748; font-size: 16px; margin: 0;">2. Which of the following is an asset?</p>
+            <label style="font-size: 14px; color: #2d3748;">
+                <input type="radio" name="q2" style="margin-right: 5px;"> Savings in a bank account
+            </label>
+            <label style="font-size: 14px; color: #2d3748;">
+                <input type="radio" name="q2" style="margin-right: 5px;"> A monthly rent payment
+            </label>
+        </div>
+
+        <button type="submit" style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+            Submit Quiz
+        </button>
+    </form>
+</section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([20.5937, 78.9629], 5); // Centered on India
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Financial literacy rates for Indian states
+        const financialLiteracyRates = {
+            'Andhra Pradesh': 67.90,
+            'Arunachal Pradesh': 61.60,
+            'Assam': 67.70,
+            'Bihar': 53.70,
+            'Chhattisgarh': 59.60,
+            'Goa': 85.20,
+            'Gujarat': 69.10,
+            'Haryana': 76.10,
+            'Himachal Pradesh': 74.30,
+            'Jharkhand': 53.70,
+            'Karnataka': 69.50,
+            'Kerala': 84.50,
+            'Madhya Pradesh': 66.70,
+            'Maharashtra': 76.90,
+            'Manipur': 60.30,
+            'Meghalaya': 65.30,
+            'Mizoram': 71.20,
+            'Nagaland': 65.50,
+            'Odisha': 73.90,
+            'Punjab': 76.70,
+            'Rajasthan': 62.90,
+            'Sikkim': 69.60,
+            'Tamil Nadu': 80.00,
+            'Telangana': 73.80,
+            'Tripura': 71.90,
+            'Uttar Pradesh': 54.70,
+            'Uttarakhand': 78.40,
+            'West Bengal': 76.60,
+            'Andaman and Nicobar Islands': 73.20,
+            'Chandigarh': 87.40,
+            'Dadra and Nagar Haveli and Daman and Diu': 65.70,
+            'Lakshadweep': 72.60,
+            'Delhi': 85.00,
+            'Puducherry': 75.50,
+            'Jammu and Kashmir': 70.10,
+            'Ladakh': 68.20,
+        };
+
+        // Function to categorize states based on financial literacy rates
+        function getLiteracyCategory(rate) {
+            if (rate < 60) {
+                return 'low';
+            } else if (rate >= 60 && rate <= 75) {
+                return 'medium';
+            } else {
+                return 'high';
+            }
+        }
+
+        // Coordinates for Indian states (approximated)
+        const stateCoordinates = {
+            'Andhra Pradesh': [15.9129, 79.7400],
+            'Arunachal Pradesh': [28.2180, 94.7278],
+            'Assam': [26.2006, 92.9376],
+            'Bihar': [25.0961, 85.3131],
+            'Chhattisgarh': [21.2787, 81.8661],
+            'Goa': [15.2993, 74.1240],
+            'Gujarat': [22.2587, 71.1924],
+            'Haryana': [29.0588, 76.0856],
+            'Himachal Pradesh': [31.1048, 77.1734],
+            'Jharkhand': [23.4108, 85.2900],
+            'Karnataka': [15.3173, 75.7139],
+            'Kerala': [10.8505, 76.2711],
+            'Madhya Pradesh': [22.9734, 78.6569],
+            'Maharashtra': [19.6016, 75.3239],
+            'Manipur': [24.6637, 93.9063],
+            'Meghalaya': [25.4670, 91.3662],
+            'Mizoram': [23.1645, 92.9376],
+            'Nagaland': [26.1584, 94.5624],
+            'Odisha': [20.9517, 85.0985],
+            'Punjab': [31.1471, 75.3412],
+            'Rajasthan': [27.0238, 74.2179],
+            'Sikkim': [27.5330, 88.6139],
+            'Tamil Nadu': [11.1271, 78.6569],
+            'Telangana': [17.1232, 78.6569],
+            'Tripura': [23.8435, 91.2868],
+            'Uttar Pradesh': [26.8467, 80.9462],
+            'Uttarakhand': [30.0668, 79.0193],
+            'West Bengal': [22.9868, 87.8550],
+            'Andaman and Nicobar Islands': [11.6230, 92.4623],
+            'Chandigarh': [30.7333, 76.7794],
+            'Dadra and Nagar Haveli and Daman and Diu': [20.2926, 73.4229],
+            'Lakshadweep': [10.5726, 72.6417],
+            'Delhi': [28.6139, 77.2090],
+            'Puducherry': [11.9416, 79.8083],
+            'Jammu and Kashmir': [33.7781, 76.5762],
+            'Ladakh': [34.1526, 77.5772],
+        };
+
+        // Function to display financial literacy rates on the map
+        for (const state in financialLiteracyRates) {
+            const rate = financialLiteracyRates[state];
+            const category = getLiteracyCategory(rate);
+            const [lat, lon] = stateCoordinates[state];
+            let color;
+
+            // Set color based on financial literacy category
+            if (category === 'low') {
+                color = 'red';
+            } else if (category === 'medium') {
+                color = 'yellow';
+            } else {
+                color = 'green';
+            }
+
+            // Add circle markers to the map
+            L.circle([lat, lon], {
+                color: color,
+                fillColor: color,
+                fillOpacity: 0.5,
+                radius: 50000 // Adjust the radius as needed
+            }).addTo(map).bindPopup(`${state}: ${rate.toFixed(2)}% literacy`);
+
+            // Populate the table
+            const literacyTableBody = document.getElementById('literacy-data');
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${state}</td><td>${rate.toFixed(2)}%</td>`;
+            literacyTableBody.appendChild(row);
+        }
+    </script>
+    
+    <footer id="footer" class="footer-area pt-120">
+        <div class="container">
+          <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="height: 265px; background-color: #0890ff;">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="subscribe-content mt-45">
+                  <h2 class="subscribe-title">
+                    Subscribe Our Newsletter <span style="font-size: 28px;"> Get regular updates</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="subscribe-form mt-50">
+                  <form id="unique-subscribe-form">
+                    <input type="email" id="unique-news-email" placeholder="Enter Email" required />
+                    <button class="unique-main-btn" id="unique-subscribe-btn" type="submit">Subscribe</button>
+                  </form>
+                  <div id="unique-message" class="unique-popup-message" style="display: none;">
+                    <div class="border-animation"></div>
+                    Thank You for the subscription!
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widget pb-100">
+          <div class="row" id="footer">
+            <div class="col-lg-4 col-md-6 col-sm-8">
+              <div class="footer-about mt-50 ml-45 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                <img src="../assets/images/FinvedaLogo.png" alt="FinVeda Logo"
+                  style="height: 80px; width: auto; margin-bottom: 15px;" />
+                <p class="text custom-margin">
+                  We at FinVeda aim to make you a stock market Guru easily with our AI-powered teaching and financial
+                  blogs.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-7">
+              <div class="footer-link d-flex mt-50 justify-content-md-between"
+                style="justify-content: space-around !important;">
+                <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                  <div class="footer-title">
+                    <h3 class="title custom-margin">Quick Links</h3>
+                  </div>
+
+                  <ul class="link custom-margin">
+                    <li><a href="../blogs/privacy-policy.html"><i class="fas fa-user-secret"></i> Privacy Policy</a></li>
+                    <li><a href="../blogs/refund-policy.html"><i class="fas fa-undo-alt"></i> Refund Policy</a></li>
+                    <li><a href="../Licensing.html"><i class="fas fa-file-contract"></i> Licensing</a></li>
+                    <li><a href="../blogs/terms-of-service.html"><i class="fas fa-file-alt"></i> Terms of Service</a></li>
+                    <li><a href="../contributors.html"><i class="fas fa-users"></i> Our Contributors</a></li>
+                  </ul>
+                </div>
+                <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                  <div class="footer-title">
+                    <h4 class="title custom-margin">Resources</h4>
+                  </div>
+                  <ul class="link custom-margin">
+                    <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="../about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="../trends.html"><i class="fas fa-chart-line"></i> Trends</a></li>
+                    <li><a href="../tools/sip.html"><i class="fas fa-tools"></i> Tools</a></li>
+                    <li><a href="../blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                    <li><a href="../quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-5">
+              <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+                <div class="footer-title">
+                  <h4 class="title custom-margin">Contact Us</h4>
+                </div>
+                <ul class="contact custom-margin-big" style="justify-content: space-around;">
+                  <li class="d-sm-flex justify-content-center">
+                    <i class="fa fa-envelope d-sm-flex align-items-center white" style="font-size: 16px; width: 10%;"></i>
+                    <p style="width: 80%;">
+                      <a href="mailto:mauriceroy538@gmail.com" target="_blank"
+                        style="color: white; text-decoration: underline;">
+                        mauriceroy538@gmail.com
+                      </a>
+                    </p>
+                  </li>
+                  <li class="d-sm-flex justify-content-center">
+                    <i class="fa fa-globe d-sm-flex align-items-center white" style="font-size: 16px; width: 10%;"></i>
+                    <div style="width: 80%;">
+                      <a href="#" target="_blank" style="color: #fff;">
+                        fin-veda.vercel.app
+                      </a>
+                    </div>
+                  </li>
+                  <li class="d-sm-flex justify-content-center">
+                    <i class="fa fa-location-dot d-sm-flex align-items-center white" style="font: 12px; width: 10%;"></i>
+                    <div style="width: 80%;">
+                      <a href="https://www.google.com/maps/place/Delhi/@28.6436846,76.7635778,10z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x37205b715389640!8m2!3d28.7040592!4d77.1024902!16zL20vMDlmMDc?entry=ttu"
+                        style="color:#fff">
+                        Delhi, India
+                      </a>
+                    </div>
+                  </li>
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://discord.com/"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://github.com/ayush-that/FinVeda"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-copyright mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s"
+          style="text-align: center">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright d-sm-flex justify-content-center"
+                style="display: flex; justify-content: center; text-align: center; width: 100%; height: 100%;">
+                <div class="copyright-content" style="text-align: center">
+                  <p class="text" style="text-align: center">
+                    © <span id="copyright-year">2025</span> FinVeda. All rights are reserved<br />
+                    Made with ♥ DevRoy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <script>
+          document.getElementById('unique-subscribe-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from submitting normally
+  
+            // Show popup message
+            var messageDiv = document.getElementById('unique-message');
+            messageDiv.style.display = 'block';
+  
+            // Reset existing animation
+            var borderAnimationDiv = messageDiv.querySelector('.border-animation');
+            borderAnimationDiv.style.animation = 'none';
+            borderAnimationDiv.offsetHeight; // Trigger reflow to restart the animation
+            borderAnimationDiv.style.animation = 'borderAnimation 3s linear forwards';
+  
+            // Hide popup message after 10 seconds
+            setTimeout(function () {
+              messageDiv.style.display = 'none';
+            }, 3000); // 10 seconds
+  
+            // Reset form
+            this.reset();
+          });
+        </script>
+  
+        </div>
+  
+        <div id="particles-2"></div>
+        </div>
+  
+      </footer>
+  
+     
+    <button id="scrollToTopBtn" class="scroll-top" aria-label="Scroll to top">
+        <div class="scroll-top-icon">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <svg class="progress-ring" width="60" height="60">
+          <circle class="progress-ring__circle" stroke="#ffffff" stroke-width="4" fill="transparent" r="28" cx="30"
+            cy="30"></circle>
+        </svg>
+      </button>
+      <style>
+        .scroll-top {
+          position: fixed;
+          right: 1.6%;
+          background: #635adc;
+          color: white;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+          box-shadow: 0 5px 15px rgba(255, 69, 159, 0.4);
+          overflow: visible;
+          z-index: 10;
+          bottom: 110px;
+          margin-right: 10px;
+          /* Ensure button is on top */
+        }
+  
+        .scroll-top.show {
+          opacity: 1;
+          visibility: visible;
+        }
+  
+        .scroll-top:hover {
+          transform: scale(1.1);
+          /* Subtle scaling instead of expanding */
+          box-shadow: 0 8px 20px rgba(255, 69, 159, 0.6);
+          /* Slightly larger shadow */
+        }
+  
+        .scroll-top:active {
+          transform: scale(1.05);
+          /* Minor scale reduction on click */
+        }
+  
+        .scroll-top-icon {
+          position: relative;
+          z-index: 2;
+          transition: transform 0.3s ease;
+        }
+  
+        .scroll-top:hover .scroll-top-icon {
+          transform: translateY(-3px);
+        }
+  
+        /* Progress Ring Styling */
+        .progress-ring {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: rotate(-90deg);
+          /* To start from the top */
+        }
+  
+        .progress-ring__circle {
+          transition: stroke-dashoffset 0.35s;
+          transform-origin: 50% 50%;
+        }
+  
+        /* Pulse Animation */
+        @keyframes pulse {
+          0% {
+            box-shadow: 0 5px 15px rgba(255, 69, 159, 0.4);
+          }
+  
+          50% {
+            box-shadow: 0 5px 15px rgba(255, 69, 159, 0.7);
+          }
+  
+          100% {
+            box-shadow: 0 5px 15px rgba(255, 69, 159, 0.4);
+          }
+        }
+  
+        .scroll-top:hover {
+          animation: pulse 1.5s infinite;
+        }
+  
+        .scroll-top.show {
+          animation: none;
+          /* No animation when showing the button */
+        }
+  
+        .scroll-top.show:hover {
+          animation: pulse 1.5s infinite;
+          /* Pulse on hover */
+        }
+      </style>
+      <script>
+        // Get the button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        const progressCircle = document.querySelector(".progress-ring__circle");
+        const radius = progressCircle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+  
+        // Set the circle progress properties
+        progressCircle.style.strokeDasharray = `${circumference} ${circumference}`;
+        progressCircle.style.strokeDashoffset = circumference;
+  
+        // Function to show or hide the button based on scroll position
+        function toggleScrollButton() {
+          if (window.scrollY > 100) {
+            scrollToTopBtn.classList.add("show");
+          } else {
+            scrollToTopBtn.classList.remove("show");
+          }
+        }
+  
+        // Function to set the scroll progress on the button ring
+        function setProgress(percent) {
+          const offset = circumference - (percent / 100) * circumference;
+          progressCircle.style.strokeDashoffset = offset;
+        }
+  
+        // Listen for scroll events to update button visibility and progress
+        window.addEventListener("scroll", () => {
+          toggleScrollButton();
+          const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+          setProgress(scrollPercent);
+        });
+  
+        // Smooth scroll to top when the button is clicked
+        scrollToTopBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      </script>
+      
+        <script src="finance.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 2000
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const coords = { x: 0, y: 0 };
+          const circles = document.querySelectorAll(".circle");
+      
+          circles.forEach(function (circle) {
+            circle.x = 0;
+            circle.y = 0;
+          });
+      
+          window.addEventListener("mousemove", function (e) {
+            coords.x = e.pageX;
+            coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+          });
+      
+          function animateCircles() {
+            let x = coords.x;
+            let y = coords.y;
+      
+            circles.forEach(function (circle, index) {
+              circle.style.left = `${x - 12}px`;
+              circle.style.top = `${y - 12}px`;
+              circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+      
+              const nextCircle = circles[index + 1] || circles[0];
+              circle.x = x;
+              circle.y = y;
+      
+              x += (nextCircle.x - x) * 0.3;
+              y += (nextCircle.y - y) * 0.3;
+            });
+      
+            requestAnimationFrame(animateCircles);
+          }
+      
+          animateCircles();
+        });
+      
+      </script>
+</body>
+</html>

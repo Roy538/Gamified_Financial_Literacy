@@ -1,0 +1,37 @@
+.password-container {
+    position: relative;
+  }
+  .password-container input {
+    padding-right: 30px;
+  }
+  .password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  table {
+    width: 100%;
+  }
+  table tr td {
+    padding: 10px 0;
+  }
+  .error {
+    color: red;
+    font-size: 0.9em;
+  }
+  .btn-transparent{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 900;
+   background-color: white;
+   color: #4d84e2;
+  }
+  .btn-transparent:hover{
+    background-color: #1e90ff;
+    color: white;
+  }

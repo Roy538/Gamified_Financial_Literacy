@@ -1,0 +1,78 @@
+.search-container {
+    margin: 20px 0;
+    text-align: center; /* Centers the search bar */
+}
+
+/* Style for the input field */
+#jobSearch {
+    width: 80%; /* Full width with some padding */
+    max-width: 400px; /* Maximum width */
+    padding: 10px; /* Padding inside the input */
+    border: 2px solid #28a745; /* Green border for a positive tone */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size of the input text */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and shadow */
+}
+
+/* Change border color and add shadow on focus */
+#jobSearch:focus {
+    border-color: #218838; /* Darker green on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(33, 136, 56, 0.4); /* Soft green shadow for focus */
+}
+
+/* Salary filter input styling */
+#salaryFilter {
+    width: 80%; /* Full width with some padding */
+    max-width: 200px; /* Maximum width */
+    padding: 10px; /* Padding inside the input */
+    border: 2px solid #28a745; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size of the input text */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color and shadow */
+}
+
+/* Change border color and add shadow on focus */
+#salaryFilter:focus {
+    border-color: #218838; /* Darker green on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(33, 136, 56, 0.4); /* Soft green shadow */
+}
+
+/* Job table styles */
+.jobs-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+.jobs-table th, .jobs-table td {
+    padding: 8px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+.jobs-table th {
+    background-color: #e9f7ef; /* Light green background for headers */
+    font-weight: bold; /* Bold font for headers */
+    color: #155724; /* Darker green for text */
+}
+
+.jobs-table td {
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+/* No results message style */
+.no-results {
+    color: #ff4d4f; /* Slightly softer red for a friendlier tone */
+    font-weight: bold; /* Bold font for emphasis */
+    text-align: center; /* Center the message */
+    margin-top: 20px; /* Margin above the message */
+    font-size: 1.1em; /* Slightly larger font */
+    animation: fadeIn 0.5s ease-in; /* Soft fade-in effect */
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

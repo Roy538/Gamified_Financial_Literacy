@@ -1,4 +1,4 @@
-<div align="center">
+<!-- <div align="center">
 <a href="https://fin-veda.vercel.app/" target="_blank" title="Go to the FinVeda website"><img height="256px" alt="FinVeda logo" src="https://github.com/user-attachments/assets/5e45e1f4-7e0d-45b1-914d-80b6ab77ddd8"></a>
 <table align="center">
     <thead align="center">
@@ -64,18 +64,18 @@ FinVeda is a dynamic financial literacy app that'll help you Learn finance with 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- Added Hacktoberfest 2025 and GSSoc Extended 2025 banners -->
-### This project is now OFFICIALLY accepted for
+<!-- ### This project is now OFFICIALLY accepted for -->
 
-<div align="center">
+<!-- <div align="center">
   <img src="https://github.com/neeru24/Connect_icons/blob/main/hacktober.png" alt="Hacktoberfest 2025" width="80%">
 </div>
-<br>
+<br> -->
 
 
 
-   ![image](https://github.com/user-attachments/assets/5263dc32-ce09-4835-b964-7f996e970eb5)
-
-### 💵 How to Contribute
+   <!-- ![image](https://github.com/user-attachments/assets/5263dc32-ce09-4835-b964-7f996e970eb5) --> -->
+<!--  -->
+<!-- ### 💵 How to Contribute
 
    #### 1. Fork the repository to your GitHub account.
    #### 2. Clone the forked repository to your local machine.
@@ -127,9 +127,9 @@ We want to extend our heartfelt gratitude to all the amazing contributors who ha
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
-## 💗 Stargazers
+## 💗 Stargazers -->
 
-<div align='left'>
+<!-- <div align='left'>
 
 [![Stargazers repo roster for @ayush-that/FinVeda](https://reporoster.com/stars/ayush-that/FinVeda)](https://github.com/ayush-that/FinVeda/stargazers)
 
@@ -174,16 +174,16 @@ FinVeda is free and open-source software licensed under the GNU General Public L
 If you find this project useful and would like to support the project, please consider giving it a ⭐ star on GitHub! Your support helps us grow and improve. Thank you! 🙌
 
 <h3 align="center">Keep learning and exploring! 🚀</h3>
-<h3 align="center">Happy coding! 👩‍💻🎉 </h3>
+<h3 align="center">Happy coding! 👩‍💻🎉 </h3> -->
 
 
-## Connect with Me 🌐
+<!-- ## Connect with Me 🌐 -->
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mauriceroy538@gmail.com)
+<!-- [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mauriceroy538@gmail.com)
 [![X (formerly Twitter)](https://img.shields.io/badge/X-1DA1F2?style=flat-square&logo=x&logoColor=white)](https://x.com/shydev69)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-that/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ayush-that)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@ayush-that)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@ayush-that) -->
 
 ---
 

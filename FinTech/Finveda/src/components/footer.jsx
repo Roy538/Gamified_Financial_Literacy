@@ -82,7 +82,7 @@ function Footer() {
                   </div>
                   <ul className="contact">
                     <li>mauriceroy538@gmail.com</li>
-                    <li>fin-veda.vercel.app</li>
+                    <li>fin-veda.netlify.app</li>
                     <li>Delhi, India</li>
                   </ul>
                 </div>

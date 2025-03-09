@@ -54,16 +54,16 @@ const achievements = [
 ];
 
 // Initialize game
-// function initializeGame() {
-//     const savedState = localStorage.getItem('budgetHeroState');
-//     if (savedState) {
-//         gameState = JSON.parse(savedState);
-//         updateUI();
-//         checkDailySavings();
-//     }
-//     renderAchievements();
-//     updateWeeklyProgress();
-// }
+function initializeGame() {
+    const savedState = localStorage.getItem('budgetHeroState');
+    if (savedState) {
+        gameState = JSON.parse(savedState);
+        updateUI();
+        checkDailySavings();
+    }
+    renderAchievements();
+    updateWeeklyProgress();
+}
 
 // Save game state
 function saveGameState() {

@@ -27,14 +27,14 @@ const achievements = [
         condition: (state) => state.weeklySavings.length > 0,
         points: 50
     },
-    // {
-    //     id: 'weekly_goal',
-    //     title: 'Weekly Master',
-    //     description: 'Complete a weekly savings goal',
-    //     icon: '🎯',
-    //     condition: (state) => state.weeklySavings.reduce((sum, s) => sum + s.amount, 0) >= state.weeklyGoal,
-    //     points: 100
-    // },
+    {
+        id: 'weekly_goal',
+        title: 'Weekly Master',
+        description: 'Complete a weekly savings goal',
+        icon: '🎯',
+        condition: (state) => state.weeklySavings.reduce((sum, s) => sum + s.amount, 0) >= state.weeklyGoal,
+        points: 100
+    },
     {
         id: 'streak_3',
         title: 'Consistent Saver',

@@ -71,20 +71,20 @@ function saveGameState() {
 }
 
 // Update UI elements
-function updateUI() {
-    document.getElementById('currentBalance').textContent = gameState.balance;
-    document.getElementById('score').textContent = gameState.score;
-    document.getElementById('level').textContent = gameState.level;
-    document.getElementById('streakCount').textContent = gameState.streak;
-    document.getElementById('weeklySavingsTotal').textContent = 
-        gameState.weeklySavings.reduce((sum, s) => sum + s.amount, 0);
-    document.getElementById('savingsDaysCount').textContent = 
-        `${gameState.weeklySavings.length}/7 days`;
+// function updateUI() {
+//     document.getElementById('currentBalance').textContent = gameState.balance;
+//     document.getElementById('score').textContent = gameState.score;
+//     document.getElementById('level').textContent = gameState.level;
+//     document.getElementById('streakCount').textContent = gameState.streak;
+//     document.getElementById('weeklySavingsTotal').textContent = 
+//         gameState.weeklySavings.reduce((sum, s) => sum + s.amount, 0);
+//     document.getElementById('savingsDaysCount').textContent = 
+//         `${gameState.weeklySavings.length}/7 days`;
     
-    updateTransactionsList();
-    updateWeeklyProgress();
-    checkAchievements();
-}
+//     updateTransactionsList();
+//     updateWeeklyProgress();
+//     checkAchievements();
+// }
 
 // Add income
 function addIncome() {

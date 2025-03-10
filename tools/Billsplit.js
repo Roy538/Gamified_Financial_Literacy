@@ -42,11 +42,11 @@
 //         }
 //     });
 
-    document.getElementById('clearBtn5').addEventListener('click', function () {
-        billSubtotalInput.value = '';
-        tipPercentageInput.value = '';
-        numberOfPersonsInput.value = '';
-        totalBillOutput.textContent = '₹00.00';
-        billPerPersonOutput.textContent = '₹00.00';
-    });
-});
+//     document.getElementById('clearBtn5').addEventListener('click', function () {
+//         billSubtotalInput.value = '';
+//         tipPercentageInput.value = '';
+//         numberOfPersonsInput.value = '';
+//         totalBillOutput.textContent = '₹00.00';
+//         billPerPersonOutput.textContent = '₹00.00';
+//     });
+// });

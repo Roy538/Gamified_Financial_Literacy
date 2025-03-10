@@ -26,12 +26,12 @@ function calculateGDP() {
   document.getElementById('gdp-result').textContent = `GDP: ₹${gdp.toFixed(2)}`;
 }
 
-// function clearFields() {
-//   document.getElementById('personal').value = '';
-//   document.getElementById('investment1').value = '';
-//   document.getElementById('consumption').value = '';
-//   document.getElementById('exports').value = '';
-//   document.getElementById('imports').value = '';
+function clearFields() {
+  document.getElementById('personal').value = '';
+  document.getElementById('investment1').value = '';
+  document.getElementById('consumption').value = '';
+  document.getElementById('exports').value = '';
+  document.getElementById('imports').value = '';
   
-//   document.getElementById('gdp-result').textContent = '';
-// }
+  document.getElementById('gdp-result').textContent = '';
+}

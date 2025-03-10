@@ -19,23 +19,23 @@
 //                                <p>your potential returns after ${investmentPeriod} years could be approximately INR ${futureValue.toFixed(2)}.</p>`;
 // }
 
-// function calculatePPF() {
-//     const principalAmount = parseFloat(document.getElementById('principalAmount').value);
-//     const annualInterestRatePPF = parseFloat(document.getElementById('annualInterestRatePPF').value);
-//     const investmentPeriodPPF = parseFloat(document.getElementById('investmentPeriodPPF').value);
+function calculatePPF() {
+    const principalAmount = parseFloat(document.getElementById('principalAmount').value);
+    const annualInterestRatePPF = parseFloat(document.getElementById('annualInterestRatePPF').value);
+    const investmentPeriodPPF = parseFloat(document.getElementById('investmentPeriodPPF').value);
 
-//     if (isNaN(principalAmount) || isNaN(annualInterestRatePPF) || isNaN(investmentPeriodPPF) || principalAmount <= 0 || annualInterestRatePPF <= 0 || investmentPeriodPPF <= 0) {
-//         document.getElementById('ppfResult').innerHTML = `<p>Please enter valid positive values for all fields.</p>`;
-//         return;
-//     }
+    if (isNaN(principalAmount) || isNaN(annualInterestRatePPF) || isNaN(investmentPeriodPPF) || principalAmount <= 0 || annualInterestRatePPF <= 0 || investmentPeriodPPF <= 0) {
+        document.getElementById('ppfResult').innerHTML = `<p>Please enter valid positive values for all fields.</p>`;
+        return;
+    }
 
-//     const monthlyInterestRatePPF = (annualInterestRatePPF / 100) / 12;
-//     const totalMonthsPPF = investmentPeriodPPF * 12;
+    const monthlyInterestRatePPF = (annualInterestRatePPF / 100) / 12;
+    const totalMonthsPPF = investmentPeriodPPF * 12;
 
-//     const futureValuePPF = principalAmount * Math.pow(1 + monthlyInterestRatePPF, totalMonthsPPF);
+    const futureValuePPF = principalAmount * Math.pow(1 + monthlyInterestRatePPF, totalMonthsPPF);
 
-//     const ppfResultElement = document.getElementById('ppfResult');
-//     ppfResultElement.innerHTML = `<h3>Potential Returns:</h3>
-//                                <p>If you invest INR ${principalAmount} at an annual interest rate of ${annualInterestRatePPF}%,</p>
-//                                <p>your maturity amount after ${investmentPeriodPPF} years could be approximately INR ${futureValuePPF.toFixed(2)}.</p>`;
-// }
+    const ppfResultElement = document.getElementById('ppfResult');
+    ppfResultElement.innerHTML = `<h3>Potential Returns:</h3>
+                               <p>If you invest INR ${principalAmount} at an annual interest rate of ${annualInterestRatePPF}%,</p>
+                               <p>your maturity amount after ${investmentPeriodPPF} years could be approximately INR ${futureValuePPF.toFixed(2)}.</p>`;
+}

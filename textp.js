@@ -24,7 +24,7 @@ const getCurrentTimestamp = () => {
   const displayLastActive = () => {
     const lastActive = getLastActive();
     const formattedTime = new Date(parseInt(lastActive)).toLocaleString();
-    document.getElementById('last-active').innerHTML = Last active: ${formattedTime};
+    // document.getElementById('last-active').innerHTML = Last active: ${formattedTime};
   };
   
   displayLastActive();

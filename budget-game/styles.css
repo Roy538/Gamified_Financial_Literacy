@@ -47,6 +47,15 @@ h1 {
     gap: 10px;
 }
 
+
+.category {
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+.category:hover {
+    transform: scale(1.1);
+    background-color: #ffcc00;
+}
+
 .player-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

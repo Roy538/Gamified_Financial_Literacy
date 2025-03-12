@@ -15,11 +15,11 @@ function initializeTheme() {
 }
 
 // Call initializeTheme on page load
-// document.addEventListener("DOMContentLoaded", () => {
-//   initializeTheme();
+document.addEventListener("DOMContentLoaded", () => {
+  initializeTheme();
 
-//   const toggleButton = document.getElementById("theme-toggle");
-//   const body = document.body;
+  const toggleButton = document.getElementById("theme-toggle");
+  const body = document.body;
 
   // Event listener for theme toggle
   toggleButton.addEventListener("click", () => {

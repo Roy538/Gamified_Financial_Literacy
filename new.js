@@ -44,19 +44,19 @@ function loadShow() {
   // Additional actions can go here
 }
 
-// function filterFAQs() {
-//   const searchInput = document
-//     .getElementById("faq-search-input")
-//     .value.toLowerCase();
-//   const faqs = document.querySelectorAll(".accordion-item");
+function filterFAQs() {
+  const searchInput = document
+    .getElementById("faq-search-input")
+    .value.toLowerCase();
+  const faqs = document.querySelectorAll(".accordion-item");
 
-//   faqs.forEach((faq) => {
-//     const question = faq
-//       .querySelector(".accordion-button")
-//       .textContent.toLowerCase();
-//     const answer = faq
-//       .querySelector(".accordion-body")
-//       .textContent.toLowerCase();
+  faqs.forEach((faq) => {
+    const question = faq
+      .querySelector(".accordion-button")
+      .textContent.toLowerCase();
+    const answer = faq
+      .querySelector(".accordion-body")
+      .textContent.toLowerCase();
 
     // Display the FAQ item only if the search term matches either the question or answer
     if (question.includes(searchInput) || answer.includes(searchInput)) {

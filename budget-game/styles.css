@@ -47,7 +47,7 @@ h1 {
     gap: 10px;
 }
 
-Choose a Financial Category
+/* Choose a Financial Category */
 .category {
     transition: transform 0.3s ease-in-out, background-color 0.3s;
 }

@@ -220,4 +220,10 @@ function toggleDropdown(show) {
     dropdownMenu.style.display = 'none';
   }
 }
+
+document.querySelectorAll('.category').forEach(button => {
+  button.addEventListener('click', () => {
+      alert(`You selected: ${button.textContent.trim()}`);
+  });
+});
   

@@ -35,21 +35,21 @@ document.addEventListener("DOMContentLoaded", function() {
         clearInputs();
     });
 
-    // function validateInputs(monthlyInstallment, annualInterestRate, timePeriodMonths) {
-    //     let hasError = false;
+    function validateInputs(monthlyInstallment, annualInterestRate, timePeriodMonths) {
+        let hasError = false;
 
-    //     if (isNaN(monthlyInstallment) || monthlyInstallment <= 0) {
-    //         showError('installmentError', 'Please enter a valid positive number for the monthly installment.');
-    //         hasError = true;
-    //     }
-    //     if (isNaN(annualInterestRate) || annualInterestRate <= 0) {
-    //         showError('rateError', 'Please enter a valid positive number for the annual interest rate.');
-    //         hasError = true;
-    //     }
-    //     if (isNaN(timePeriodMonths) || timePeriodMonths <= 0) {
-    //         showError('monthsError', 'Please enter a valid positive number for the time period in months.');
-    //         hasError = true;
-    //     }
+        if (isNaN(monthlyInstallment) || monthlyInstallment <= 0) {
+            showError('installmentError', 'Please enter a valid positive number for the monthly installment.');
+            hasError = true;
+        }
+        if (isNaN(annualInterestRate) || annualInterestRate <= 0) {
+            showError('rateError', 'Please enter a valid positive number for the annual interest rate.');
+            hasError = true;
+        }
+        if (isNaN(timePeriodMonths) || timePeriodMonths <= 0) {
+            showError('monthsError', 'Please enter a valid positive number for the time period in months.');
+            hasError = true;
+        }
 
         return hasError;
     }

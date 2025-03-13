@@ -18,15 +18,15 @@ function removeCashFlow(button) {
     cashFlowItem.remove();
 }
 
-// function calculateNPV() {
-//     const initialInvestment = parseFloat(document.getElementById('initialInvestment').value);
-//     const discountRate = parseFloat(document.getElementById('discountRate').value) / 100;
-//     const cashFlowItems = document.querySelectorAll('.cash-flow-item input');
+function calculateNPV() {
+    const initialInvestment = parseFloat(document.getElementById('initialInvestment').value);
+    const discountRate = parseFloat(document.getElementById('discountRate').value) / 100;
+    const cashFlowItems = document.querySelectorAll('.cash-flow-item input');
 
-//     if (isNaN(initialInvestment) || isNaN(discountRate)) {
-//         alert('Please enter valid inputs.');
-//         return;
-//     }
+    if (isNaN(initialInvestment) || isNaN(discountRate)) {
+        alert('Please enter valid inputs.');
+        return;
+    }
 
 //     let npv = -initialInvestment;
 //     cashFlowItems.forEach((input, index) => {

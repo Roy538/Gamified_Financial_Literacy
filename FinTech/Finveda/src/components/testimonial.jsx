@@ -63,7 +63,7 @@ function Testimonial(){
                     </div>
                 </div>
                 <div className="team-content">
-                    <h5 className="holder-name"><a href="#">Ayush Singh</a></h5>
+                    <h5 className="holder-name"><a href="#">Roy Maurice</a></h5>
                     <p className="text">Developer</p>
                 </div>
           </div>

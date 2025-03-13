@@ -150,7 +150,7 @@ git push -u origin <your_branch_name>
 
 # For Help And Support 💬
 
-- Admin :- Ayush Singh
+- Admin :- Roy Maurice
 - Contact :- [Email](mauriceroy538@gmail.com)
 
 # Good Coding Practices 🧑‍💻

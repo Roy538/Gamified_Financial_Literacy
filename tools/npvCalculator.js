@@ -41,27 +41,27 @@ function calculateNPV() {
     document.getElementById('npvResult').textContent = npv.toFixed(2);
 }
 
-// function clearNPV() {
-//     document.getElementById('initialInvestment').value = '';
-//     document.getElementById('discountRate').value = '';
-//     document.getElementById('cashFlows').innerHTML = '';
-//     document.getElementById('npvResult').innerText = '';
-//   }
+function clearNPV() {
+    document.getElementById('initialInvestment').value = '';
+    document.getElementById('discountRate').value = '';
+    document.getElementById('cashFlows').innerHTML = '';
+    document.getElementById('npvResult').innerText = '';
+  }
   
-//   function addCashFlow() {
-//     const cashFlowsContainer = document.getElementById('cashFlows');
-//     const year = cashFlowsContainer.children.length + 1;
-//     const cashFlowInput = document.createElement('div');
-//     cashFlowInput.innerHTML = `
-//       <div>
-//         <b>Year ${year} Cash Flow (INR)</b>
-//         <input class="form-control" type="number" name="cashFlow" />
-//         <button type="button" onclick="removeCashFlow(this)">Remove</button>
-//       </div>
-//       <br />
-//     `;
-//     cashFlowsContainer.appendChild(cashFlowInput);
-//   }
+  function addCashFlow() {
+    const cashFlowsContainer = document.getElementById('cashFlows');
+    const year = cashFlowsContainer.children.length + 1;
+    const cashFlowInput = document.createElement('div');
+    cashFlowInput.innerHTML = `
+      <div>
+        <b>Year ${year} Cash Flow (INR)</b>
+        <input class="form-control" type="number" name="cashFlow" />
+        <button type="button" onclick="removeCashFlow(this)">Remove</button>
+      </div>
+      <br />
+    `;
+    cashFlowsContainer.appendChild(cashFlowInput);
+  }
   
   // function removeCashFlow(button) {
   //   const cashFlowDiv = button.parentElement;

@@ -8,23 +8,23 @@
         clearErrorMessages();
 
         // Validate inputs and display errors if any
-        const hasError = validateInputs(monthlyInstallment, annualInterestRate, timePeriodMonths);
-        if (hasError) return;
+        // const hasError = validateInputs(monthlyInstallment, annualInterestRate, timePeriodMonths);
+        // if (hasError) return;
 
-        const monthlyInterestRate = annualInterestRate / 12 / 100;
-        let maturityAmount = 0;
+        // const monthlyInterestRate = annualInterestRate / 12 / 100;
+        // let maturityAmount = 0;
 
-        for (let i = 0; i < timePeriodMonths; i++) {
-            maturityAmount += monthlyInstallment * Math.pow((1 + monthlyInterestRate), (timePeriodMonths - i)); 
-        }
+        // for (let i = 0; i < timePeriodMonths; i++) {
+        //     maturityAmount += monthlyInstallment * Math.pow((1 + monthlyInterestRate), (timePeriodMonths - i)); 
+        // }
 
-        const totalInvestAmount = monthlyInstallment * timePeriodMonths;
-        const interestEarned = maturityAmount - totalInvestAmount;
+        // const totalInvestAmount = monthlyInstallment * timePeriodMonths;
+        // const interestEarned = maturityAmount - totalInvestAmount;
 
-        const formatter = new Intl.NumberFormat('en-IN', {
-            style: 'currency',
-            currency: 'INR'
-        });
+        // const formatter = new Intl.NumberFormat('en-IN', {
+        //     style: 'currency',
+        //     currency: 'INR'
+        // });
 
         // Display formatted results
         document.getElementById("interestEarned1").innerText = `Interest Earned: ${formatter.format(interestEarned)}`;

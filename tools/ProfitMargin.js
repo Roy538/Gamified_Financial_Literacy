@@ -38,8 +38,8 @@ function calculateProfitMargin() {
         return;
     }
 
-//     const profit = sellingPrice - costPrice;
-//     const profitMargin = (profit / sellingPrice) * 100;
+    const profit = sellingPrice - costPrice;
+    const profitMargin = (profit / sellingPrice) * 100;
 
-//     document.getElementById('profit-margin').innerText = `Profit Margin: ${profitMargin.toFixed(2)}%`;
-// }
+    document.getElementById('profit-margin').innerText = `Profit Margin: ${profitMargin.toFixed(2)}%`;
+}

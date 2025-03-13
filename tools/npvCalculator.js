@@ -63,22 +63,22 @@ function calculateNPV() {
 //     cashFlowsContainer.appendChild(cashFlowInput);
 //   }
   
-  function removeCashFlow(button) {
-    const cashFlowDiv = button.parentElement;
-    cashFlowDiv.parentElement.removeChild(cashFlowDiv);
-  }
+  // function removeCashFlow(button) {
+  //   const cashFlowDiv = button.parentElement;
+  //   cashFlowDiv.parentElement.removeChild(cashFlowDiv);
+  // }
   
-  function calculateNPV() {
-    const initialInvestment = parseFloat(document.getElementById('initialInvestment').value);
-    const discountRate = parseFloat(document.getElementById('discountRate').value) / 100;
-    const cashFlowElements = document.getElementsByName('cashFlow');
-    let npv = -initialInvestment;
+  // function calculateNPV() {
+  //   const initialInvestment = parseFloat(document.getElementById('initialInvestment').value);
+  //   const discountRate = parseFloat(document.getElementById('discountRate').value) / 100;
+  //   const cashFlowElements = document.getElementsByName('cashFlow');
+  //   let npv = -initialInvestment;
   
-    cashFlowElements.forEach((element, index) => {
-      const cashFlow = parseFloat(element.value);
-      npv += cashFlow / Math.pow(1 + discountRate, index + 1);
-    });
+  //   cashFlowElements.forEach((element, index) => {
+  //     const cashFlow = parseFloat(element.value);
+  //     npv += cashFlow / Math.pow(1 + discountRate, index + 1);
+  //   });
   
-    document.getElementById('npvResult').innerText = npv.toFixed(2);
-  }
+  //   document.getElementById('npvResult').innerText = npv.toFixed(2);
+  // }
   

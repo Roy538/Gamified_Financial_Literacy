@@ -51,25 +51,25 @@ document.addEventListener("DOMContentLoaded", function() {
     //         hasError = true;
     //     }
 
-//         return hasError;
-//     }
+        return hasError;
+    }
 
-//     function showError(elementId, message) {
-//         document.getElementById(elementId).textContent = message;
-//     }
+    function showError(elementId, message) {
+        document.getElementById(elementId).textContent = message;
+    }
 
-//     function clearErrorMessages() {
-//         document.getElementById('installmentError').textContent = '';
-//         document.getElementById('rateError').textContent = '';
-//         document.getElementById('monthsError').textContent = '';
-//     }
+    function clearErrorMessages() {
+        document.getElementById('installmentError').textContent = '';
+        document.getElementById('rateError').textContent = '';
+        document.getElementById('monthsError').textContent = '';
+    }
 
-//     function clearInputs() {
-//         document.getElementById("monthly-installment").value = '';
-//         document.getElementById("rate1").value = '';
-//         document.getElementById("months1").value = '';
-//         document.getElementById("interestEarned1").innerText = '';
-//         document.getElementById("maturityAmount1").innerText = '';
-//         clearErrorMessages();
-//     }
-// });
+    function clearInputs() {
+        document.getElementById("monthly-installment").value = '';
+        document.getElementById("rate1").value = '';
+        document.getElementById("months1").value = '';
+        document.getElementById("interestEarned1").innerText = '';
+        document.getElementById("maturityAmount1").innerText = '';
+        clearErrorMessages();
+    }
+});

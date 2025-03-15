@@ -115,11 +115,11 @@ const percentage = () => {
     }
 };
 
-const clearAll = () => {
-    document.getElementById('loanAmount').value = '';
-    document.getElementById('interestRate').value = '';
-    document.getElementById('loanTenure').value = '';
-    document.getElementById('monthlyEMI').innerText = '';
-    document.getElementById('totalPayment').innerText = '';
-    document.getElementById('totalInterestPaid').innerText = '';
-};
+// const clearAll = () => {
+//     document.getElementById('loanAmount').value = '';
+//     document.getElementById('interestRate').value = '';
+//     document.getElementById('loanTenure').value = '';
+//     document.getElementById('monthlyEMI').innerText = '';
+//     document.getElementById('totalPayment').innerText = '';
+//     document.getElementById('totalInterestPaid').innerText = '';
+// };

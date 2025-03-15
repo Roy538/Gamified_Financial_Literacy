@@ -1,15 +1,15 @@
-document.getElementById('calculateBtn1').addEventListener('click', calculateSWP);
+// document.getElementById('calculateBtn1').addEventListener('click', calculateSWP);
 
-function calculateSWP() {
-    const totalInvestment = parseFloat(document.getElementById('totalInvestment').value);
-    const withdrawalPerMonth = parseFloat(document.getElementById('withdrawalPerMonth').value);
-    const expectedReturnRate = parseFloat(document.getElementById('expectedReturnRate').value);
-    const totalPeriod = parseFloat(document.getElementById('totalPeriod').value);
+// function calculateSWP() {
+//     const totalInvestment = parseFloat(document.getElementById('totalInvestment').value);
+//     const withdrawalPerMonth = parseFloat(document.getElementById('withdrawalPerMonth').value);
+//     const expectedReturnRate = parseFloat(document.getElementById('expectedReturnRate').value);
+//     const totalPeriod = parseFloat(document.getElementById('totalPeriod').value);
 
-    if (isNaN(totalInvestment) || isNaN(withdrawalPerMonth) || isNaN(expectedReturnRate) || isNaN(totalPeriod)) {
-        alert("Please fill all fields.");
-        return;
-    }
+//     if (isNaN(totalInvestment) || isNaN(withdrawalPerMonth) || isNaN(expectedReturnRate) || isNaN(totalPeriod)) {
+//         alert("Please fill all fields.");
+//         return;
+//     }
 
     const monthlyInterestRate = (expectedReturnRate / 100) / 12;
     const totalMonths = totalPeriod * 12;

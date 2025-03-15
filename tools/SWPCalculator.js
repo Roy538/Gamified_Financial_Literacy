@@ -27,16 +27,16 @@ function calculateSWP() {
     remainingAmountElement.textContent = `₹${finalValue.toFixed(2)}`;
 }
 
-document.getElementById('calculateBtn1').addEventListener('click', function() {
-    const totalInvestment = parseFloat(document.getElementById('totalInvestment').value);
-    const withdrawalPerMonth = parseFloat(document.getElementById('withdrawalPerMonth').value);
-    const expectedReturnRate = parseFloat(document.getElementById('expectedReturnRate').value);
-    const totalPeriod = parseFloat(document.getElementById('totalPeriod').value);
+// document.getElementById('calculateBtn1').addEventListener('click', function() {
+//     const totalInvestment = parseFloat(document.getElementById('totalInvestment').value);
+//     const withdrawalPerMonth = parseFloat(document.getElementById('withdrawalPerMonth').value);
+//     const expectedReturnRate = parseFloat(document.getElementById('expectedReturnRate').value);
+//     const totalPeriod = parseFloat(document.getElementById('totalPeriod').value);
 
-    if (isNaN(totalInvestment) || isNaN(withdrawalPerMonth) || isNaN(expectedReturnRate) || isNaN(totalPeriod)) {
-        alert('Please enter valid numbers for all fields.');
-        return;
-    }
+//     if (isNaN(totalInvestment) || isNaN(withdrawalPerMonth) || isNaN(expectedReturnRate) || isNaN(totalPeriod)) {
+//         alert('Please enter valid numbers for all fields.');
+//         return;
+//     }
 
     // Example calculation, adjust as per your formula
     const totalWithdrawn = withdrawalPerMonth * totalPeriod * 12;

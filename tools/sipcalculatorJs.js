@@ -93,14 +93,14 @@ const formatNumber = (number) => {
 //         });
 //     }
 
-    const knowMoreBtns = document.querySelectorAll(".know-more-btn");
-    knowMoreBtns.forEach(button => {
-        button.addEventListener("click", function () {
-            const knowMoreContent = this.nextElementSibling;
-            knowMoreContent.classList.toggle("show");
-        });
-    });
-});
+//     const knowMoreBtns = document.querySelectorAll(".know-more-btn");
+//     knowMoreBtns.forEach(button => {
+//         button.addEventListener("click", function () {
+//             const knowMoreContent = this.nextElementSibling;
+//             knowMoreContent.classList.toggle("show");
+//         });
+//     });
+// });
 
 const commas = () => {
     let amount = document.getElementById("investment").value;

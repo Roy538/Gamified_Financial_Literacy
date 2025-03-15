@@ -1,6 +1,6 @@
-// const calculateResult = () => {
-//     const amountValue = document.getElementById("investment").value.replace(" Rs", "");
-//     const amount = parseInt(amountValue.split(",").join(""));
+const calculateResult = () => {
+    const amountValue = document.getElementById("investment").value.replace(" Rs", "");
+    const amount = parseInt(amountValue.split(",").join(""));
 
     // Validate amount input
     if (isNaN(amount) || amount <= 0) {

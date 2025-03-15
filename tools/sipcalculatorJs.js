@@ -58,9 +58,9 @@ const calculateResult = () => {
     maturityValue = wealthGained - total;
 
     // Format numbers with commas
-    document.getElementById("total").innerHTML = formatNumber(total);
-    document.getElementById("wealth-gained").innerHTML = formatNumber(wealthGained);
-    document.getElementById("maturity-value").innerHTML = formatNumber(maturityValue);
+    // document.getElementById("total").innerHTML = formatNumber(total);
+    // document.getElementById("wealth-gained").innerHTML = formatNumber(wealthGained);
+    // document.getElementById("maturity-value").innerHTML = formatNumber(maturityValue);
 
     // Reset fields
     document.getElementById("investment").value = "";

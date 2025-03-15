@@ -45,10 +45,10 @@ document.getElementById('calculateBtn1').addEventListener('click', function() {
     document.getElementById('remainingAmount').innerText = remainingAmount.toFixed(2);
 });
 
-document.getElementById('clearBtn6').addEventListener('click', function() {
-    document.getElementById('totalInvestment').value = '';
-    document.getElementById('withdrawalPerMonth').value = '';
-    document.getElementById('expectedReturnRate').value = '';
-    document.getElementById('totalPeriod').value = '';
-    document.getElementById('remainingAmount').innerText = '';
-});
+// document.getElementById('clearBtn6').addEventListener('click', function() {
+//     document.getElementById('totalInvestment').value = '';
+//     document.getElementById('withdrawalPerMonth').value = '';
+//     document.getElementById('expectedReturnRate').value = '';
+//     document.getElementById('totalPeriod').value = '';
+//     document.getElementById('remainingAmount').innerText = '';
+// });

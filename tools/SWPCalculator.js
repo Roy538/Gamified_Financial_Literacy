@@ -11,17 +11,17 @@ function calculateSWP() {
         return;
     }
 
-    // const monthlyInterestRate = (expectedReturnRate / 100) / 12;
-    // const totalMonths = totalPeriod * 12;
+    const monthlyInterestRate = (expectedReturnRate / 100) / 12;
+    const totalMonths = totalPeriod * 12;
 
-    // let finalValue = totalInvestment;
-    // for (let i = 0; i < totalMonths; i++) {
-    //     finalValue = finalValue * (1 + monthlyInterestRate) - withdrawalPerMonth;
-    //     if (finalValue < 0) {
-    //         finalValue = 0;
-    //         break;
-    //     }
-    // }
+    let finalValue = totalInvestment;
+    for (let i = 0; i < totalMonths; i++) {
+        finalValue = finalValue * (1 + monthlyInterestRate) - withdrawalPerMonth;
+        if (finalValue < 0) {
+            finalValue = 0;
+            break;
+        }
+    }
 
     const remainingAmountElement = document.getElementById('remainingAmount');
     remainingAmountElement.textContent = `₹${finalValue.toFixed(2)}`;

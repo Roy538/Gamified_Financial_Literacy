@@ -3,14 +3,14 @@
 //     const amount = parseInt(amountValue.split(",").join(""));
 
     // Validate amount input
-    // if (isNaN(amount) || amount <= 0) {
-    //     alert("Please enter a valid positive investment amount.");
-    //     document.getElementById("investment").focus();
-    //     return;
-    // }
-    // document.getElementById("input-1").innerHTML = amount;
+    if (isNaN(amount) || amount <= 0) {
+        alert("Please enter a valid positive investment amount.");
+        document.getElementById("investment").focus();
+        return;
+    }
+    document.getElementById("input-1").innerHTML = amount;
 
-    // const years = document.getElementById("years").value;
+    const years = document.getElementById("years").value;
 
     // Validate years input
     if (years.length === 0 || isNaN(years) || years <= 0) {

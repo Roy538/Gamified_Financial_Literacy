@@ -29,13 +29,13 @@ const calculateResult = () => {
         document.getElementById("return-rate").focus();
         return;
     }
-    document.getElementById("input-3").innerHTML = returnRate;
+    // document.getElementById("input-3").innerHTML = returnRate;
 
-    const selectedOption = document.querySelector("input[name='checked']:checked");
-    if (!selectedOption) {
-        alert("Please select a calculation mode.");
-        return;
-    }
+    // const selectedOption = document.querySelector("input[name='checked']:checked");
+    // if (!selectedOption) {
+    //     alert("Please select a calculation mode.");
+    //     return;
+    // }
 
     const mode = selectedOption.value;
     let wealthGained = 0;

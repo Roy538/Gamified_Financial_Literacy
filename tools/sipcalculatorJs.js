@@ -72,26 +72,26 @@ const formatNumber = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
-document.addEventListener("DOMContentLoaded", function() {
-    const selectElement = document.querySelector('.select');
-    if (selectElement) {
-        selectElement.addEventListener('click', function() {
-            this.classList.toggle('clicked');
-            document.querySelector('.menu').classList.toggle('open');
-        });
-    }
+// document.addEventListener("DOMContentLoaded", function() {
+//     const selectElement = document.querySelector('.select');
+//     if (selectElement) {
+//         selectElement.addEventListener('click', function() {
+//             this.classList.toggle('clicked');
+//             document.querySelector('.menu').classList.toggle('open');
+//         });
+//     }
 
-    const currencyOptions = document.querySelectorAll('.currency-option');
-    if (currencyOptions) {
-        currencyOptions.forEach(option => {
-            option.addEventListener('click', function() {
-                const selected = document.querySelector('.selected');
-                selected.innerHTML = this.innerHTML;
-                document.querySelector('.menu').classList.remove('open');
-                document.querySelector('.select').classList.remove('clicked');
-            });
-        });
-    }
+//     const currencyOptions = document.querySelectorAll('.currency-option');
+//     if (currencyOptions) {
+//         currencyOptions.forEach(option => {
+//             option.addEventListener('click', function() {
+//                 const selected = document.querySelector('.selected');
+//                 selected.innerHTML = this.innerHTML;
+//                 document.querySelector('.menu').classList.remove('open');
+//                 document.querySelector('.select').classList.remove('clicked');
+//             });
+//         });
+//     }
 
     const knowMoreBtns = document.querySelectorAll(".know-more-btn");
     knowMoreBtns.forEach(button => {

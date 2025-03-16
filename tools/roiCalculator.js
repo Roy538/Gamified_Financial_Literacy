@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
 //     document.getElementById('clearBtn').addEventListener('click', clearROI);
 // });
 
-// function calculateROI() {
-//     const invested = parseFloat(document.getElementById('invested').value);
-//     const returned = parseFloat(document.getElementById('return').value);
+function calculateROI() {
+    const invested = parseFloat(document.getElementById('invested').value);
+    const returned = parseFloat(document.getElementById('return').value);
 
-//     if (isNaN(invested) || isNaN(returned) || invested <= 0) {
-//         alert('Please enter valid positive numbers for both fields.');
-//         return;
-//     }
+    if (isNaN(invested) || isNaN(returned) || invested <= 0) {
+        alert('Please enter valid positive numbers for both fields.');
+        return;
+    }
 
     const gl = returned - invested;
     const roi = (gl / invested) * 100;

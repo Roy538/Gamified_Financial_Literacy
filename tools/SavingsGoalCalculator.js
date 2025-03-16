@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('timePeriod').addEventListener('input', clearErrorMessages);
 });
 
-function calculateSavings() {
-    const goalAmount = parseFloat(document.getElementById('goalAmount').value);
-    const currentSavings = parseFloat(document.getElementById('currentSavings').value);
-    const timePeriod = parseInt(document.getElementById('timePeriod').value);
+// function calculateSavings() {
+//     const goalAmount = parseFloat(document.getElementById('goalAmount').value);
+//     const currentSavings = parseFloat(document.getElementById('currentSavings').value);
+//     const timePeriod = parseInt(document.getElementById('timePeriod').value);
 
     // Clear previous error messages
     clearErrorMessages();

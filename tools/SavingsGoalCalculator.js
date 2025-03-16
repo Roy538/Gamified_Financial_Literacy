@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('clearBtn').addEventListener('click', clearSavings);
 
     // Clear error messages when user changes input
-    document.getElementById('goalAmount').addEventListener('input', clearErrorMessages);
-    document.getElementById('currentSavings').addEventListener('input', clearErrorMessages);
-    document.getElementById('timePeriod').addEventListener('input', clearErrorMessages);
-});
+//     document.getElementById('goalAmount').addEventListener('input', clearErrorMessages);
+//     document.getElementById('currentSavings').addEventListener('input', clearErrorMessages);
+//     document.getElementById('timePeriod').addEventListener('input', clearErrorMessages);
+// });
 
 function calculateSavings() {
     const goalAmount = parseFloat(document.getElementById('goalAmount').value);

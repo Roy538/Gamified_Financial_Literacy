@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('timePeriod').addEventListener('input', clearErrorMessages);
 });
 
-function calculateSavings() {
-    const goalAmount = parseFloat(document.getElementById('goalAmount').value);
-    const currentSavings = parseFloat(document.getElementById('currentSavings').value);
-    const timePeriod = parseInt(document.getElementById('timePeriod').value);
+// function calculateSavings() {
+//     const goalAmount = parseFloat(document.getElementById('goalAmount').value);
+//     const currentSavings = parseFloat(document.getElementById('currentSavings').value);
+//     const timePeriod = parseInt(document.getElementById('timePeriod').value);
 
     // Clear previous error messages
     clearErrorMessages();
@@ -59,11 +59,11 @@ function showError(elementId, message) {
     document.getElementById(elementId).textContent = message;
 }
 
-// function clearErrorMessages() {
-//     document.getElementById('goalAmountError').textContent = '';
-//     document.getElementById('currentSavingsError').textContent = '';
-//     document.getElementById('timePeriodError').textContent = '';
-// }
+function clearErrorMessages() {
+    document.getElementById('goalAmountError').textContent = '';
+    document.getElementById('currentSavingsError').textContent = '';
+    document.getElementById('timePeriodError').textContent = '';
+}
 
 function clearSavings() {
     document.getElementById('goalAmount').value = '';

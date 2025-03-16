@@ -59,11 +59,11 @@ function showError(elementId, message) {
     document.getElementById(elementId).textContent = message;
 }
 
-function clearErrorMessages() {
-    document.getElementById('goalAmountError').textContent = '';
-    document.getElementById('currentSavingsError').textContent = '';
-    document.getElementById('timePeriodError').textContent = '';
-}
+// function clearErrorMessages() {
+//     document.getElementById('goalAmountError').textContent = '';
+//     document.getElementById('currentSavingsError').textContent = '';
+//     document.getElementById('timePeriodError').textContent = '';
+// }
 
 function clearSavings() {
     document.getElementById('goalAmount').value = '';

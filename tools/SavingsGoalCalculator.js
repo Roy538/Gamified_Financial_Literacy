@@ -36,24 +36,24 @@ function calculateSavings() {
     document.getElementById('result').textContent = `You need to save ${formatter.format(monthlySavings)} per month to reach your goal.`;
 }
 
-// function validateInputs(goalAmount, currentSavings, timePeriod) {
-//     let hasError = false;
+function validateInputs(goalAmount, currentSavings, timePeriod) {
+    let hasError = false;
 
-//     if (isNaN(goalAmount) || goalAmount <= 0) {
-//         showError('goalAmountError', 'Please enter a valid positive goal amount.');
-//         hasError = true;
-//     }
-//     if (isNaN(currentSavings) || currentSavings < 0) {
-//         showError('currentSavingsError', 'Please enter a valid current savings amount (0 or more).');
-//         hasError = true;
-//     }
-//     if (isNaN(timePeriod) || timePeriod <= 0) {
-//         showError('timePeriodError', 'Please enter a valid positive time period.');
-//         hasError = true;
-//     }
+    if (isNaN(goalAmount) || goalAmount <= 0) {
+        showError('goalAmountError', 'Please enter a valid positive goal amount.');
+        hasError = true;
+    }
+    if (isNaN(currentSavings) || currentSavings < 0) {
+        showError('currentSavingsError', 'Please enter a valid current savings amount (0 or more).');
+        hasError = true;
+    }
+    if (isNaN(timePeriod) || timePeriod <= 0) {
+        showError('timePeriodError', 'Please enter a valid positive time period.');
+        hasError = true;
+    }
 
-//     return hasError;
-// }
+    return hasError;
+}
 
 // function showError(elementId, message) {
 //     document.getElementById(elementId).textContent = message;

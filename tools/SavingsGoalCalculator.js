@@ -65,10 +65,10 @@ function showError(elementId, message) {
 //     document.getElementById('timePeriodError').textContent = '';
 // }
 
-// function clearSavings() {
-//     document.getElementById('goalAmount').value = '';
-//     document.getElementById('currentSavings').value = '';
-//     document.getElementById('timePeriod').value = '';
-//     document.getElementById('result').innerText = '';
-//     clearErrorMessages();
-// }
+function clearSavings() {
+    document.getElementById('goalAmount').value = '';
+    document.getElementById('currentSavings').value = '';
+    document.getElementById('timePeriod').value = '';
+    document.getElementById('result').innerText = '';
+    clearErrorMessages();
+}

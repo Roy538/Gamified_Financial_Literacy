@@ -1,6 +1,6 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.getElementById('calculateBtn').addEventListener('click', calculateSavings);
-//     document.getElementById('clearBtn').addEventListener('click', clearSavings);
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('calculateBtn').addEventListener('click', calculateSavings);
+    document.getElementById('clearBtn').addEventListener('click', clearSavings);
 
     // Clear error messages when user changes input
     document.getElementById('goalAmount').addEventListener('input', clearErrorMessages);

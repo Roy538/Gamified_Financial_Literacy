@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('roi-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        calculateROI();
-    });
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.getElementById('roi-form').addEventListener('submit', function(event) {
+//         event.preventDefault();
+//         calculateROI();
+//     });
 
-    document.getElementById('clearBtn').addEventListener('click', clearROI);
-});
+//     document.getElementById('clearBtn').addEventListener('click', clearROI);
+// });
 
 function calculateROI() {
     const invested = parseFloat(document.getElementById('invested').value);
@@ -19,7 +19,7 @@ function calculateROI() {
     const gl = returned - invested;
     const roi = (gl / invested) * 100;
 
-    document.getElementById('gl').textContent = `Gain: ₹${gl.toFixed(2)}`;
+    document.getElementById('gl').textContent = `Gain: Ksh${gl.toFixed(2)}`;
     document.getElementById('result').textContent = `ROI: ${roi.toFixed(2)}%`;
 }
 

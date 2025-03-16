@@ -24,7 +24,7 @@ function calculateSWP() {
     }
 
     const remainingAmountElement = document.getElementById('remainingAmount');
-    remainingAmountElement.textContent = `₹${finalValue.toFixed(2)}`;
+    remainingAmountElement.textContent = `Ksh${finalValue.toFixed(2)}`;
 }
 
 document.getElementById('calculateBtn1').addEventListener('click', function() {

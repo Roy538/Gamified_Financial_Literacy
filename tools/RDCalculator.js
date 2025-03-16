@@ -54,15 +54,15 @@ document.addEventListener("DOMContentLoaded", function() {
         return hasError;
     }
 
-    function showError(elementId, message) {
-        document.getElementById(elementId).textContent = message;
-    }
+    // function showError(elementId, message) {
+    //     document.getElementById(elementId).textContent = message;
+    // }
 
-    function clearErrorMessages() {
-        document.getElementById('installmentError').textContent = '';
-        document.getElementById('rateError').textContent = '';
-        document.getElementById('monthsError').textContent = '';
-    }
+    // function clearErrorMessages() {
+    //     document.getElementById('installmentError').textContent = '';
+    //     document.getElementById('rateError').textContent = '';
+    //     document.getElementById('monthsError').textContent = '';
+    // }
 
 //     function clearInputs() {
 //         document.getElementById("monthly-installment").value = '';

@@ -30,7 +30,7 @@ function calculateSavings() {
 
     const formatter = new Intl.NumberFormat('en-IN', {
         style: 'currency',
-        currency: 'INR'
+        currency: 'Ksh'
     });
 
     document.getElementById('result').textContent = `You need to save ${formatter.format(monthlySavings)} per month to reach your goal.`;

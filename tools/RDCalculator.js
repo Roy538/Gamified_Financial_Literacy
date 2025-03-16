@@ -64,12 +64,12 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('monthsError').textContent = '';
     }
 
-    function clearInputs() {
-        document.getElementById("monthly-installment").value = '';
-        document.getElementById("rate1").value = '';
-        document.getElementById("months1").value = '';
-        document.getElementById("interestEarned1").innerText = '';
-        document.getElementById("maturityAmount1").innerText = '';
-        clearErrorMessages();
-    }
-});
+//     function clearInputs() {
+//         document.getElementById("monthly-installment").value = '';
+//         document.getElementById("rate1").value = '';
+//         document.getElementById("months1").value = '';
+//         document.getElementById("interestEarned1").innerText = '';
+//         document.getElementById("maturityAmount1").innerText = '';
+//         clearErrorMessages();
+//     }
+// });

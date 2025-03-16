@@ -54,9 +54,9 @@
     //     return hasError;
     // }
 
-    // function showError(elementId, message) {
-    //     document.getElementById(elementId).textContent = message;
-    // }
+    function showError(elementId, message) {
+        document.getElementById(elementId).textContent = message;
+    }
 
     // function clearErrorMessages() {
     //     document.getElementById('installmentError').textContent = '';

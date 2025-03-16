@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
 //     document.getElementById('result').textContent = `ROI: ${roi.toFixed(2)}%`;
 // }
 
-// function clearROI() {
-//     document.getElementById('roi-form').reset();
-//     document.getElementById('gl').innerText = '';
-//     document.getElementById('result').innerText = '';
-// }
+function clearROI() {
+    document.getElementById('roi-form').reset();
+    document.getElementById('gl').innerText = '';
+    document.getElementById('result').innerText = '';
+}

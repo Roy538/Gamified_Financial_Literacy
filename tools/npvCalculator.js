@@ -13,10 +13,10 @@
 //     cashFlowsDiv.appendChild(newCashFlow);
 // }
 
-function removeCashFlow(button) {
-    const cashFlowItem = button.parentElement;
-    cashFlowItem.remove();
-}
+// function removeCashFlow(button) {
+//     const cashFlowItem = button.parentElement;
+//     cashFlowItem.remove();
+// }
 
 function calculateNPV() {
     const initialInvestment = parseFloat(document.getElementById('initialInvestment').value);

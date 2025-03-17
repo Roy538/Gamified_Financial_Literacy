@@ -54,7 +54,7 @@ function clearNPV() {
     const cashFlowInput = document.createElement('div');
     cashFlowInput.innerHTML = `
       <div>
-        <b>Year ${year} Cash Flow (INR)</b>
+        <b>Year ${year} Cash Flow (Ksh)</b>
         <input class="form-control" type="number" name="cashFlow" />
         <button type="button" onclick="removeCashFlow(this)">Remove</button>
       </div>

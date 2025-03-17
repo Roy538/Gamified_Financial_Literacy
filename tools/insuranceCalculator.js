@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('calculateBtn').addEventListener('click', calculateInsurance);
-    document.getElementById('clearBtn').addEventListener('click', clearInsurance);
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.getElementById('calculateBtn').addEventListener('click', calculateInsurance);
+//     document.getElementById('clearBtn').addEventListener('click', clearInsurance);
+// });
 
 function calculateInsurance() {
     const sumAssured = parseFloat(document.getElementById('Sumassured').value);

@@ -48,21 +48,21 @@ function calculateInsurance() {
     document.getElementById('netGain').textContent = `Net Gain: ₹${netGain}`;
 }
 
-// function clearInsurance() {
-//     document.getElementById('Sumassured').value = '';
-//     document.getElementById('Policyterm').value = '';
-//     document.getElementById('Annualpremium').value = '';
-//     document.getElementById('ReversionaryBonus').value = '';
-//     document.getElementById('TerminalBonus').value = '';
+function clearInsurance() {
+    document.getElementById('Sumassured').value = '';
+    document.getElementById('Policyterm').value = '';
+    document.getElementById('Annualpremium').value = '';
+    document.getElementById('ReversionaryBonus').value = '';
+    document.getElementById('TerminalBonus').value = '';
   
-//     document.getElementById('ReversionaryBonusAmt').textContent = '';
-//     document.getElementById('TerminalBonusAmt').textContent = '';
-//     document.getElementById('TotalBonus').textContent = '';
-//     document.getElementById('TotalPremium').textContent = '';
-//     document.getElementById('netGain').textContent = '';
+    document.getElementById('ReversionaryBonusAmt').textContent = '';
+    document.getElementById('TerminalBonusAmt').textContent = '';
+    document.getElementById('TotalBonus').textContent = '';
+    document.getElementById('TotalPremium').textContent = '';
+    document.getElementById('netGain').textContent = '';
 
-//     const checkedRadio = document.querySelector('input[name="surrenderType"]:checked');
-//     if (checkedRadio) {
-//         checkedRadio.checked = false;
-//     }
-// }
+    const checkedRadio = document.querySelector('input[name="surrenderType"]:checked');
+    if (checkedRadio) {
+        checkedRadio.checked = false;
+    }
+}

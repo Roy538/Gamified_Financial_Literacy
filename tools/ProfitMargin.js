@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('profit-margin').innerText = '';
 }
 
-// document.getElementById('profit-margin-calculator').addEventListener('submit', function(event) {
-//     event.preventDefault();
-//     calculateProfitMargin();
-// });
+document.getElementById('profit-margin-calculator').addEventListener('submit', function(event) {
+    event.preventDefault();
+    calculateProfitMargin();
+});
 
 function calculateProfitMargin() {
     const costPrice = parseFloat(document.getElementById('cost').value);

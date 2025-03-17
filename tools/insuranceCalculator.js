@@ -41,12 +41,12 @@ function calculateInsurance() {
     totalPremium = (sumAssured * annualPremium * policyTerm).toFixed(2);
     netGain = (parseFloat(totalBonus) - parseFloat(totalPremium)).toFixed(2);
 
-    document.getElementById('ReversionaryBonusAmt').textContent = `Reversionary Bonus Amount: ₹${reversionaryBonusAmt}`;
-    document.getElementById('TerminalBonusAmt').textContent = `Terminal Bonus Amount: ₹${terminalBonusAmt}`;
-    document.getElementById('TotalBonus').textContent = `Total Bonus: ₹${totalBonus}`;
-    document.getElementById('TotalPremium').textContent = `Total Premium: ₹${totalPremium}`;
-    document.getElementById('netGain').textContent = `Net Gain: ₹${netGain}`;
-}
+//     document.getElementById('ReversionaryBonusAmt').textContent = `Reversionary Bonus Amount: ₹${reversionaryBonusAmt}`;
+//     document.getElementById('TerminalBonusAmt').textContent = `Terminal Bonus Amount: ₹${terminalBonusAmt}`;
+//     document.getElementById('TotalBonus').textContent = `Total Bonus: ₹${totalBonus}`;
+//     document.getElementById('TotalPremium').textContent = `Total Premium: ₹${totalPremium}`;
+//     document.getElementById('netGain').textContent = `Net Gain: ₹${netGain}`;
+// }
 
 // function clearInsurance() {
 //     document.getElementById('Sumassured').value = '';

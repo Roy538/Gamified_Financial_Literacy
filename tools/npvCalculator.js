@@ -41,12 +41,12 @@ function calculateNPV() {
     document.getElementById('npvResult').textContent = npv.toFixed(2);
 }
 
-function clearNPV() {
-    document.getElementById('initialInvestment').value = '';
-    document.getElementById('discountRate').value = '';
-    document.getElementById('cashFlows').innerHTML = '';
-    document.getElementById('npvResult').innerText = '';
-  }
+// function clearNPV() {
+//     document.getElementById('initialInvestment').value = '';
+//     document.getElementById('discountRate').value = '';
+//     document.getElementById('cashFlows').innerHTML = '';
+//     document.getElementById('npvResult').innerText = '';
+//   }
   
   function addCashFlow() {
     const cashFlowsContainer = document.getElementById('cashFlows');

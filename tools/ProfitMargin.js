@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
       resultElement.textContent = `Profit Margin: ${profitMargin.toFixed(2)}%`;
     });
   });
-//   function clearProfitMargin() {
-//     document.getElementById('profit-margin-calculator').reset();
-//     document.getElementById('profit-margin').innerText = '';
-// }
+  function clearProfitMargin() {
+    document.getElementById('profit-margin-calculator').reset();
+    document.getElementById('profit-margin').innerText = '';
+}
 
 // document.getElementById('profit-margin-calculator').addEventListener('submit', function(event) {
 //     event.preventDefault();

@@ -18,11 +18,11 @@ function calculateInsurance() {
     //     return;
     // }
 
-    const surrenderType = document.querySelector('input[name="surrenderType"]:checked');
-    if (!surrenderType) {
-        alert('Please select a surrender type.');
-        return;
-    }
+    // const surrenderType = document.querySelector('input[name="surrenderType"]:checked');
+    // if (!surrenderType) {
+    //     alert('Please select a surrender type.');
+    //     return;
+    // }
 
     const type = surrenderType.id;
 

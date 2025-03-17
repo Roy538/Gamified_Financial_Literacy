@@ -28,18 +28,18 @@ function calculateNPV() {
         return;
     }
 
-    let npv = -initialInvestment;
-    cashFlowItems.forEach((input, index) => {
-        const cashFlow = parseFloat(input.value);
-        if (isNaN(cashFlow)) {
-            alert('Please enter valid cash flow values.');
-            return;
-        }
-        npv += cashFlow / Math.pow(1 + discountRate, index + 1);
-    });
+//     let npv = -initialInvestment;
+//     cashFlowItems.forEach((input, index) => {
+//         const cashFlow = parseFloat(input.value);
+//         if (isNaN(cashFlow)) {
+//             alert('Please enter valid cash flow values.');
+//             return;
+//         }
+//         npv += cashFlow / Math.pow(1 + discountRate, index + 1);
+//     });
 
-    document.getElementById('npvResult').textContent = npv.toFixed(2);
-}
+//     document.getElementById('npvResult').textContent = npv.toFixed(2);
+// }
 
 // function clearNPV() {
 //     document.getElementById('initialInvestment').value = '';

@@ -1,17 +1,17 @@
-// let cashFlowCount = 0;
+let cashFlowCount = 0;
 
-// function addCashFlow() {
-//     cashFlowCount++;
-//     const cashFlowsDiv = document.getElementById('cashFlows');
-//     const newCashFlow = document.createElement('div');
-//     newCashFlow.className = 'cash-flow-item';
-//     newCashFlow.innerHTML = `
-//         <label for="cashFlow${cashFlowCount}">Year ${cashFlowCount} : <br> ₹</label>
-//         <input class="form-control" id="cashFlow${cashFlowCount}" type="number"/>
-//         <button type="button" onclick="removeCashFlow(this); cashFlowCount--;">x</button>
-//     `;
-//     cashFlowsDiv.appendChild(newCashFlow);
-// }
+function addCashFlow() {
+    cashFlowCount++;
+    const cashFlowsDiv = document.getElementById('cashFlows');
+    const newCashFlow = document.createElement('div');
+    newCashFlow.className = 'cash-flow-item';
+    newCashFlow.innerHTML = `
+        <label for="cashFlow${cashFlowCount}">Year ${cashFlowCount} : <br> ₹</label>
+        <input class="form-control" id="cashFlow${cashFlowCount}" type="number"/>
+        <button type="button" onclick="removeCashFlow(this); cashFlowCount--;">x</button>
+    `;
+    cashFlowsDiv.appendChild(newCashFlow);
+}
 
 // function removeCashFlow(button) {
 //     const cashFlowItem = button.parentElement;

@@ -10,13 +10,13 @@ function calculateInsurance() {
     const reversionaryBonus = parseFloat(document.getElementById('ReversionaryBonus').value) / 100;
     const terminalBonus = parseFloat(document.getElementById('TerminalBonus').value) / 100;
 
-    if (isNaN(sumAssured) || isNaN(policyTerm) || isNaN(annualPremium) || 
-        isNaN(reversionaryBonus) || isNaN(terminalBonus) || 
-        sumAssured <= 0 || policyTerm <= 0 || annualPremium < 0 || 
-        reversionaryBonus < 0 || terminalBonus < 0) {
-        alert('Please enter valid positive numbers for all fields.');
-        return;
-    }
+    // if (isNaN(sumAssured) || isNaN(policyTerm) || isNaN(annualPremium) || 
+    //     isNaN(reversionaryBonus) || isNaN(terminalBonus) || 
+    //     sumAssured <= 0 || policyTerm <= 0 || annualPremium < 0 || 
+    //     reversionaryBonus < 0 || terminalBonus < 0) {
+    //     alert('Please enter valid positive numbers for all fields.');
+    //     return;
+    // }
 
     const surrenderType = document.querySelector('input[name="surrenderType"]:checked');
     if (!surrenderType) {

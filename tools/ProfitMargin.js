@@ -1,6 +1,6 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     const form = document.getElementById('profit-margin-calculator');
-//     const resultElement = document.getElementById('profit-margin');
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('profit-margin-calculator');
+    const resultElement = document.getElementById('profit-margin');
   
     form.addEventListener('submit', function(event) {
       event.preventDefault();

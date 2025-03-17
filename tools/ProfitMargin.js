@@ -13,16 +13,16 @@
 //         return;
 //       }
   
-//       const profit = sellingPrice - cost;
-//       const profitMargin = (profit / sellingPrice) * 100;
+      const profit = sellingPrice - cost;
+      const profitMargin = (profit / sellingPrice) * 100;
   
-//       resultElement.textContent = `Profit Margin: ${profitMargin.toFixed(2)}%`;
-//     });
-//   });
-//   function clearProfitMargin() {
-//     document.getElementById('profit-margin-calculator').reset();
-//     document.getElementById('profit-margin').innerText = '';
-// }
+      resultElement.textContent = `Profit Margin: ${profitMargin.toFixed(2)}%`;
+    });
+  });
+  function clearProfitMargin() {
+    document.getElementById('profit-margin-calculator').reset();
+    document.getElementById('profit-margin').innerText = '';
+}
 
 document.getElementById('profit-margin-calculator').addEventListener('submit', function(event) {
     event.preventDefault();

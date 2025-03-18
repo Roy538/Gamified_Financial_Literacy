@@ -23,8 +23,8 @@ function calculateIncomeTax() {
     document.getElementById('real-income').innerText = `Income After Tax: ₹ ${realIncome.toFixed(2)}`;
 }
 
-function clearIncomeTax() {
-    document.getElementById('income-tax-calculator').reset();
-    document.getElementById('income-tax').innerText = '';
-    document.getElementById('real-income').innerText = '';
-}
+// function clearIncomeTax() {
+//     document.getElementById('income-tax-calculator').reset();
+//     document.getElementById('income-tax').innerText = '';
+//     document.getElementById('real-income').innerText = '';
+// }

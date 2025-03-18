@@ -1,13 +1,13 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.getElementById('gst-calculator').addEventListener('submit', function(event) {
-//         event.preventDefault();
-//         calculateGST();
-//     });
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('gst-calculator').addEventListener('submit', function(event) {
+        event.preventDefault();
+        calculateGST();
+    });
 
-//     document.getElementById('clearBtn7').addEventListener('click', function() {
-//         clearGST();
-//     });
-// });
+    document.getElementById('clearBtn7').addEventListener('click', function() {
+        clearGST();
+    });
+});
 
 // function calculateGST() {
 //     const mode = document.getElementById('mode').value;

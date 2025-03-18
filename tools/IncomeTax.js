@@ -1,11 +1,11 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     const form = document.getElementById('income-tax-calculator');
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('income-tax-calculator');
 
-//     form.addEventListener('submit', function(event) {
-//         event.preventDefault();
-//         calculateIncomeTax();
-//     });
-// });
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        calculateIncomeTax();
+    });
+});
 
 function calculateIncomeTax() {
     const income = parseFloat(document.getElementById('income').value);

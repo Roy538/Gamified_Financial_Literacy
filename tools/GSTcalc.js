@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function calculateGST() {
-    const mode = document.getElementById('mode').value;
-    const amount = parseFloat(document.getElementById('amount').value);
-    const taxSlab = parseFloat(document.getElementById('tax-slab').value);
+// function calculateGST() {
+//     const mode = document.getElementById('mode').value;
+//     const amount = parseFloat(document.getElementById('amount').value);
+//     const taxSlab = parseFloat(document.getElementById('tax-slab').value);
 
     // Clear previous error messages
     clearErrorMessages();

@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const contributorsContainer = document.getElementById("contributors");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const contributorsContainer = document.getElementById("contributors");
 
     async function fetchContributors() {
       let contributors = [];

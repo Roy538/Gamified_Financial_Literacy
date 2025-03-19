@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
       let perPage = 100; // Max per page is 100
       let moreContributors = true;
 
-      // while (moreContributors) {
-      //   try {
-      //     const response = await fetch(
-      //       `https://api.github.com/repos/ayush-that/FinVeda/contributors?page=${page}&per_page=${perPage}`
-      //     );
-      //     const data = await response.json();
+      while (moreContributors) {
+        try {
+          const response = await fetch(
+            `https://api.github.com/repos/ayush-that/FinVeda/contributors?page=${page}&per_page=${perPage}`
+          );
+          const data = await response.json();
 
           // If no more contributors, stop fetching
           // if (data.length === 0) {

@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
 
-    //   displayContributors(contributors);
-    // }
+      displayContributors(contributors);
+    }
 
     function displayContributors(contributors) {
       contributorsContainer.innerHTML = "";

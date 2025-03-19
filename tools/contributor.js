@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contributorsContainer = document.getElementById("contributors");
 
-    // async function fetchContributors() {
-    //   let contributors = [];
-    //   let page = 1;
-    //   let perPage = 100; // Max per page is 100
-    //   let moreContributors = true;
+    async function fetchContributors() {
+      let contributors = [];
+      let page = 1;
+      let perPage = 100; // Max per page is 100
+      let moreContributors = true;
 
       // while (moreContributors) {
       //   try {

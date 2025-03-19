@@ -55,8 +55,8 @@ function validateInputs(amount, taxSlab) {
         hasError = true;
     }
 
-//     return hasError;
-// }
+    return hasError;
+}
 
 // function showError(elementId, message) {
 //     document.getElementById(elementId).textContent = message;

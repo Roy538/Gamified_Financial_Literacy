@@ -68,9 +68,9 @@ function calculateGST() {
 //     document.getElementById('modeError').textContent = '';
 // }
 
-function clearGST() {
-    document.getElementById('gst-calculator').reset();
-    document.getElementById('total-gst').innerText = '';
-    document.getElementById('post-gst-amount').innerText = '';
-    clearErrorMessages();
-}
+// function clearGST() {
+//     document.getElementById('gst-calculator').reset();
+//     document.getElementById('total-gst').innerText = '';
+//     document.getElementById('post-gst-amount').innerText = '';
+//     clearErrorMessages();
+// }

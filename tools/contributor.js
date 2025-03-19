@@ -21,14 +21,14 @@
           //   contributors = contributors.concat(data);
           //   page++;
           // }
-        } catch (error) {
-          console.error("Error fetching contributors:", error);
-          break; // Exit loop if there's an error
-        }
-      }
+    //     } catch (error) {
+    //       console.error("Error fetching contributors:", error);
+    //       break; // Exit loop if there's an error
+    //     }
+    //   }
 
-      displayContributors(contributors);
-    }
+    //   displayContributors(contributors);
+    // }
 
     function displayContributors(contributors) {
       contributorsContainer.innerHTML = "";

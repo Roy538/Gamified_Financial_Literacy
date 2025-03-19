@@ -48,5 +48,5 @@ document.addEventListener("DOMContentLoaded", () => {
     //   });
     // }
 
-  //   fetchContributors();
-  // });
+    fetchContributors();
+  });

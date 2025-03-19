@@ -58,15 +58,15 @@ function validateInputs(amount, taxSlab) {
     return hasError;
 }
 
-// function showError(elementId, message) {
-//     document.getElementById(elementId).textContent = message;
-// }
+function showError(elementId, message) {
+    document.getElementById(elementId).textContent = message;
+}
 
-// function clearErrorMessages() {
-//     document.getElementById('amountError').textContent = '';
-//     document.getElementById('taxSlabError').textContent = '';
-//     document.getElementById('modeError').textContent = '';
-// }
+function clearErrorMessages() {
+    document.getElementById('amountError').textContent = '';
+    document.getElementById('taxSlabError').textContent = '';
+    document.getElementById('modeError').textContent = '';
+}
 
 // function clearGST() {
 //     document.getElementById('gst-calculator').reset();

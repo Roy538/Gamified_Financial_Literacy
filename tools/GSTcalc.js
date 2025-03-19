@@ -34,14 +34,14 @@ function calculateGST() {
         return;
     }
 
-//     const formatter = new Intl.NumberFormat('en-IN', {
-//         style: 'currency',
-//         currency: 'INR'
-//     });
+    const formatter = new Intl.NumberFormat('en-IN', {
+        style: 'currency',
+        currency: 'INR'
+    });
 
-//     document.getElementById('total-gst').innerText = `GST Amount: ${formatter.format(gstAmount)}`;
-//     document.getElementById('post-gst-amount').innerText = `Post GST Amount: ${formatter.format(postGSTAmount)}`;
-// }
+    document.getElementById('total-gst').innerText = `GST Amount: ${formatter.format(gstAmount)}`;
+    document.getElementById('post-gst-amount').innerText = `Post GST Amount: ${formatter.format(postGSTAmount)}`;
+}
 
 // function validateInputs(amount, taxSlab) {
 //     let hasError = false;

@@ -14,18 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
           );
           const data = await response.json();
 
-          // If no more contributors, stop fetching
-          // if (data.length === 0) {
-          //   moreContributors = false;
-          // } else {
-          //   contributors = contributors.concat(data);
-          //   page++;
-          // }
-    //     } catch (error) {
-    //       console.error("Error fetching contributors:", error);
-    //       break; // Exit loop if there's an error
-    //     }
-    //   }
+          If no more contributors, stop fetching
+          if (data.length === 0) {
+            moreContributors = false;
+          } else {
+            contributors = contributors.concat(data);
+            page++;
+          }
+        } catch (error) {
+          console.error("Error fetching contributors:", error);
+          break; // Exit loop if there's an error
+        }
+      }
 
     //   displayContributors(contributors);
     // }

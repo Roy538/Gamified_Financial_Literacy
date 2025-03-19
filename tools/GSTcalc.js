@@ -43,20 +43,20 @@ function calculateGST() {
 //     document.getElementById('post-gst-amount').innerText = `Post GST Amount: ${formatter.format(postGSTAmount)}`;
 // }
 
-function validateInputs(amount, taxSlab) {
-    let hasError = false;
+// function validateInputs(amount, taxSlab) {
+//     let hasError = false;
 
-    if (isNaN(amount) || amount <= 0) {
-        showError('amountError', 'Please enter a valid positive number for the amount.');
-        hasError = true;
-    }
-    if (isNaN(taxSlab) || taxSlab <= 0) {
-        showError('taxSlabError', 'Please enter a valid positive number for the tax slab.');
-        hasError = true;
-    }
+//     if (isNaN(amount) || amount <= 0) {
+//         showError('amountError', 'Please enter a valid positive number for the amount.');
+//         hasError = true;
+//     }
+//     if (isNaN(taxSlab) || taxSlab <= 0) {
+//         showError('taxSlabError', 'Please enter a valid positive number for the tax slab.');
+//         hasError = true;
+//     }
 
-    return hasError;
-}
+//     return hasError;
+// }
 
 function showError(elementId, message) {
     document.getElementById(elementId).textContent = message;

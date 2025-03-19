@@ -18,21 +18,21 @@ function calculateGST() {
     clearErrorMessages();
 
     // Validate inputs and display errors if any
-    const hasError = validateInputs(amount, taxSlab);
-    if (hasError) return;
+    // const hasError = validateInputs(amount, taxSlab);
+    // if (hasError) return;
 
-    let gstAmount, postGSTAmount;
+    // let gstAmount, postGSTAmount;
 
-    if (mode === 'exclusive') {
-        gstAmount = amount * (taxSlab / 100);
-        postGSTAmount = amount + gstAmount;
-    } else if (mode === 'inclusive') {
-        gstAmount = amount * (taxSlab / (100 + taxSlab));
-        postGSTAmount = amount - gstAmount;
-    } else {
-        showError('modeError', 'Please select a valid GST mode.');
-        return;
-    }
+    // if (mode === 'exclusive') {
+    //     gstAmount = amount * (taxSlab / 100);
+    //     postGSTAmount = amount + gstAmount;
+    // } else if (mode === 'inclusive') {
+    //     gstAmount = amount * (taxSlab / (100 + taxSlab));
+    //     postGSTAmount = amount - gstAmount;
+    // } else {
+    //     showError('modeError', 'Please select a valid GST mode.');
+    //     return;
+    // }
 
     const formatter = new Intl.NumberFormat('en-IN', {
         style: 'currency',

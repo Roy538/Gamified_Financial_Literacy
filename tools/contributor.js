@@ -36,17 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
     //     const contributorCard = document.createElement("div");
     //     contributorCard.className = "contributor-card";
 
-    //     contributorCard.innerHTML = `
-    //       <a href="${contributor.html_url}" target="_blank" rel="noopener noreferrer">
-    //         <img src="${contributor.avatar_url}" alt="${contributor.login}">
-    //       </a>
-    //       <h3>${contributor.login}</h3>
-    //       <p>Contributions: ${contributor.contributions}</p>
-    //     `;
+        contributorCard.innerHTML = `
+          <a href="${contributor.html_url}" target="_blank" rel="noopener noreferrer">
+            <img src="${contributor.avatar_url}" alt="${contributor.login}">
+          </a>
+          <h3>${contributor.login}</h3>
+          <p>Contributions: ${contributor.contributions}</p>
+        `;
 
-    //     contributorsContainer.appendChild(contributorCard);
-    //   });
-    // }
+        contributorsContainer.appendChild(contributorCard);
+      });
+    }
 
     fetchContributors();
   });

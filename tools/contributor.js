@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
     //   displayContributors(contributors);
     // }
 
-    // function displayContributors(contributors) {
-    //   contributorsContainer.innerHTML = "";
-    //   contributors.forEach((contributor) => {
-    //     const contributorCard = document.createElement("div");
-    //     contributorCard.className = "contributor-card";
+    function displayContributors(contributors) {
+      contributorsContainer.innerHTML = "";
+      contributors.forEach((contributor) => {
+        const contributorCard = document.createElement("div");
+        contributorCard.className = "contributor-card";
 
         contributorCard.innerHTML = `
           <a href="${contributor.html_url}" target="_blank" rel="noopener noreferrer">

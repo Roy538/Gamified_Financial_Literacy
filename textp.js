@@ -1,7 +1,7 @@
 // Get current timestamp
-const getCurrentTimestamp = () => {
-    return new Date().getTime();
-  };
+// const getCurrentTimestamp = () => {
+//     return new Date().getTime();
+//   };
   
   // Store last active timestamp in LocalStorage
   const storeLastActive = () => {

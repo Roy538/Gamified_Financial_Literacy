@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Podcast Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Financial Literacy Podcast Hub</h1>
+            <div class="user-stats">
+                <span class="points">Points: <span id="pointsValue">0</span></span>
+                <span class="level">Level: <span id="levelValue">1</span></span>
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="player-section">
+                <div class="podcast-player">
+                    <div class="current-episode">
+                        <img id="episodeImage" src="https://via.placeholder.com/300" alt="Episode Cover">
+                        <h2 id="episodeTitle">Select an episode to start</h2>
+                        <p id="episodeDescription">Learn about financial literacy through our interactive podcasts</p>
+                    </div>
+                    <div class="controls">
+                        <audio id="audioPlayer"></audio>
+                        <div class="time-controls">
+                            <span id="currentTime">00:00</span>
+                            <div class="progress">
+                                <div id="audioProgress"></div>
+                            </div>
+                            <span id="duration">00:00</span>
+                        </div>
+                        <div class="buttons">
+                            <button id="prevBtn" class="control-btn"><i class="fas fa-backward"></i></button>
+                            <button id="playBtn" class="control-btn"><i class="fas fa-play"></i></button>
+                            <button id="nextBtn" class="control-btn"><i class="fas fa-forward"></i></button>
+                            <button id="speedBtn" class="control-btn">1x</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="episodes-section">
+                <h2>Episodes</h2>
+                <div class="episodes-list" id="episodesList">
+                    <!-- Episodes will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <section class="quiz-section hidden" id="quizSection">
+                <h2>Knowledge Check</h2>
+                <div class="quiz-container">
+                    <p id="quizQuestion"></p>
+                    <div id="quizOptions"></div>
+                    <button id="submitQuiz" class="quiz-btn">Submit Answer</button>
+                </div>
+            </section>
+
+            <section class="achievements-section">
+                <h2>Your Achievements</h2>
+                <div class="achievements-grid" id="achievementsGrid">
+                    <!-- Achievements will be populated by JavaScript -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="podcast.js"></script>
+</body>
+</html>

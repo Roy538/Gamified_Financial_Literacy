@@ -6,10 +6,10 @@ document.getElementById("editButton").addEventListener("click", function () {
   document.getElementById("profileEdit").style.display = "block";
 });
 
-// document
-//   .getElementById("profileForm")
-//   .addEventListener("submit", function (event) {
-//     event.preventDefault(); // Prevent form submission
+document
+  .getElementById("profileForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
 
     // Get updated values
     const updatedUsername = document.getElementById("username").value;

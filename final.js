@@ -17,9 +17,9 @@ document
   //   const updatedBio = document.getElementById("bio").value;
 
   //   // Update the displayed values
-  //   document.getElementById("displayUsername").textContent = updatedUsername;
-  //   document.getElementById("displayEmail").textContent = updatedEmail;
-  //   document.getElementById("displayBio").textContent = updatedBio;
+    document.getElementById("displayUsername").textContent = updatedUsername;
+    document.getElementById("displayEmail").textContent = updatedEmail;
+    document.getElementById("displayBio").textContent = updatedBio;
 
   //   // Hide the edit form and show the display section again
     document.getElementById("profileEdit").style.display = "none";

@@ -36,17 +36,17 @@ document.getElementById("cancelButton").addEventListener("click", function () {
 });
 
 // Handle image upload
-// document
-//   .getElementById("imageUpload")
-//   .addEventListener("change", function (event) {
-//     const file = event.target.files[0];
-//     const reader = new FileReader();
+document
+  .getElementById("imageUpload")
+  .addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
 
-//     reader.onload = function (e) {
-//       document.getElementById("profileImage").src = e.target.result; // Update the image src to the new file
-//     };
+    reader.onload = function (e) {
+      document.getElementById("profileImage").src = e.target.result; // Update the image src to the new file
+    };
 
-//     if (file) {
-//       reader.readAsDataURL(file);
-//     }
-//   });
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  });

@@ -12,21 +12,21 @@ document
     event.preventDefault(); // Prevent form submission
 
     // Get updated values
-    const updatedUsername = document.getElementById("username").value;
-    const updatedEmail = document.getElementById("email").value;
-    const updatedBio = document.getElementById("bio").value;
+  //   const updatedUsername = document.getElementById("username").value;
+  //   const updatedEmail = document.getElementById("email").value;
+  //   const updatedBio = document.getElementById("bio").value;
 
-    // Update the displayed values
-    document.getElementById("displayUsername").textContent = updatedUsername;
-    document.getElementById("displayEmail").textContent = updatedEmail;
-    document.getElementById("displayBio").textContent = updatedBio;
+  //   // Update the displayed values
+  //   document.getElementById("displayUsername").textContent = updatedUsername;
+  //   document.getElementById("displayEmail").textContent = updatedEmail;
+  //   document.getElementById("displayBio").textContent = updatedBio;
 
-    // Hide the edit form and show the display section again
-    document.getElementById("profileEdit").style.display = "none";
-    document.getElementById("profileDisplay").style.display = "flex"; // Show as flex for alignment
+  //   // Hide the edit form and show the display section again
+  //   document.getElementById("profileEdit").style.display = "none";
+  //   document.getElementById("profileDisplay").style.display = "flex"; // Show as flex for alignment
 
-    alert("Profile updated successfully!");
-  });
+  //   alert("Profile updated successfully!");
+  // });
 
 // Handle cancel button
 document.getElementById("cancelButton").addEventListener("click", function () {

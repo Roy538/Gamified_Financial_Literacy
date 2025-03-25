@@ -31,9 +31,9 @@ document
 // Handle cancel button
 document.getElementById("cancelButton").addEventListener("click", function () {
   // Hide the edit form and show the display section again
-//   document.getElementById("profileEdit").style.display = "none";
-//   document.getElementById("profileDisplay").style.display = "flex"; // Show as flex for alignment
-// });
+  document.getElementById("profileEdit").style.display = "none";
+  document.getElementById("profileDisplay").style.display = "flex"; // Show as flex for alignment
+});
 
 // Handle image upload
 document

@@ -1,10 +1,10 @@
-document.getElementById("editButton").addEventListener("click", function () {
-  // Hide the display section
-  document.getElementById("profileDisplay").style.display = "none";
+// document.getElementById("editButton").addEventListener("click", function () {
+//   // Hide the display section
+//   document.getElementById("profileDisplay").style.display = "none";
 
-  // Show the edit form
-  document.getElementById("profileEdit").style.display = "block";
-});
+//   // Show the edit form
+//   document.getElementById("profileEdit").style.display = "block";
+// });
 
 document
   .getElementById("profileForm")

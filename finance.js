@@ -1,8 +1,8 @@
-// document.getElementById('postForm').addEventListener('submit', function (e) {
-//   e.preventDefault();
+document.getElementById('postForm').addEventListener('submit', function (e) {
+  e.preventDefault();
 
-//   const postContent = document.getElementById('postContent').value;
-//   if (postContent.trim() === '') return;
+  const postContent = document.getElementById('postContent').value;
+  if (postContent.trim() === '') return;
 
   const postContainer = document.getElementById('posts');
   const newPost = document.createElement('div');

@@ -4,10 +4,10 @@ document.getElementById('postForm').addEventListener('submit', function (e) {
   const postContent = document.getElementById('postContent').value;
   if (postContent.trim() === '') return;
 
-  const postContainer = document.getElementById('posts');
-  const newPost = document.createElement('div');
-  newPost.classList.add('post');
-  newPost.textContent = postContent;
+  // const postContainer = document.getElementById('posts');
+  // const newPost = document.createElement('div');
+  // newPost.classList.add('post');
+  // newPost.textContent = postContent;
 
   postContainer.appendChild(newPost);
   document.getElementById('postContent').value = ''; // Clear the textarea

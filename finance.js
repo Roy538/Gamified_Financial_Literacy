@@ -83,4 +83,4 @@ window.scrollTo({ top: 0, behavior: 'smooth' });
 
 
 // Call the function to render courses on page load
-window.onload = renderCourses;
+// window.onload = renderCourses;

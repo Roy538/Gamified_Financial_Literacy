@@ -33,7 +33,7 @@ function generateAndSendOTP() {
     alert(`Your OTP is: ${generatedOtp}`); // Display OTP for testing (replace with SMS or email in production)
     
     // Show the OTP input section
-    // document.getElementById("otp-section").style.display = "block";
+    document.getElementById("otp-section").style.display = "block";
   } else {
     alert("Please enter a valid username and password.");
   }

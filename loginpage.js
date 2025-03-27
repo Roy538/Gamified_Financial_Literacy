@@ -29,7 +29,7 @@ function generateAndSendOTP() {
 
   if (username && password) {
     // Generate a 6-digit OTP
-    // generatedOtp = Math.floor(100000 + Math.random() * 900000).toString();
+    generatedOtp = Math.floor(100000 + Math.random() * 900000).toString();
     alert(`Your OTP is: ${generatedOtp}`); // Display OTP for testing (replace with SMS or email in production)
     
     // Show the OTP input section

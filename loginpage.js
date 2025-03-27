@@ -25,7 +25,7 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (e) 
 // Function to generate and display OTP
 function generateAndSendOTP() {
   const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+  // const password = document.getElementById("password").value;
 
   if (username && password) {
     // Generate a 6-digit OTP

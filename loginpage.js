@@ -7,9 +7,9 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (e) 
     const password = document.getElementById("password-input-signup").value;
   
     // Check if user already exists
-    if (localStorage.getItem(username)) {
-      alert("Username already exists. Please choose a different one.");
-    } else {
+    // if (localStorage.getItem(username)) {
+    //   alert("Username already exists. Please choose a different one.");
+    // } else {
       // Save user data in local storage
       const userData = { username, email, password };
       localStorage.setItem(username, JSON.stringify(userData));

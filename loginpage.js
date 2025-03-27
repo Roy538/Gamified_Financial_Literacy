@@ -66,7 +66,7 @@ function verifyOTP() {
       return;
     }
   
-    const { password: storedPassword } = JSON.parse(storedUserData);
+    // const { password: storedPassword } = JSON.parse(storedUserData);
   
     // Validate password
     if (password === storedPassword) {

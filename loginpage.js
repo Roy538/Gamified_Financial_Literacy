@@ -74,8 +74,8 @@ function verifyOTP() {
 
   
       // Save logged-in status
-      // localStorage.setItem("isLoggedIn", true);
-      // localStorage.setItem("currentUser", username);
+      localStorage.setItem("isLoggedIn", true);
+      localStorage.setItem("currentUser", username);
   
       // Redirect to index.html
       window.location.href = "index.html";

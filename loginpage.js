@@ -1,10 +1,10 @@
 // Registration functionality
-document.querySelector(".sign-up-form").addEventListener("submit", function (e) {
-    e.preventDefault();
+// document.querySelector(".sign-up-form").addEventListener("submit", function (e) {
+//     e.preventDefault();
   
-    const username = document.querySelector(".sign-up-form input[type='text']").value;
-    const email = document.querySelector(".sign-up-form input[type='email']").value;
-    const password = document.getElementById("password-input-signup").value;
+//     const username = document.querySelector(".sign-up-form input[type='text']").value;
+//     const email = document.querySelector(".sign-up-form input[type='email']").value;
+//     const password = document.getElementById("password-input-signup").value;
   
     // Check if user already exists
     if (localStorage.getItem(username)) {

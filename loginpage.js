@@ -12,7 +12,7 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (e) 
     } else {
       // Save user data in local storage
       // const userData = { username, email, password };
-      localStorage.setItem(username, JSON.stringify(userData));
+      // localStorage.setItem(username, JSON.stringify(userData));
   
       alert("🎉 User successfully registered!");
        // Redirect to index.html

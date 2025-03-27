@@ -35,7 +35,7 @@ function generateAndSendOTP() {
     // Show the OTP input section
     // document.getElementById("otp-section").style.display = "block";
   } else {
-    alert("Please enter a valid username and password.");
+    // alert("Please enter a valid username and password.");
   }
 }
 

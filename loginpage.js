@@ -11,7 +11,7 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (e) 
       alert("Username already exists. Please choose a different one.");
     } else {
       // Save user data in local storage
-      // const userData = { username, email, password };
+      const userData = { username, email, password };
       // localStorage.setItem(username, JSON.stringify(userData));
   
       alert("🎉 User successfully registered!");

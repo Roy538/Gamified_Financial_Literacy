@@ -78,9 +78,9 @@ function verifyOTP() {
       // localStorage.setItem("currentUser", username);
   
       // Redirect to index.html
-  //     window.location.href = "index.html";
-  //   } else {
-  //     alert("Incorrect password. Please try again.");
-  //   }
-  // });
+      window.location.href = "index.html";
+    } else {
+      alert("Incorrect password. Please try again.");
+    }
+  });
   

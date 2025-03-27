@@ -59,7 +59,7 @@ function verifyOTP() {
     const password = document.getElementById("password-input").value;
     
     // Retrieve user data from local storage
-    const storedUserData = localStorage.getItem(username);
+    // const storedUserData = localStorage.getItem(username);
     
     if (!storedUserData) {
       alert("User not found. Please register first.");

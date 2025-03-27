@@ -16,9 +16,9 @@ document.querySelector(".sign-up-form").addEventListener("submit", function (e) 
   
       alert("🎉 User successfully registered!");
        // Redirect to index.html
-  //      window.location.href = "loginpage.html";
-  //   }
-  // });
+       window.location.href = "loginpage.html";
+    }
+  });
   
   let generatedOtp = "";
 

@@ -16,9 +16,9 @@
   
       alert("🎉 User successfully registered!");
        // Redirect to index.html
-       window.location.href = "loginpage.html";
-    }
-  });
+  //      window.location.href = "loginpage.html";
+  //   }
+  // });
   
   let generatedOtp = "";
 

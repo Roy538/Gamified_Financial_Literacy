@@ -52,19 +52,19 @@ function verifyOTP() {
 }
 
   // Login functionality
-  // document.querySelector(".sign-in-form").addEventListener("submit", function (e) {
-  //   e.preventDefault();
+  document.querySelector(".sign-in-form").addEventListener("submit", function (e) {
+    e.preventDefault();
   
-  //   const username = document.querySelector(".sign-in-form input[type='text']").value;
-  //   const password = document.getElementById("password-input").value;
+    const username = document.querySelector(".sign-in-form input[type='text']").value;
+    const password = document.getElementById("password-input").value;
     
-  //   // Retrieve user data from local storage
-  //   const storedUserData = localStorage.getItem(username);
+    // Retrieve user data from local storage
+    const storedUserData = localStorage.getItem(username);
     
-  //   if (!storedUserData) {
-  //     alert("User not found. Please register first.");
-  //     return;
-  //   }
+    if (!storedUserData) {
+      alert("User not found. Please register first.");
+      return;
+    }
   
     const { password: storedPassword } = JSON.parse(storedUserData);
   

@@ -20,7 +20,7 @@ function calculateEMI() {
     var totalPayment = emi * loanTenure;
 
     // Calculate total interest paid
-    // var totalInterestPaid = totalPayment - loanAmount;
+    var totalInterestPaid = totalPayment - loanAmount;
 
     // Display results
     document.getElementById('monthlyEMI').textContent = 'Ksh ' + emi.toFixed(2);

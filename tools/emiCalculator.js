@@ -17,7 +17,7 @@ function calculateEMI() {
     // var emi = loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTenure) / (Math.pow(1 + monthlyInterestRate, loanTenure) - 1);
 
     // Calculate total payment
-    var totalPayment = emi * loanTenure;
+    // var totalPayment = emi * loanTenure;
 
     // Calculate total interest paid
     var totalInterestPaid = totalPayment - loanAmount;

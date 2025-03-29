@@ -25,7 +25,7 @@ function calculateEMI() {
     // Display results
     document.getElementById('monthlyEMI').textContent = 'INR ' + emi.toFixed(2);
     document.getElementById('totalPayment').textContent = 'INR ' + totalPayment.toFixed(2);
-    document.getElementById('totalInterestPaid').textContent = 'INR ' + totalInterestPaid.toFixed(2);
+    document.getElementById('totalInterestPaid').textContent = 'Ksh ' + totalInterestPaid.toFixed(2);
 }
 
 function clearEMI() {

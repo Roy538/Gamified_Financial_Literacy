@@ -1,9 +1,9 @@
-document.getElementById("calculate-Btn4").addEventListener("click", function() {
-    const salary = parseFloat(document.getElementById("salary").value);
-    const age = parseInt(document.getElementById("age").value);
-    const contribution = parseFloat(document.getElementById("contribution").value) / 100;
-    const increase = parseFloat(document.getElementById("increase").value) / 100;
-    const rate = parseFloat(document.getElementById("rate2").value) / 100;
+// document.getElementById("calculate-Btn4").addEventListener("click", function() {
+//     const salary = parseFloat(document.getElementById("salary").value);
+//     const age = parseInt(document.getElementById("age").value);
+//     const contribution = parseFloat(document.getElementById("contribution").value) / 100;
+//     const increase = parseFloat(document.getElementById("increase").value) / 100;
+//     const rate = parseFloat(document.getElementById("rate2").value) / 100;
 
     // Clear previous error messages
     clearErrorMessages();

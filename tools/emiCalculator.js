@@ -23,10 +23,10 @@ function calculateEMI() {
     var totalInterestPaid = totalPayment - loanAmount;
 
     // Display results
-//     document.getElementById('monthlyEMI').textContent = 'Ksh ' + emi.toFixed(2);
-//     document.getElementById('totalPayment').textContent = 'Ksh ' + totalPayment.toFixed(2);
-//     document.getElementById('totalInterestPaid').textContent = 'Ksh ' + totalInterestPaid.toFixed(2);
-// }
+    document.getElementById('monthlyEMI').textContent = 'Ksh ' + emi.toFixed(2);
+    document.getElementById('totalPayment').textContent = 'Ksh ' + totalPayment.toFixed(2);
+    document.getElementById('totalInterestPaid').textContent = 'Ksh ' + totalInterestPaid.toFixed(2);
+}
 
 function clearEMI() {
     document.getElementById('loanAmount').value = '';

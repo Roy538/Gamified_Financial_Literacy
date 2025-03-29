@@ -2,7 +2,7 @@ function calculateEMI() {
     // Retrieve input values
     var loanAmount = parseFloat(document.getElementById('loanAmount').value);
     var interestRate = parseFloat(document.getElementById('interestRate').value);
-    var loanTenure = parseFloat(document.getElementById('loanTenure').value);
+    // var loanTenure = parseFloat(document.getElementById('loanTenure').value);
 
     // Validate inputs
     // if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTenure) || loanAmount <= 0 || interestRate <= 0 || loanTenure <= 0) {

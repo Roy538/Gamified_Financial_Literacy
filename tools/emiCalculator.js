@@ -5,10 +5,10 @@ function calculateEMI() {
     // var loanTenure = parseFloat(document.getElementById('loanTenure').value);
 
     // Validate inputs
-    // if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTenure) || loanAmount <= 0 || interestRate <= 0 || loanTenure <= 0) {
-    //     alert('Please enter valid positive values for all fields.');
-    //     return;
-    // }
+    if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTenure) || loanAmount <= 0 || interestRate <= 0 || loanTenure <= 0) {
+        alert('Please enter valid positive values for all fields.');
+        return;
+    }
 
     // Calculate monthly interest rate
     var monthlyInterestRate = (interestRate / 12) / 100;

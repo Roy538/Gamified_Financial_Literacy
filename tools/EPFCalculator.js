@@ -30,7 +30,7 @@ document.getElementById("calculate-Btn4").addEventListener("click", function() {
 
     const formatter = new Intl.NumberFormat('en-IN', {
         style: 'currency',
-        currency: 'INR'
+        currency: 'Ksh'
     });
 
     document.getElementById("totalEPF").textContent = formatter.format(totalEPF);

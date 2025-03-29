@@ -1,7 +1,7 @@
 function calculateEMI() {
     // Retrieve input values
     // var loanAmount = parseFloat(document.getElementById('loanAmount').value);
-    var interestRate = parseFloat(document.getElementById('interestRate').value);
+    // var interestRate = parseFloat(document.getElementById('interestRate').value);
     var loanTenure = parseFloat(document.getElementById('loanTenure').value);
 
     // Validate inputs

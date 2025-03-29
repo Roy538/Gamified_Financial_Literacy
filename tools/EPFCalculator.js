@@ -21,12 +21,12 @@ document.getElementById("calculate-Btn4").addEventListener("click", function() {
     let totalEPF = 0;
     let currentSalary = salary;
 
-    // for (let i = 0; i < yearsToRetirement; i++) {
-    //     const yearlyContribution = currentSalary * contribution * monthsInYear;
-    //     totalEPF += yearlyContribution;
-    //     totalEPF += totalEPF * rate;
-    //     currentSalary += currentSalary * increase;
-    // }
+    for (let i = 0; i < yearsToRetirement; i++) {
+        const yearlyContribution = currentSalary * contribution * monthsInYear;
+        totalEPF += yearlyContribution;
+        totalEPF += totalEPF * rate;
+        currentSalary += currentSalary * increase;
+    }
 
     const formatter = new Intl.NumberFormat('en-IN', {
         style: 'currency',

@@ -28,13 +28,13 @@
         currentSalary += currentSalary * increase;
     }
 
-    const formatter = new Intl.NumberFormat('en-IN', {
-        style: 'currency',
-        currency: 'INR'
-    });
+//     const formatter = new Intl.NumberFormat('en-IN', {
+//         style: 'currency',
+//         currency: 'INR'
+//     });
 
-    document.getElementById("totalEPF").textContent = formatter.format(totalEPF);
-});
+//     document.getElementById("totalEPF").textContent = formatter.format(totalEPF);
+// });
 
 document.getElementById("clearBtn3").addEventListener("click", function() {
     clearInputs();

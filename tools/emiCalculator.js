@@ -28,11 +28,11 @@ function calculateEMI() {
 //     document.getElementById('totalInterestPaid').textContent = 'Ksh ' + totalInterestPaid.toFixed(2);
 // }
 
-// function clearEMI() {
-//     document.getElementById('loanAmount').value = '';
-//     document.getElementById('interestRate').value = '';
-//     document.getElementById('loanTenure').value = '';
-//     document.getElementById('monthlyEMI').innerText = '';
-//     document.getElementById('totalPayment').innerText = '';
-//     document.getElementById('totalInterestPaid').innerText = '';
-// }
+function clearEMI() {
+    document.getElementById('loanAmount').value = '';
+    document.getElementById('interestRate').value = '';
+    document.getElementById('loanTenure').value = '';
+    document.getElementById('monthlyEMI').innerText = '';
+    document.getElementById('totalPayment').innerText = '';
+    document.getElementById('totalInterestPaid').innerText = '';
+}

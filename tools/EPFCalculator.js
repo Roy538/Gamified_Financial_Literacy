@@ -79,12 +79,12 @@ function clearErrorMessages() {
     document.getElementById("rateError").textContent = "";
 }
 
-function clearInputs() {
-    document.getElementById("salary").value = "";
-    document.getElementById("age").value = "";
-    document.getElementById("contribution").value = "";
-    document.getElementById("increase").value = "";
-    document.getElementById("rate2").value = "";
-    document.getElementById("totalEPF").textContent = "";
-    clearErrorMessages();
-}
+// function clearInputs() {
+//     document.getElementById("salary").value = "";
+//     document.getElementById("age").value = "";
+//     document.getElementById("contribution").value = "";
+//     document.getElementById("increase").value = "";
+//     document.getElementById("rate2").value = "";
+//     document.getElementById("totalEPF").textContent = "";
+//     clearErrorMessages();
+// }

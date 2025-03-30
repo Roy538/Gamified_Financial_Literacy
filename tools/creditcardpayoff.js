@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
         calculateCreditCardPayoff('#CreditCardPayoff');
     });
 
-    // document.querySelector('#CreditCardPayoff #clearBtn').addEventListener('click', function() {
-    //     clearCreditCardPayoff('#CreditCardPayoff');
-    // });
+    document.querySelector('#CreditCardPayoff #clearBtn').addEventListener('click', function() {
+        clearCreditCardPayoff('#CreditCardPayoff');
+    });
 });
 
 function calculateCreditCardPayoff(containerId) {

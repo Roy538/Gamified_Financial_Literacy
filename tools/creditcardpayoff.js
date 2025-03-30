@@ -30,7 +30,7 @@ function calculateCreditCardPayoff(containerId) {
     let totalInterestPaid = monthsToPayOff * monthlyPayment - balance;
 
     container.querySelector('#monthsToPayOff').textContent = `Ksh${monthsToPayOff.toFixed(2)}`;
-    container.querySelector('#totalInterestPaid').textContent = `₹${totalInterestPaid.toFixed(2)}`;
+    container.querySelector('#totalInterestPaid').textContent = `Ksh${totalInterestPaid.toFixed(2)}`;
 }
 
 function clearCreditCardPayoff(containerId) {

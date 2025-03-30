@@ -33,11 +33,11 @@ function calculateCreditCardPayoff(containerId) {
     container.querySelector('#totalInterestPaid').textContent = `Ksh${totalInterestPaid.toFixed(2)}`;
 }
 
-function clearCreditCardPayoff(containerId) {
-    let container = document.querySelector(containerId);
-    container.querySelector('#balance').value = '';
-    container.querySelector('#apr').value = '';
-    container.querySelector('#monthly-payment').value = '';
-    container.querySelector('#monthsToPayOff').textContent = '0';
-    container.querySelector('#totalInterestPaid').textContent = '₹0.00';
-}
+// function clearCreditCardPayoff(containerId) {
+//     let container = document.querySelector(containerId);
+//     container.querySelector('#balance').value = '';
+//     container.querySelector('#apr').value = '';
+//     container.querySelector('#monthly-payment').value = '';
+//     container.querySelector('#monthsToPayOff').textContent = '0';
+//     container.querySelector('#totalInterestPaid').textContent = '₹0.00';
+// }

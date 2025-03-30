@@ -14,10 +14,10 @@ function calculateCreditCardPayoff(containerId) {
     let apr = parseFloat(container.querySelector('#apr').value);
     let monthlyPayment = parseFloat(container.querySelector('#monthly-payment').value);
 
-    // if (isNaN(balance) || isNaN(apr) || isNaN(monthlyPayment) || balance <= 0 || apr <= 0 || monthlyPayment <= 0) {
-    //     alert('Please enter valid numbers for Balance, APR, and Monthly Payment.');
-    //     return;
-    // }
+    if (isNaN(balance) || isNaN(apr) || isNaN(monthlyPayment) || balance <= 0 || apr <= 0 || monthlyPayment <= 0) {
+        alert('Please enter valid numbers for Balance, APR, and Monthly Payment.');
+        return;
+    }
 
     let monthlyInterestRate = apr / 100 / 12;
 

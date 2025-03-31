@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTips - Financial Literacy for Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-piggy-bank"></i>
+            <!-- <span>FinTips</span> -->
+        </div>
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#saved-tips"><i class="fas fa-bookmark"></i> Saved Tips</a></li>
+            <li><a href="#progress"><i class="fas fa-chart-line"></i> Progress</a></li>
+            <li><a href="#resources"><i class="fas fa-book"></i> Resources</a></li>
+            <li><a href="#profile"><i class="fas fa-user"></i> Profile</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-piggy-bank"></i> FinTips</h1>
+            <div class="user-stats">
+                <div class="level">
+                    <i class="fas fa-star"></i>
+                    <span id="userLevel">Level 1</span>
+                </div>
+                <div class="points">
+                    <i class="fas fa-coins"></i>
+                    <span id="userPoints">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="home-section" class="section active">
+                <div class="tip-container">
+                    <div class="tip-card" id="tipCard">
+                        <div class="tip-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h2>Financial Tip</h2>
+                        <p id="tipText">Click the button to get your first financial tip!</p>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="generateTip" class="btn-primary">
+                        <i class="fas fa-sync-alt"></i> Generate New Tip
+                    </button>
+                    <button id="saveTip" class="btn-secondary" disabled>
+                        <i class="fas fa-bookmark"></i> Save Tip
+                    </button>
+                </div>
+
+                <div class="achievements">
+                    <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                    <div class="achievement-grid" id="achievementGrid">
+                        <!-- Achievements will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="saved-tips-section" class="section">
+                <h2><i class="fas fa-bookmark"></i> Saved Tips</h2>
+                <div class="saved-tips-grid" id="savedTipsGrid">
+                    <!-- Saved tips will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div id="progress-section" class="section">
+                <h2><i class="fas fa-chart-line"></i> Progress</h2>
+                <p>Coming soon...</p>
+            </div>
+
+            <div id="resources-section" class="section">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p>Coming soon...</p>
+            </div>
+
+            <div id="profile-section" class="section">
+                <h2><i class="fas fa-user"></i> Profile</h2>
+                <p>Coming soon...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Learn financial literacy one tip at a time!</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

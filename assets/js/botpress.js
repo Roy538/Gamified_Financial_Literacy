@@ -1,4 +1,4 @@
-<button id="chatWithArthsathi">Chat with Arthsathi</button>;
+{/* <button id="chatWithArthsathi">Chat with Arthsathi</button>;
 
 document
   .getElementById("chatWithArthsathi")
@@ -12,4 +12,4 @@ document
       "https://mediafiles.botpress.cloud/5e160793-5606-4412-ba4c-337e416f14fe/webchat/config.js";
     script2.defer = true;
     document.head.appendChild(script2);
-  });
+  }); */}

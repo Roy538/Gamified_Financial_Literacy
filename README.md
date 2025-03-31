@@ -1,5 +1,5 @@
 <!-- <div align="center">
-<a href="https://fin-veda.netlify.app/" target="_blank" title="Go to the FinVeda website"><img height="256px" alt="FinVeda logo" src="https://github.com/user-attachments/assets/5e45e1f4-7e0d-45b1-914d-80b6ab77ddd8"></a>
+<a href="https://finliteracy.netlify.app/" target="_blank" title="Go to the FinVeda website"><img height="256px" alt="FinVeda logo" src="https://github.com/user-attachments/assets/5e45e1f4-7e0d-45b1-914d-80b6ab77ddd8"></a>
 <table align="center">
     <thead align="center">
         <tr border: 2px;>
@@ -12,11 +12,11 @@
      </thead>
     <tbody>
          <tr>
-            <td><img alt="Stars" src="https://img.shields.io/github/stars/ayush-that/FinVeda?style=flat&logo=github"/></td>
-             <td><img alt="Forks" src="https://img.shields.io/github/forks/ayush-that/FinVeda?style=flat&logo=github"/></td>
-            <td><img alt="Issues" src="https://img.shields.io/github/issues/ayush-that/FinVeda?style=flat&logo=github"/></td>
-            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/ayush-that/FinVeda?style=flat&logo=github"/></td>
-           <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/ayush-that/FinVeda?style=flat&color=critical&logo=github"/></td>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/Roy538/FinVeda?style=flat&logo=github"/></td>
+             <td><img alt="Forks" src="https://img.shields.io/github/forks/Roy538/FinVeda?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/Roy538/FinVeda?style=flat&logo=github"/></td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/Roy538/FinVeda?style=flat&logo=github"/></td>
+           <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Roy538/FinVeda?style=flat&color=critical&logo=github"/></td>
         </tr>
     </tbody>
 </table>
@@ -29,7 +29,7 @@
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 
-###  Say 👋🏼 to Arth Sathi, your AI-powered financial companion
+###  We've got gamified elements for your financial literacy companion
 
 https://github.com/user-attachments/assets/44ddffa1-70b6-43d6-9438-3181f25dd0ad
 
@@ -55,7 +55,7 @@ According to a survey by the OECD, <b>only 38% of adults DevRoy are financially 
 ### 🌟 Features
 FinVeda is a dynamic financial literacy app that'll help you Learn finance with finesse.
 <strong>
-- AI-Powered Consultant
+- Gamified Budget and Saving System
 - Financial Blogs and quizzes 
 - Latest Market Trends & News
 - Finance Tools
@@ -105,11 +105,11 @@ FinVeda is a dynamic financial literacy app that'll help you Learn finance with 
 
 ### 💗 Contributors
 <p align="center">
-    <img src="https://api.vaunt.dev/v1/github/entities/ayush-that/repositories/FinVeda/contributors?format=svg&limit=54" width="700" height="250" />
+    <img src="https://api.vaunt.dev/v1/github/entities/Roy538/repositories/FinVeda/contributors?format=svg&limit=54" width="700" height="250" />
 </p>
 
-<a href="https://github.com/ayush-that/FinVeda/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ayush-that/FinVeda" />
+<a href="https://github.com/Roy538/FinVeda/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Roy538/FinVeda" />
 </a>
 
 #### A Big Thank You to Our Contributors! 🎉👏
@@ -119,21 +119,11 @@ We want to extend our heartfelt gratitude to all the amazing contributors who ha
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-## 💗 Forkers
-
-[![Forkers repo roster for @ayush-that/FinVeda](https://reporoster.com/forks/ayush-that/FinVeda)](https://github.com/ayush-that/FinVeda/network/members)
-
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 
 ## 💗 Stargazers -->
-
-<!-- <div align='left'>
-
-[![Stargazers repo roster for @ayush-that/FinVeda](https://reporoster.com/stars/ayush-that/FinVeda)](https://github.com/ayush-that/FinVeda/stargazers)
-
-</div>
 
 <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ayush-that/FinVeda&type=Date&theme=dark" />
@@ -160,7 +150,7 @@ If you encounter any issues while using FinVeda, here are some common solutions:
    - **Solution**: Double-check your `.env` file configurations. Refer to `.env.example` for the correct variable setup.
 
 4. **External Resources**
-   - Check the [Issues](https://github.com/ayush-that/FinVeda/issues) page for similar problems or create a new issue.
+   - Check the [Issues](https://github.com/Roy538/FinVeda/issues) page for similar problems or create a new issue.
    - For additional help, visit our community channels.
 
 Feel free to reach out via the FinVeda community channels for more support. Happy learning! 

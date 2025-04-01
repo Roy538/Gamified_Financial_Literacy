@@ -105,6 +105,29 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 const savedTipsGrid = document.getElementById('savedTipsGrid');
 
+// Sound effects
+const sounds = {
+    click: new Audio('sounds/click.mp3'),
+    levelUp: new Audio('sounds/level-up.mp3'),
+    achievement: new Audio('sounds/achievement.mp3'),
+    save: new Audio('sounds/save.mp3'),
+    delete: new Audio('sounds/delete.mp3'),
+    hover: new Audio('sounds/hover.mp3')
+};
+
+// Sound settings
+let soundEnabled = true;
+
+// Function to play sound with error handling
+function playSound(soundName) {
+    if (!soundEnabled) return;
+    const sound = sounds[soundName];
+    if (sound) {
+        sound.currentTime = 0;
+        sound.play().catch(error => console.log('Sound play failed:', error));
+    }
+}
+
 // Navigation Toggle
 navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
@@ -175,30 +198,63 @@ function saveUserState() {
 
 // Setup event listeners
 function setupEventListeners() {
-    generateTipBtn.addEventListener('click', generateNewTip);
-    saveTipBtn.addEventListener('click', saveCurrentTip);
+    generateTipBtn.addEventListener('click', () => {
+        playSound('click');
+        generateNewTip();
+    });
+    
+    saveTipBtn.addEventListener('click', () => {
+        playSound('click');
+        saveCurrentTip();
+    });
+
+    // Add hover sound to buttons
+    [generateTipBtn, saveTipBtn].forEach(btn => {
+        btn.addEventListener('mouseenter', () => playSound('hover'));
+    });
+
+    // Add hover sound to navigation links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('mouseenter', () => playSound('hover'));
+    });
 }
 
 // Generate a new financial tip
 function generateNewTip() {
     const randomTip = financialTips[Math.floor(Math.random() * financialTips.length)];
     
-    // Animate the card
+    // Enhanced card animation
     tipCard.style.animation = 'none';
     tipCard.offsetHeight; // Trigger reflow
-    tipCard.style.animation = 'cardAppear 0.5s ease';
+    tipCard.style.animation = 'cardAppear 0.5s ease, cardGlow 1s ease';
     
-    // Update tip content
-    tipText.textContent = randomTip.tip;
+    // Update tip content with typing animation
+    const tipElement = tipText;
+    tipElement.textContent = '';
+    let i = 0;
+    const typingSpeed = 30; // milliseconds per character
+    
+    function typeWriter() {
+        if (i < randomTip.tip.length) {
+            tipElement.textContent += randomTip.tip.charAt(i);
+            i++;
+            setTimeout(typeWriter, typingSpeed);
+        } else {
+            // Enable save button with animation
+            saveTipBtn.disabled = false;
+            saveTipBtn.style.animation = 'buttonPulse 1s ease';
+        }
+    }
+    
+    typeWriter();
     
     // Update categories seen
     userState.categoriesSeen.add(randomTip.category);
     
-    // Add points
+    // Add points with animation
+    const currentPoints = userState.points;
     userState.points += randomTip.points;
-    
-    // Enable save button
-    saveTipBtn.disabled = false;
+    animatePoints(currentPoints, userState.points);
     
     // Check for level up
     checkLevelUp();
@@ -210,18 +266,42 @@ function generateNewTip() {
     updateUI();
 }
 
+// Add points animation
+function animatePoints(start, end) {
+    const duration = 1000; // 1 second
+    const steps = 20;
+    const increment = (end - start) / steps;
+    let current = start;
+    
+    const interval = setInterval(() => {
+        current += increment;
+        if (current >= end) {
+            current = end;
+            clearInterval(interval);
+        }
+        userPointsElement.textContent = Math.round(current);
+    }, duration / steps);
+}
+
 // Save the current tip
 function saveCurrentTip() {
     const currentTip = financialTips.find(tip => tip.tip === tipText.textContent);
     if (currentTip && !userState.savedTips.includes(currentTip.tip)) {
+        playSound('save');
         userState.savedTips.push(currentTip.tip);
         saveUserState();
         saveTipBtn.disabled = true;
         
-        // Show success animation
+        // Enhanced save animation
         saveTipBtn.innerHTML = '<i class="fas fa-check"></i> Saved!';
+        saveTipBtn.style.animation = 'saveSuccess 0.5s ease';
+        
+        // Add success particle effect
+        createSuccessParticles(saveTipBtn);
+        
         setTimeout(() => {
             saveTipBtn.innerHTML = '<i class="fas fa-bookmark"></i> Save Tip';
+            saveTipBtn.style.animation = '';
         }, 2000);
         
         // Update saved tips view if on saved tips section
@@ -242,6 +322,7 @@ function checkLevelUp() {
 
 // Show level up animation
 function showLevelUpAnimation() {
+    playSound('levelUp');
     const levelUpMessage = document.createElement('div');
     levelUpMessage.className = 'level-up-message';
     levelUpMessage.innerHTML = `
@@ -250,6 +331,9 @@ function showLevelUpAnimation() {
         <span>You're now level ${userState.level}</span>
     `;
     document.body.appendChild(levelUpMessage);
+    
+    // Add confetti effect
+    createConfetti();
     
     setTimeout(() => {
         levelUpMessage.remove();
@@ -288,6 +372,7 @@ function checkAchievements() {
 
 // Show achievement unlock animation
 function showAchievementUnlock(achievement) {
+    playSound('achievement');
     const achievementMessage = document.createElement('div');
     achievementMessage.className = 'achievement-unlock';
     achievementMessage.innerHTML = `
@@ -299,6 +384,9 @@ function showAchievementUnlock(achievement) {
         </div>
     `;
     document.body.appendChild(achievementMessage);
+    
+    // Add achievement sparkle effect
+    createSparkles(achievementMessage);
     
     setTimeout(() => {
         achievementMessage.remove();
@@ -359,9 +447,58 @@ function renderSavedTips() {
 
 // Delete saved tip
 function deleteTip(tipText) {
-    userState.savedTips = userState.savedTips.filter(tip => tip !== tipText);
-    saveUserState();
-    renderSavedTips();
+    playSound('delete');
+    const tipCard = event.target.closest('.saved-tip-card');
+    tipCard.style.animation = 'deleteTip 0.5s ease forwards';
+    
+    setTimeout(() => {
+        userState.savedTips = userState.savedTips.filter(tip => tip !== tipText);
+        saveUserState();
+        renderSavedTips();
+    }, 500);
+}
+
+// Particle effects
+function createSuccessParticles(element) {
+    const rect = element.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    for (let i = 0; i < 10; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'success-particle';
+        particle.style.left = centerX + 'px';
+        particle.style.top = centerY + 'px';
+        document.body.appendChild(particle);
+        
+        setTimeout(() => particle.remove(), 1000);
+    }
+}
+
+function createConfetti() {
+    for (let i = 0; i < 50; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        document.body.appendChild(confetti);
+        
+        setTimeout(() => confetti.remove(), 5000);
+    }
+}
+
+function createSparkles(element) {
+    const rect = element.getBoundingClientRect();
+    for (let i = 0; i < 8; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.style.left = (rect.left + Math.random() * rect.width) + 'px';
+        sparkle.style.top = (rect.top + Math.random() * rect.height) + 'px';
+        document.body.appendChild(sparkle);
+        
+        setTimeout(() => sparkle.remove(), 1000);
+    }
 }
 
 // Initialize the application when the page loads

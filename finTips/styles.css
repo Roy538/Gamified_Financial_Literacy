@@ -569,4 +569,145 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Enhanced Animations */
+@keyframes cardGlow {
+    0% {
+        box-shadow: 0 4px 15px var(--shadow-color);
+    }
+    50% {
+        box-shadow: 0 4px 25px var(--primary-color);
+    }
+    100% {
+        box-shadow: 0 4px 15px var(--shadow-color);
+    }
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes saveSuccess {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: var(--primary-color);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes deleteTip {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+/* Particle Effects */
+.success-particle {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: particleFloat 1s ease forwards;
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    animation: confettiFall 5s linear forwards;
+}
+
+.sparkle {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkleEffect 1s ease forwards;
+}
+
+@keyframes particleFloat {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(
+            calc((random() - 0.5) * 100px),
+            -100px
+        ) scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sparkleEffect {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1) rotate(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Empty State Animation */
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    animation: fadeIn 0.5s ease;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 } 

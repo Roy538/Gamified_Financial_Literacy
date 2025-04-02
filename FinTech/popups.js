@@ -4,9 +4,9 @@ window.onload = function() {
   };
 
   // Close the pop-up when the user clicks the close button
-  // document.querySelector('.close-nl').addEventListener('click', function() {
-  //   document.getElementById('popup-nl').style.display = 'none';
-  // });
+  document.querySelector('.close-nl').addEventListener('click', function() {
+    document.getElementById('popup-nl').style.display = 'none';
+  });
 
   // // Close the pop-up when clicking outside the pop-up content
   // window.addEventListener('click', function(event) {

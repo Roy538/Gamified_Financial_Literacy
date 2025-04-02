@@ -17,8 +17,8 @@ window.onload = function() {
   // });
 
   // Handle form submission
-  // document.getElementById('emailForm-nl').addEventListener('submit', function(event) {
-  //   event.preventDefault();
+  document.getElementById('emailForm-nl').addEventListener('submit', function(event) {
+    event.preventDefault();
 
     const email = document.getElementById('email-nl').value;
     if (email) {

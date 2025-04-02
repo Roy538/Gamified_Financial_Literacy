@@ -28,7 +28,7 @@ window.onload = function() {
   });
   
   // Handle "No thanks" link
-  // document.querySelector('.no-thanks-nl').addEventListener('click', function(event) {
-  //   event.preventDefault();
+  document.querySelector('.no-thanks-nl').addEventListener('click', function(event) {
+    event.preventDefault();
     document.getElementById('popup-nl').style.display = 'none';
   });

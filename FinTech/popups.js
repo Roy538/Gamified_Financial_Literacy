@@ -1,7 +1,7 @@
 // Show the pop-up automatically when the page loads
-// window.onload = function() {
-//     document.getElementById('popup-nl').style.display = 'flex';
-//   };
+window.onload = function() {
+    document.getElementById('popup-nl').style.display = 'flex';
+  };
 
   // Close the pop-up when the user clicks the close button
   // document.querySelector('.close-nl').addEventListener('click', function() {

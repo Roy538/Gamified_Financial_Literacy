@@ -8,7 +8,7 @@ body {
 
 }
 
-/* .fa-home {
+.fa-home {
 
     position: absolute;
     right: 190px;
@@ -16,7 +16,7 @@ body {
     font-size: 25px;
     color: #33aeaa;
 
-} */
+}
 
 .fa-home:hover {
 

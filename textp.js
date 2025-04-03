@@ -16,7 +16,7 @@ const getCurrentTimestamp = () => {
   
   // Update last active timestamp on page load and interaction
   document.addEventListener('DOMContentLoaded', storeLastActive);
-  // document.addEventListener('click', storeLastActive);
+  document.addEventListener('click', storeLastActive);
   // document.addEventListener('scroll', storeLastActive);
   document.addEventListener('keydown', storeLastActive);
   

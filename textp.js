@@ -10,9 +10,9 @@ const getCurrentTimestamp = () => {
   };
   
   // Get last active timestamp from LocalStorage
-  const getLastActive = () => {
-    return localStorage.getItem('lastActive');
-  };
+  // const getLastActive = () => {
+  //   return localStorage.getItem('lastActive');
+  // };
   
   // Update last active timestamp on page load and interaction
   // document.addEventListener('DOMContentLoaded', storeLastActive);

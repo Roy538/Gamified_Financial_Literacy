@@ -18,7 +18,7 @@ const getCurrentTimestamp = () => {
   // document.addEventListener('DOMContentLoaded', storeLastActive);
   // document.addEventListener('click', storeLastActive);
   // document.addEventListener('scroll', storeLastActive);
-  // document.addEventListener('keydown', storeLastActive);
+  document.addEventListener('keydown', storeLastActive);
   
   // Example usage:
   const displayLastActive = () => {

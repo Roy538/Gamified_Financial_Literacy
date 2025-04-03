@@ -77,7 +77,7 @@ body {
 
 }
 
-.edit-profile-btn {
+/* .edit-profile-btn {
 
     background: linear-gradient(to right,#fe8464 0%, #fe6e9a 50%, #fe8464 100%); 
     color: white;
@@ -87,7 +87,7 @@ body {
     border-radius: 5px;
     transition: background 0.3s, transform 0.3s;
 
-}
+} */
 
 .edit-profile-btn:hover {
 

@@ -27,7 +27,7 @@
     document.getElementById('last-active').innerHTML = Last active: ${formattedTime};
   };
   
-  displayLastActive();
+  // displayLastActive();
   
 
   

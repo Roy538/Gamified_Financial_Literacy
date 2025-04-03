@@ -6,7 +6,7 @@ const getCurrentTimestamp = () => {
   // Store last active timestamp in LocalStorage
   // const storeLastActive = () => {
     const lastActive = getCurrentTimestamp();
-    localStorage.setItem('lastActive', lastActive);
+    // localStorage.setItem('lastActive', lastActive);
   };
   
   // Get last active timestamp from LocalStorage

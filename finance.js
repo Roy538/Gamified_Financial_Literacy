@@ -59,7 +59,7 @@ function renderCourses() {
     // courseDuration.className = "course-duration";
     // courseDuration.textContent = course.duration;
 
-    courseItem.appendChild(courseLink);
+    // courseItem.appendChild(courseLink);
     courseItem.appendChild(courseDuration);
 
     // videoCoursesContainer.appendChild(courseItem);

@@ -1,4 +1,4 @@
-// document.getElementById('postForm').addEventListener('submit', function (e) {
+document.getElementById('postForm').addEventListener('submit', function (e) {
   // e.preventDefault();
 
   const postContent = document.getElementById('postContent').value;

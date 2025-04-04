@@ -9,7 +9,7 @@
   // newPost.classList.add('post');
   // newPost.textContent = postContent;
 
-  postContainer.appendChild(newPost);
+  // postContainer.appendChild(newPost);
   document.getElementById('postContent').value = ''; // Clear the textarea
 });
 // Array of video course data

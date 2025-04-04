@@ -57,7 +57,7 @@ function renderCourses() {
 
     // const courseDuration = document.createElement("span");
     // courseDuration.className = "course-duration";
-    courseDuration.textContent = course.duration;
+    // courseDuration.textContent = course.duration;
 
     courseItem.appendChild(courseLink);
     courseItem.appendChild(courseDuration);

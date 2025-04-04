@@ -1,5 +1,5 @@
 // document.getElementById('postForm').addEventListener('submit', function (e) {
-  e.preventDefault();
+  // e.preventDefault();
 
   const postContent = document.getElementById('postContent').value;
   if (postContent.trim() === '') return;

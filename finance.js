@@ -5,7 +5,7 @@
   if (postContent.trim() === '') return;
 
   // const postContainer = document.getElementById('posts');
-  const newPost = document.createElement('div');
+  // const newPost = document.createElement('div');
   newPost.classList.add('post');
   // newPost.textContent = postContent;
 

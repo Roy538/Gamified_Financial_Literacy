@@ -50,12 +50,12 @@ function renderCourses() {
     courseItem.className = "course-item";
 
     // const courseLink = document.createElement("a");
-    courseLink.className = "course-title";
+    // courseLink.className = "course-title";
     // courseLink.href = course.url;
     // courseLink.textContent = course.title;
     // courseLink.target = "_blank";
 
-    const courseDuration = document.createElement("span");
+    // const courseDuration = document.createElement("span");
     courseDuration.className = "course-duration";
     courseDuration.textContent = course.duration;
 

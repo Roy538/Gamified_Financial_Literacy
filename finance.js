@@ -7,7 +7,7 @@
   // const postContainer = document.getElementById('posts');
   const newPost = document.createElement('div');
   newPost.classList.add('post');
-  newPost.textContent = postContent;
+  // newPost.textContent = postContent;
 
   postContainer.appendChild(newPost);
   document.getElementById('postContent').value = ''; // Clear the textarea

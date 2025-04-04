@@ -45,7 +45,7 @@ const courses = [
 function renderCourses() {
   const videoCoursesContainer = document.getElementById("video-courses");
 
-  courses.forEach(course => {
+  // courses.forEach(course => {
     // const courseItem = document.createElement("div");
     // courseItem.className = "course-item";
 
@@ -56,7 +56,7 @@ function renderCourses() {
     courseLink.target = "_blank";
 
     const courseDuration = document.createElement("span");
-    // courseDuration.className = "course-duration";
+    courseDuration.className = "course-duration";
     // courseDuration.textContent = course.duration;
 
     // courseItem.appendChild(courseLink);

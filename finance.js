@@ -6,7 +6,7 @@
 
   // const postContainer = document.getElementById('posts');
   // const newPost = document.createElement('div');
-  // newPost.classList.add('post');
+  newPost.classList.add('post');
   // newPost.textContent = postContent;
 
   // postContainer.appendChild(newPost);

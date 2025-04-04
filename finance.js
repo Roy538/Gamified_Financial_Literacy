@@ -56,7 +56,7 @@ function renderCourses() {
     // courseLink.target = "_blank";
 
     // const courseDuration = document.createElement("span");
-    courseDuration.className = "course-duration";
+    // courseDuration.className = "course-duration";
     // courseDuration.textContent = course.duration;
 
     courseItem.appendChild(courseLink);

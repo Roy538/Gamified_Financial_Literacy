@@ -47,7 +47,7 @@ function renderCourses() {
 
   courses.forEach(course => {
     // const courseItem = document.createElement("div");
-    // courseItem.className = "course-item";
+    courseItem.className = "course-item";
 
     const courseLink = document.createElement("a");
     courseLink.className = "course-title";

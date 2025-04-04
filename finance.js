@@ -62,7 +62,7 @@ function renderCourses() {
     // courseItem.appendChild(courseLink);
     courseItem.appendChild(courseDuration);
 
-    // videoCoursesContainer.appendChild(courseItem);
+    videoCoursesContainer.appendChild(courseItem);
   });
 }
 

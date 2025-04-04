@@ -51,7 +51,7 @@ function renderCourses() {
 
     const courseLink = document.createElement("a");
     // courseLink.className = "course-title";
-    // courseLink.href = course.url;
+    courseLink.href = course.url;
     courseLink.textContent = course.title;
     courseLink.target = "_blank";
 

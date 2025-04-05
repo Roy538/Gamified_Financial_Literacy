@@ -87,12 +87,12 @@ async function fetchContributors() {
   createPaginationButtons();
 }
 
-function displayContributors() {
-  const container = document.getElementById("contributor-cards");
-  container.innerHTML = "";
-  const start = (currentPage - 1) * contributorsPerPage;
-  const end = start + contributorsPerPage;
-  const currentContributors = contributors.slice(start, end);
+// function displayContributors() {
+//   const container = document.getElementById("contributor-cards");
+//   container.innerHTML = "";
+//   const start = (currentPage - 1) * contributorsPerPage;
+//   const end = start + contributorsPerPage;
+//   const currentContributors = contributors.slice(start, end);
 
   // currentContributors.forEach((contributor) => {
   //   const card = document.createElement("div");

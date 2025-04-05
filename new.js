@@ -87,7 +87,7 @@ async function fetchContributors() {
   createPaginationButtons();
 }
 
-// function displayContributors() {
+function displayContributors() {
 //   const container = document.getElementById("contributor-cards");
 //   container.innerHTML = "";
 //   const start = (currentPage - 1) * contributorsPerPage;

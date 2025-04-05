@@ -88,7 +88,7 @@ async function fetchContributors() {
 }
 
 function displayContributors() {
-//   const container = document.getElementById("contributor-cards");
+  const container = document.getElementById("contributor-cards");
 //   container.innerHTML = "";
 //   const start = (currentPage - 1) * contributorsPerPage;
 //   const end = start + contributorsPerPage;

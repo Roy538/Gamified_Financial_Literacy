@@ -68,7 +68,7 @@ function filterFAQs() {
 }
 
 // Function for the contributors section
-const owner = "ayush-that";
+const owner = "Roy538";
 const repo = "FinVeda";
 const contributorsPerPage = 8;
 let contributors = [];

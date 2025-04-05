@@ -69,7 +69,7 @@ function filterFAQs() {
 
 // Function for the contributors section
 const owner = "Roy538";
-const repo = "FinVeda";
+const repo = "Gamified_Financial_Literacy";
 const contributorsPerPage = 8;
 let contributors = [];
 let currentPage = 1;

@@ -92,7 +92,7 @@ function displayContributors() {
   container.innerHTML = "";
   const start = (currentPage - 1) * contributorsPerPage;
   const end = start + contributorsPerPage;
-//   const currentContributors = contributors.slice(start, end);
+  const currentContributors = contributors.slice(start, end);
 
   // currentContributors.forEach((contributor) => {
     const card = document.createElement("div");

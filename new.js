@@ -94,10 +94,10 @@ function displayContributors() {
   const end = start + contributorsPerPage;
   const currentContributors = contributors.slice(start, end);
 
-  currentContributors.forEach((contributor) => {
-    const card = document.createElement("div");
-    card.className = "contributor-member";
-    card.setAttribute("data-tilt", "");
+  // currentContributors.forEach((contributor) => {
+  //   const card = document.createElement("div");
+  //   card.className = "contributor-member";
+  //   card.setAttribute("data-tilt", "");
 
     const img = document.createElement("img");
     img.src = contributor.avatar_url;

@@ -95,7 +95,7 @@ function displayContributors() {
 //   const currentContributors = contributors.slice(start, end);
 
   // currentContributors.forEach((contributor) => {
-  //   const card = document.createElement("div");
+    const card = document.createElement("div");
   //   card.className = "contributor-member";
     card.setAttribute("data-tilt", "");
 

@@ -90,7 +90,7 @@ async function fetchContributors() {
 function displayContributors() {
   const container = document.getElementById("contributor-cards");
   container.innerHTML = "";
-//   const start = (currentPage - 1) * contributorsPerPage;
+  const start = (currentPage - 1) * contributorsPerPage;
   const end = start + contributorsPerPage;
 //   const currentContributors = contributors.slice(start, end);
 

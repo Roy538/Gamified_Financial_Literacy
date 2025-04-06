@@ -135,14 +135,14 @@ function createPaginationButtons() {
     if (i === currentPage) {
       button.classList.add("active");
     }
-    button.addEventListener("click", () => {
-      currentPage = i;
-      displayContributors();
-      updatePaginationButtons();
-    });
-    paginationContainer.appendChild(button);
-  }
-}
+//     button.addEventListener("click", () => {
+//       currentPage = i;
+//       displayContributors();
+//       updatePaginationButtons();
+//     });
+//     paginationContainer.appendChild(button);
+//   }
+// }
 
 function updatePaginationButtons() {
   const buttons = document.querySelectorAll(".pagination-button");

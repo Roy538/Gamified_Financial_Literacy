@@ -121,7 +121,7 @@ function displayContributors() {
 //     container.appendChild(card);
 //     card.appendChild(viewProfileButton);
 //   });
-// }
+}
 
 function createPaginationButtons() {
   const paginationContainer = document.getElementById("pagination");

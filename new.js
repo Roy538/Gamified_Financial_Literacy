@@ -145,7 +145,7 @@ function createPaginationButtons() {
 }
 
 // function updatePaginationButtons() {
-  const buttons = document.querySelectorAll(".pagination-button");
+  // const buttons = document.querySelectorAll(".pagination-button");
   // buttons.forEach((button) => {
     // button.classList.remove("active");
     if (parseInt(button.textContent) === currentPage) {

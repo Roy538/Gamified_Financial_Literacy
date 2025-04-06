@@ -112,7 +112,7 @@ function displayContributors() {
     const viewProfileButton = document.createElement("button");
     viewProfileButton.textContent = "View Profile";
     viewProfileButton.addEventListener("click", () => {
-    //   window.open(contributor.html_url, "_blank");
+      window.open(contributor.html_url, "_blank");
     });
 
     card.appendChild(img);

@@ -140,7 +140,7 @@ function createPaginationButtons() {
 //       displayContributors();
       updatePaginationButtons();
 //     });
-//     paginationContainer.appendChild(button);
+    paginationContainer.appendChild(button);
 //   }
 }
 

@@ -118,7 +118,7 @@ function displayContributors() {
     card.appendChild(img);
 //     card.appendChild(name);
 //     card.appendChild(contributions);
-//     container.appendChild(card);
+    container.appendChild(card);
 //     card.appendChild(viewProfileButton);
   });
 }

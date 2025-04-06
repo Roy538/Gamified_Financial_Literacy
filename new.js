@@ -151,7 +151,7 @@ function updatePaginationButtons() {
     // if (parseInt(button.textContent) === currentPage) {
       // button.classList.add("active");
     // }
-  // });
+  });
 }
 
 fetchContributors();

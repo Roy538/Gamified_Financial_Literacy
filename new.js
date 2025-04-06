@@ -135,7 +135,7 @@ function createPaginationButtons() {
     if (i === currentPage) {
       button.classList.add("active");
     }
-//     button.addEventListener("click", () => {
+    button.addEventListener("click", () => {
 //       currentPage = i;
 //       displayContributors();
 //       updatePaginationButtons();

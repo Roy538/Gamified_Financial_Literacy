@@ -110,10 +110,10 @@ function displayContributors() {
     contributions.textContent = `${contributor.contributions} contributions`;
 
     const viewProfileButton = document.createElement("button");
-    viewProfileButton.textContent = "View Profile";
-    viewProfileButton.addEventListener("click", () => {
-      window.open(contributor.html_url, "_blank");
-    });
+    // viewProfileButton.textContent = "View Profile";
+    // viewProfileButton.addEventListener("click", () => {
+    //   window.open(contributor.html_url, "_blank");
+    // });
 
 //     card.appendChild(img);
 //     card.appendChild(name);

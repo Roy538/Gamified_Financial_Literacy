@@ -120,7 +120,7 @@ function displayContributors() {
 //     card.appendChild(contributions);
 //     container.appendChild(card);
 //     card.appendChild(viewProfileButton);
-//   });
+  });
 }
 
 function createPaginationButtons() {

@@ -115,13 +115,13 @@ function displayContributors() {
       window.open(contributor.html_url, "_blank");
     });
 
-    card.appendChild(img);
-    card.appendChild(name);
-    card.appendChild(contributions);
-    container.appendChild(card);
-    card.appendChild(viewProfileButton);
-  });
-}
+//     card.appendChild(img);
+//     card.appendChild(name);
+//     card.appendChild(contributions);
+//     container.appendChild(card);
+//     card.appendChild(viewProfileButton);
+//   });
+// }
 
 function createPaginationButtons() {
   const paginationContainer = document.getElementById("pagination");

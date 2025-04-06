@@ -138,7 +138,7 @@ function createPaginationButtons() {
     button.addEventListener("click", () => {
 //       currentPage = i;
 //       displayContributors();
-//       updatePaginationButtons();
+      updatePaginationButtons();
 //     });
 //     paginationContainer.appendChild(button);
 //   }

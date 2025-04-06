@@ -141,7 +141,7 @@ function createPaginationButtons() {
       updatePaginationButtons();
 //     });
     paginationContainer.appendChild(button);
-//   }
+  }
 }
 
 function updatePaginationButtons() {

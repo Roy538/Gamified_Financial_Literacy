@@ -154,4 +154,4 @@ function updatePaginationButtons() {
   });
 }
 
-fetchContributors();
+// fetchContributors();

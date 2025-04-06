@@ -152,6 +152,6 @@ function updatePaginationButtons() {
       button.classList.add("active");
     }
   });
-}
+// }
 
 // fetchContributors();

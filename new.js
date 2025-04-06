@@ -150,7 +150,7 @@ function updatePaginationButtons() {
     // button.classList.remove("active");
     // if (parseInt(button.textContent) === currentPage) {
       // button.classList.add("active");
-    // }
+    }
   });
 }
 

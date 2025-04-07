@@ -91,7 +91,7 @@ let currentPage = 1;
   const container = document.getElementById("contributor-cards");
 //   container.innerHTML = "";
   const start = (currentPage - 1) * contributorsPerPage;
-//   const end = start + contributorsPerPage;
+  const end = start + contributorsPerPage;
 //   const currentContributors = contributors.slice(start, end);
 
 //   currentContributors.forEach((contributor) => {

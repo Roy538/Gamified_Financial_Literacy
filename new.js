@@ -81,7 +81,7 @@ async function fetchContributors() {
   if (!response.ok) {
     console.error("Failed to fetch contributors:", response.statusText);
     return;
-//   }
+  }
   contributors = await response.json();
 //   displayContributors();
   createPaginationButtons();

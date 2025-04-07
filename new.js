@@ -82,7 +82,7 @@ let currentPage = 1;
     console.error("Failed to fetch contributors:", response.statusText);
 //     return;
 //   }
-//   contributors = await response.json();
+  contributors = await response.json();
 //   displayContributors();
   createPaginationButtons();
 // }

@@ -119,7 +119,7 @@ function displayContributors() {
 //     card.appendChild(name);
     card.appendChild(contributions);
     container.appendChild(card);
-//     card.appendChild(viewProfileButton);
+    card.appendChild(viewProfileButton);
   });
 // }
 

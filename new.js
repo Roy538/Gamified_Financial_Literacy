@@ -94,7 +94,7 @@ let currentPage = 1;
   const end = start + contributorsPerPage;
 //   const currentContributors = contributors.slice(start, end);
 
-//   currentContributors.forEach((contributor) => {
+  currentContributors.forEach((contributor) => {
 //     const card = document.createElement("div");
 //     card.className = "contributor-member";
 //     card.setAttribute("data-tilt", "");

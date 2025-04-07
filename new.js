@@ -97,7 +97,7 @@ function displayContributors() {
   currentContributors.forEach((contributor) => {
 //     const card = document.createElement("div");
 //     card.className = "contributor-member";
-//     card.setAttribute("data-tilt", "");
+    card.setAttribute("data-tilt", "");
 
 //     const img = document.createElement("img");
 //     img.src = contributor.avatar_url;

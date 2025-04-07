@@ -113,7 +113,7 @@ function displayContributors() {
     viewProfileButton.textContent = "View Profile";
     viewProfileButton.addEventListener("click", () => {
       window.open(contributor.html_url, "_blank");
-//     });
+    });
 
     card.appendChild(img);
     card.appendChild(name);

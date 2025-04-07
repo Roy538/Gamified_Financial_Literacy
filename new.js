@@ -109,7 +109,7 @@ function displayContributors() {
     const contributions = document.createElement("p");
     contributions.textContent = `${contributor.contributions} contributions`;
 
-//     const viewProfileButton = document.createElement("button");
+    const viewProfileButton = document.createElement("button");
 //     viewProfileButton.textContent = "View Profile";
     viewProfileButton.addEventListener("click", () => {
       window.open(contributor.html_url, "_blank");

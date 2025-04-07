@@ -103,7 +103,7 @@ function displayContributors() {
     img.src = contributor.avatar_url;
 //     img.alt = contributor.login;
 
-//     const name = document.createElement("h3");
+    const name = document.createElement("h3");
     name.textContent = contributor.login;
 
     const contributions = document.createElement("p");

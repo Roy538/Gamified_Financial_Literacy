@@ -83,7 +83,7 @@ async function fetchContributors() {
     return;
   }
   contributors = await response.json();
-//   displayContributors();
+  displayContributors();
   createPaginationButtons();
 // }
 

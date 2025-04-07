@@ -74,7 +74,7 @@ const contributorsPerPage = 8;
 let contributors = [];
 let currentPage = 1;
 
-// async function fetchContributors() {
+async function fetchContributors() {
 //   const response = await fetch(
 //     `https://api.github.com/repos/${owner}/${repo}/contributors`
 //   );

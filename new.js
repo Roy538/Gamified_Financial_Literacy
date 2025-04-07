@@ -111,7 +111,7 @@ let currentPage = 1;
 
 //     const viewProfileButton = document.createElement("button");
 //     viewProfileButton.textContent = "View Profile";
-//     viewProfileButton.addEventListener("click", () => {
+    viewProfileButton.addEventListener("click", () => {
 //       window.open(contributor.html_url, "_blank");
 //     });
 

@@ -79,7 +79,7 @@ let currentPage = 1;
 //     `https://api.github.com/repos/${owner}/${repo}/contributors`
 //   );
 //   if (!response.ok) {
-//     console.error("Failed to fetch contributors:", response.statusText);
+    console.error("Failed to fetch contributors:", response.statusText);
 //     return;
 //   }
 //   contributors = await response.json();

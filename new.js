@@ -104,7 +104,7 @@ function displayContributors() {
 //     img.alt = contributor.login;
 
 //     const name = document.createElement("h3");
-//     name.textContent = contributor.login;
+    name.textContent = contributor.login;
 
 //     const contributions = document.createElement("p");
     contributions.textContent = `${contributor.contributions} contributions`;

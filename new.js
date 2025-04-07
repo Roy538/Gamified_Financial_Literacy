@@ -99,8 +99,8 @@ function displayContributors() {
 //     card.className = "contributor-member";
     card.setAttribute("data-tilt", "");
 
-//     const img = document.createElement("img");
-//     img.src = contributor.avatar_url;
+    const img = document.createElement("img");
+    img.src = contributor.avatar_url;
 //     img.alt = contributor.login;
 
 //     const name = document.createElement("h3");

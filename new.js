@@ -117,7 +117,7 @@ let currentPage = 1;
 
 //     card.appendChild(img);
 //     card.appendChild(name);
-//     card.appendChild(contributions);
+    card.appendChild(contributions);
     container.appendChild(card);
 //     card.appendChild(viewProfileButton);
 //   });

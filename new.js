@@ -77,7 +77,7 @@ let currentPage = 1;
 async function fetchContributors() {
   const response = await fetch(
     `https://api.github.com/repos/${owner}/${repo}/contributors`
-//   );
+  );
 //   if (!response.ok) {
     console.error("Failed to fetch contributors:", response.statusText);
 //     return;

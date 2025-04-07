@@ -84,7 +84,7 @@ let currentPage = 1;
 //   }
 //   contributors = await response.json();
 //   displayContributors();
-//   createPaginationButtons();
+  createPaginationButtons();
 // }
 
 // function displayContributors() {

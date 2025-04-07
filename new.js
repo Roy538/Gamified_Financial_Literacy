@@ -85,7 +85,7 @@ async function fetchContributors() {
   contributors = await response.json();
   displayContributors();
   createPaginationButtons();
-// }
+}
 
 function displayContributors() {
   const container = document.getElementById("contributor-cards");

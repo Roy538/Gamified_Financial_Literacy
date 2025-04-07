@@ -106,7 +106,7 @@ function displayContributors() {
 //     const name = document.createElement("h3");
     name.textContent = contributor.login;
 
-//     const contributions = document.createElement("p");
+    const contributions = document.createElement("p");
     contributions.textContent = `${contributor.contributions} contributions`;
 
 //     const viewProfileButton = document.createElement("button");

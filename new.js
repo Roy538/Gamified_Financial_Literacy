@@ -115,7 +115,7 @@ function displayContributors() {
       window.open(contributor.html_url, "_blank");
 //     });
 
-//     card.appendChild(img);
+    card.appendChild(img);
 //     card.appendChild(name);
     card.appendChild(contributions);
     container.appendChild(card);

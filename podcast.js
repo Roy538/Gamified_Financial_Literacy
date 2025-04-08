@@ -97,7 +97,7 @@ function init() {
 
 // Update game statistics display
 function updateGameStats() {
-    document.getElementById('pointsValue').textContent = gameState.points;
+    // document.getElementById('pointsValue').textContent = gameState.points;
     document.getElementById('levelValue').textContent = gameState.level;
     document.getElementById('progressFill').style.width = `${gameState.progress}%`;
 }

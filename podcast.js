@@ -1,6 +1,6 @@
 // Game state
 let gameState = {
-    // points: 0,
+    points: 0,
     // level: 1,
     // progress: 0,
     // completedEpisodes: new Set(),

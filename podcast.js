@@ -90,7 +90,7 @@ const achievementsGrid = document.getElementById('achievementsGrid');
 // Initialize the page
 function init() {
     updateGameStats();
-    // populateEpisodes();
+    populateEpisodes();
     populateAchievements();
     setupEventListeners();
 }

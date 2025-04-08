@@ -92,7 +92,7 @@ const achievementsGrid = document.getElementById('achievementsGrid');
     // updateGameStats();
     // populateEpisodes();
     // populateAchievements();
-    setupEventListeners();
+    // setupEventListeners();
 // }
 
 // Update game statistics display

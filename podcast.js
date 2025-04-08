@@ -6,7 +6,7 @@ let gameState = {
     // completedEpisodes: new Set(),
     // achievements: new Set(),
     // currentSpeed: 1
-// };
+};
 
 // Sample podcast episodes data
 const episodes = [

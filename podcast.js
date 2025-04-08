@@ -88,7 +88,7 @@ const quizSection = document.getElementById('quizSection');
 const achievementsGrid = document.getElementById('achievementsGrid');
 
 // Initialize the page
-// function init() {
+function init() {
     // updateGameStats();
     // populateEpisodes();
     // populateAchievements();

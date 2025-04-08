@@ -93,7 +93,7 @@ const achievementsGrid = document.getElementById('achievementsGrid');
     // populateEpisodes();
     // populateAchievements();
     // setupEventListeners();
-// }
+}
 
 // Update game statistics display
 function updateGameStats() {

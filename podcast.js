@@ -93,7 +93,7 @@ function init() {
     populateEpisodes();
     populateAchievements();
     setupEventListeners();
-}
+// }
 
 // Update game statistics display
 function updateGameStats() {

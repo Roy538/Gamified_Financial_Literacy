@@ -85,7 +85,7 @@ const durationSpan = document.getElementById('duration');
 const audioProgress = document.getElementById('audioProgress');
 const episodesList = document.getElementById('episodesList');
 const quizSection = document.getElementById('quizSection');
-// const achievementsGrid = document.getElementById('achievementsGrid');
+const achievementsGrid = document.getElementById('achievementsGrid');
 
 // Initialize the page
 function init() {

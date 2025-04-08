@@ -83,7 +83,7 @@ const speedBtn = document.getElementById('speedBtn');
 const currentTimeSpan = document.getElementById('currentTime');
 const durationSpan = document.getElementById('duration');
 const audioProgress = document.getElementById('audioProgress');
-// const episodesList = document.getElementById('episodesList');
+const episodesList = document.getElementById('episodesList');
 // const quizSection = document.getElementById('quizSection');
 // const achievementsGrid = document.getElementById('achievementsGrid');
 

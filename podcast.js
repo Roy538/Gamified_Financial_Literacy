@@ -75,7 +75,7 @@ const achievements = [
 ];
 
 // DOM Elements
-// const audioPlayer = document.getElementById('audioPlayer');
+const audioPlayer = document.getElementById('audioPlayer');
 // const playBtn = document.getElementById('playBtn');
 // const prevBtn = document.getElementById('prevBtn');
 // const nextBtn = document.getElementById('nextBtn');

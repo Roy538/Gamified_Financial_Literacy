@@ -4,7 +4,7 @@ let gameState = {
     level: 1,
     progress: 0,
     completedEpisodes: new Set(),
-    // achievements: new Set(),
+    achievements: new Set(),
     currentSpeed: 1
 };
 

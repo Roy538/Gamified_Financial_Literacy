@@ -100,7 +100,7 @@ function updateGameStats() {
     // document.getElementById('pointsValue').textContent = gameState.points;
     // document.getElementById('levelValue').textContent = gameState.level;
     // document.getElementById('progressFill').style.width = `${gameState.progress}%`;
-// }
+}
 
 // Populate episodes list
 function populateEpisodes() {

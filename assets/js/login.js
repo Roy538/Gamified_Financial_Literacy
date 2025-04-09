@@ -45,7 +45,7 @@ showLogin.addEventListener('click', function (e) {
         registerLink.addEventListener("click", function (event) {
           event.preventDefault();
           loginModal.style.display = "none";
-          // registerModal.style.display = "block";
+          registerModal.style.display = "block";
         // });
 
         // loginLink.addEventListener("click", function (event) {

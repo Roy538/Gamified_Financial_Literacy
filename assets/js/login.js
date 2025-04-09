@@ -40,7 +40,7 @@ showLogin.addEventListener('click', function (e) {
         const registerModal = document.getElementById("registerModal");
         const loginModal = document.getElementById("myModal");
         const registerLink = document.getElementById("registerLink");
-        // const loginLink = document.getElementById("loginLink");
+        const loginLink = document.getElementById("loginLink");
 
         // registerLink.addEventListener("click", function (event) {
           // event.preventDefault();

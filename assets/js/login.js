@@ -21,7 +21,7 @@ const showLogin = document.getElementById('show-login');
 
 // Show Sign Up form and hide Login form
 showSignup.addEventListener('click', function (e) {
-    // e.preventDefault();
+    e.preventDefault();
     // loginForm.classList.add('hidden');
     // signupForm.classList.remove('hidden');
     // signupForm.classList.add('visible');

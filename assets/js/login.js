@@ -20,7 +20,7 @@ const loginForm = document.getElementById('login-form');
 // const showLogin = document.getElementById('show-login');
 
 // Show Sign Up form and hide Login form
-showSignup.addEventListener('click', function (e) {
+// showSignup.addEventListener('click', function (e) {
     // e.preventDefault();
     // loginForm.classList.add('hidden');
     // signupForm.classList.remove('hidden');

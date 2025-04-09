@@ -17,7 +17,7 @@
 const loginForm = document.getElementById('login-form');
 const signupForm = document.getElementById('signup-form');
 const showSignup = document.getElementById('show-signup');
-const showLogin = document.getElementById('show-login');
+// const showLogin = document.getElementById('show-login');
 
 // Show Sign Up form and hide Login form
 showSignup.addEventListener('click', function (e) {

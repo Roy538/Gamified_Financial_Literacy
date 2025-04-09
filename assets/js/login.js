@@ -23,7 +23,7 @@ const showLogin = document.getElementById('show-login');
 showSignup.addEventListener('click', function (e) {
     e.preventDefault();
     loginForm.classList.add('hidden');
-    // signupForm.classList.remove('hidden');
+    signupForm.classList.remove('hidden');
     // signupForm.classList.add('visible');
 });
 

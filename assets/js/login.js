@@ -16,7 +16,7 @@
       // Get references to the forms and toggle links
 const loginForm = document.getElementById('login-form');
 const signupForm = document.getElementById('signup-form');
-// const showSignup = document.getElementById('show-signup');
+const showSignup = document.getElementById('show-signup');
 // const showLogin = document.getElementById('show-login');
 
 // Show Sign Up form and hide Login form

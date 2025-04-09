@@ -24,7 +24,7 @@ showSignup.addEventListener('click', function (e) {
     e.preventDefault();
     loginForm.classList.add('hidden');
     signupForm.classList.remove('hidden');
-    // signupForm.classList.add('visible');
+    signupForm.classList.add('visible');
 });
 
 // Show Login form and hide Sign Up form

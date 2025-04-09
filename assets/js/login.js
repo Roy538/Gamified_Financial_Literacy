@@ -39,7 +39,7 @@ showLogin.addEventListener('click', function (e) {
       document.addEventListener("DOMContentLoaded", function () {
         const registerModal = document.getElementById("registerModal");
         const loginModal = document.getElementById("myModal");
-        // const registerLink = document.getElementById("registerLink");
+        const registerLink = document.getElementById("registerLink");
         // const loginLink = document.getElementById("loginLink");
 
         // registerLink.addEventListener("click", function (event) {

@@ -48,7 +48,7 @@ async function fetchMarketDataUnique() {
 
       container.appendChild(card);
     // });
-  // } catch (error) {
+  } catch (error) {
     console.error("Error fetching market data:", error);
   }
 }
@@ -56,5 +56,5 @@ async function fetchMarketDataUnique() {
 Call the function once to load data initially
 fetchMarketDataUnique();
 
-Set up an interval to refresh the data every 1 minute (60000 ms)
+// Set up an interval to refresh the data every 1 minute (60000 ms)
 setInterval(fetchMarketDataUnique, 60000); // 60 seconds interval

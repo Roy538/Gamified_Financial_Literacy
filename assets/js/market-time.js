@@ -51,7 +51,7 @@ async function fetchMarketDataUnique() {
   // } catch (error) {
     console.error("Error fetching market data:", error);
   }
-// }
+}
 
 Call the function once to load data initially
 fetchMarketDataUnique();

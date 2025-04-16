@@ -53,7 +53,7 @@ async function fetchMarketDataUnique() {
   }
 // }
 
-// Call the function once to load data initially
+Call the function once to load data initially
 fetchMarketDataUnique();
 
 // Set up an interval to refresh the data every 1 minute (60000 ms)

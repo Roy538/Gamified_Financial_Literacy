@@ -29,7 +29,7 @@ async function fetchMarketDataUnique() {
       // title.textContent = `${market.region} (${market.market_type})`;
 
       const exchanges = document.createElement("p");
-      // exchanges.classList.add("market-card-info-unique");
+      exchanges.classList.add("market-card-info-unique");
       exchanges.textContent = `Primary Exchanges: ${market.primary_exchanges}`;
 
       const time = document.createElement("p");

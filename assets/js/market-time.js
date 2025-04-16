@@ -30,7 +30,7 @@ async function fetchMarketDataUnique() {
 
       const exchanges = document.createElement("p");
       // exchanges.classList.add("market-card-info-unique");
-      // exchanges.textContent = `Primary Exchanges: ${market.primary_exchanges}`;
+      exchanges.textContent = `Primary Exchanges: ${market.primary_exchanges}`;
 
       // const time = document.createElement("p");
       // time.classList.add("market-card-info-unique");

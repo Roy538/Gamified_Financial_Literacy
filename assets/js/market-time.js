@@ -26,7 +26,7 @@ async function fetchMarketDataUnique() {
 
       const title = document.createElement("h3");
       title.classList.add("market-card-title-unique");
-      // title.textContent = `${market.region} (${market.market_type})`;
+      title.textContent = `${market.region} (${market.market_type})`;
 
       const exchanges = document.createElement("p");
       exchanges.classList.add("market-card-info-unique");

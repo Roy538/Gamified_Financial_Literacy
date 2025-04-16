@@ -32,7 +32,7 @@ async function fetchMarketDataUnique() {
       // exchanges.classList.add("market-card-info-unique");
       // exchanges.textContent = `Primary Exchanges: ${market.primary_exchanges}`;
 
-      const time = document.createElement("p");
+      // const time = document.createElement("p");
       time.classList.add("market-card-info-unique");
       time.textContent = `Open: ${market.local_open}, Close: ${market.local_close}`;
 

@@ -30,13 +30,13 @@ async function fetchMarketDataUnique() {
 
       // const exchanges = document.createElement("p");
       // exchanges.classList.add("market-card-info-unique");
-      exchanges.textContent = `Primary Exchanges: ${market.primary_exchanges}`;
+      // exchanges.textContent = `Primary Exchanges: ${market.primary_exchanges}`;
 
       const time = document.createElement("p");
       time.classList.add("market-card-info-unique");
       time.textContent = `Open: ${market.local_open}, Close: ${market.local_close}`;
 
-      const notes = document.createElement("p");
+      // const notes = document.createElement("p");
       notes.textContent = market.notes ? `Notes: ${market.notes}` : "";
       notes.classList.add("market-card-notes-unique");
 

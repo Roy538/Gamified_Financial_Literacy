@@ -40,7 +40,7 @@ async function fetchMarketDataUnique() {
       // notes.textContent = market.notes ? `Notes: ${market.notes}` : "";
       // notes.classList.add("market-card-notes-unique");
 
-      card.appendChild(status);
+      // card.appendChild(status);
       card.appendChild(title);
       card.appendChild(exchanges);
       card.appendChild(time);

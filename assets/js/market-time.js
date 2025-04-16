@@ -37,7 +37,7 @@ async function fetchMarketDataUnique() {
       // time.textContent = `Open: ${market.local_open}, Close: ${market.local_close}`;
 
       // const notes = document.createElement("p");
-      notes.textContent = market.notes ? `Notes: ${market.notes}` : "";
+      // notes.textContent = market.notes ? `Notes: ${market.notes}` : "";
       notes.classList.add("market-card-notes-unique");
 
       card.appendChild(status);

@@ -24,7 +24,7 @@ async function fetchMarketDataUnique() {
           : "market-status-closed-unique"
       );
 
-      // const title = document.createElement("h3");
+      const title = document.createElement("h3");
       // title.classList.add("market-card-title-unique");
       // title.textContent = `${market.region} (${market.market_type})`;
 

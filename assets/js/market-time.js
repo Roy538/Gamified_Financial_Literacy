@@ -38,7 +38,7 @@ async function fetchMarketDataUnique() {
 
       const notes = document.createElement("p");
       notes.textContent = market.notes ? `Notes: ${market.notes}` : "";
-      // notes.classList.add("market-card-notes-unique");
+      notes.classList.add("market-card-notes-unique");
 
       card.appendChild(status);
       card.appendChild(title);

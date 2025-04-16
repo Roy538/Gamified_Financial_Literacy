@@ -34,7 +34,7 @@ async function fetchMarketDataUnique() {
 
       const time = document.createElement("p");
       // time.classList.add("market-card-info-unique");
-      // time.textContent = `Open: ${market.local_open}, Close: ${market.local_close}`;
+      time.textContent = `Open: ${market.local_open}, Close: ${market.local_close}`;
 
       // const notes = document.createElement("p");
       // notes.textContent = market.notes ? `Notes: ${market.notes}` : "";

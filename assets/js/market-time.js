@@ -48,7 +48,7 @@ async function fetchMarketDataUnique() {
 
       container.appendChild(card);
     });
-  } catch (error) {
+  // } catch (error) {
     // console.error("Error fetching market data:", error);
   }
 }

@@ -37,7 +37,7 @@
 
   90% {
     -webkit-transform: translate3d(0, -4px, 0);
-    /* transform: translate3d(0, -4px, 0); */
+    transform: translate3d(0, -4px, 0);
   }
 }
 

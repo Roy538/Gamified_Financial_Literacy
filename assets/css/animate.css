@@ -31,7 +31,7 @@
   70% {
     /* -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); */
     /* animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06); */
-    -webkit-transform: translate3d(0, -15px, 0);
+    /* -webkit-transform: translate3d(0, -15px, 0); */
     transform: translate3d(0, -15px, 0);
   }
 

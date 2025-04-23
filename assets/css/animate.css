@@ -355,7 +355,7 @@
   /* -webkit-animation-timing-function: ease-in-out; */
   /* animation-timing-function: ease-in-out; */
   /* -webkit-animation-name: headShake; */
-  animation-name: headShake;
+  /* animation-name: headShake; */
 }
 
 @-webkit-keyframes swing {

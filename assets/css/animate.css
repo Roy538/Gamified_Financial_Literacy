@@ -732,7 +732,7 @@
 @-webkit-keyframes bounceIn {
   from,
   20%,
-  /* 40%, */
+  40%,
   60%,
   /* 80%, */
   to {

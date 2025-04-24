@@ -720,7 +720,7 @@
   }
 }
 
-/* .heartBeat { */
+.heartBeat {
   /* -webkit-animation-name: heartBeat; */
   /* animation-name: heartBeat; */
   /* -webkit-animation-duration: 1.3s; */
@@ -744,7 +744,7 @@
     /* opacity: 0; */
     /* -webkit-transform: scale3d(0.3, 0.3, 0.3); */
     /* transform: scale3d(0.3, 0.3, 0.3); */
-  }
+  /* } */
 
   20% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1);

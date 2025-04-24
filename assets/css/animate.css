@@ -720,7 +720,7 @@
   }
 }
 
-.heartBeat {
+/* .heartBeat { */
   -webkit-animation-name: heartBeat;
   animation-name: heartBeat;
   -webkit-animation-duration: 1.3s;

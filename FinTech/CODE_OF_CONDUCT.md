@@ -129,7 +129,7 @@ individual, or aggression toward or disparagement of classes of individuals.
 the community.
 
 ---
-## 📜Attribution
+<!-- ## 📜Attribution -->
 
 <!-- This Code of Conduct is adapted from the [Contributor Covenant][homepage], -->
 <!-- version 2.0, available at -->

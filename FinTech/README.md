@@ -12,7 +12,7 @@
      </thead>
     <tbody>
          <tr>
-            <td><img alt="Stars" src="https://img.shields.io/github/stars/ayush-that/FinVeda?style=flat&logo=github"/></td>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/Roy538/FinVeda?style=flat&logo=github"/></td>
              <td><img alt="Forks" src="https://img.shields.io/github/forks/ayush-that/FinVeda?style=flat&logo=github"/></td>
             <td><img alt="Issues" src="https://img.shields.io/github/issues/ayush-that/FinVeda?style=flat&logo=github"/></td>
             <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/ayush-that/FinVeda?style=flat&logo=github"/></td>

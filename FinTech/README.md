@@ -15,7 +15,7 @@
             <td><img alt="Stars" src="https://img.shields.io/github/stars/Roy538/FinTech?style=flat&logo=github"/></td>
              <td><img alt="Forks" src="https://img.shields.io/github/forks/Roy538/FinTech?style=flat&logo=github"/></td>
             <td><img alt="Issues" src="https://img.shields.io/github/issues/Roy538/FinTech?style=flat&logo=github"/></td>
-            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/ayush-that/FinVeda?style=flat&logo=github"/></td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/ayus/FinVeda?style=flat&logo=github"/></td>
            <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/ayush-that/FinVeda?style=flat&color=critical&logo=github"/></td>
         </tr>
     </tbody>

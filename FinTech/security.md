@@ -18,7 +18,7 @@
 <!-- ### 2. **Send an email**   -->
    <!-- Contact our security team at security@FinVeda.com(mailto:security@FinVeda.com) with the following details: -->
    <!-- - A description of the vulnerability and its impact. -->
-   - Steps to reproduce the vulnerability.
+   <!-- - Steps to reproduce the vulnerability. -->
    - Any additional information that may help us understand the scope and potential threat.
 
 ### 3. **Response Time**  

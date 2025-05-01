@@ -5,7 +5,7 @@ We take security seriously and aim to promptly address any issues. Here is the c
 
 | Version       | Supported          |
 | ------------- | ------------------ |
-<!-- | v1.x.x        | :white_check_mark:  | -->
+| v1.x.x        | :white_check_mark:  |
 <!-- | v0.x.x        | :x:                | -->
 
 <!-- ## Reporting a Vulnerability -->

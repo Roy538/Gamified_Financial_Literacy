@@ -27,7 +27,7 @@ If you believe you've discovered a security vulnerability on our financial liter
    - Steps we will take to mitigate the risk.
    - A timeline for the resolution.
 
-<!-- ### 4. **Bounty Program (if applicable)**   -->
+### 4. **Bounty Program (if applicable)**  
    <!-- If your report leads to a code or configuration change that improves the security of the website, we may offer a bounty as a token of our appreciation. Please inquire in your report if you are interested in this program. -->
 
 ## Scope

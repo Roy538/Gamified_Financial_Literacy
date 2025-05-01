@@ -3,7 +3,7 @@
 ## Supported Versions
 We take security seriously and aim to promptly address any issues. Here is the current status of our support for various versions of the website.
 
-| Version       | Supported          |
+<!-- | Version       | Supported          | -->
 | ------------- | ------------------ |
 | v1.x.x        | :white_check_mark:  |
 | v0.x.x        | :x:                |

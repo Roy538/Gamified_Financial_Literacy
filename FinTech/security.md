@@ -12,7 +12,7 @@
 
 <!-- If you believe you've discovered a security vulnerability on our financial literacy website, please follow the steps below to report it. -->
 
-### 1. **Do not disclose publicly**  
+<!-- ### 1. **Do not disclose publicly**   -->
    Please **do not publicly disclose** the vulnerability until we have had the opportunity to investigate and resolve it.
 
 ### 2. **Send an email**  

@@ -37,7 +37,7 @@ The following areas of the website are in scope for security testing:
 - Financial data handling and transactions
 - API endpoints
 - Payment systems (if applicable)
-- User data protection mechanisms
+<!-- - User data protection mechanisms -->
 
 The following areas are out of scope:
 - Third-party applications integrated with the website

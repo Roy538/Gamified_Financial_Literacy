@@ -23,7 +23,7 @@ If you believe you've discovered a security vulnerability on our financial liter
 
 ### 3. **Response Time**  
    We will acknowledge your report within 48 hours and aim to provide a response with further details within 5 business days. You can expect:
-   <!-- - An assessment of the issue. -->
+   - An assessment of the issue.
    <!-- - Steps we will take to mitigate the risk. -->
    <!-- - A timeline for the resolution. -->
 

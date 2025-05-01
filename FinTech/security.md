@@ -33,7 +33,7 @@ If you believe you've discovered a security vulnerability on our financial liter
 ## Scope
 
 <!-- The following areas of the website are in scope for security testing: -->
-- User authentication and authorization
+<!-- - User authentication and authorization -->
 - Financial data handling and transactions
 - API endpoints
 - Payment systems (if applicable)

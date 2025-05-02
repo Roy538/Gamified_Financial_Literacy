@@ -42,8 +42,8 @@
   /* justify-content: center; */
 /* } */
 
-.navbar-nav {
-  list-style: none;
+/* .navbar-nav { */
+  /* list-style: none; */
   display: flex;
   gap: 20px;
 }

@@ -39,7 +39,7 @@
 
 .navbar {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 /* .navbar-nav { */

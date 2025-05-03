@@ -27,7 +27,7 @@ body {
     // min-height: 100vh;
     // padding: 4rem 1.7rem;
 
-    // .container {
+    .container {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: max(1.9vw, 1.5rem);

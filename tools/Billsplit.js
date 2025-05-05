@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // billPerPersonOutput.textContent = `Ksh${billPerPerson.toFixed(2)}`;
         // } catch (error) {
             // alert('An error occurred while calculating the bill. Please try again.');
-            console.error(error); 
+            // console.error(error); 
         }
     });
 

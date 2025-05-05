@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const totalBill = billSubtotal + totalTip;
             const billPerPerson = totalBill / numberOfPersons;
 
-            totalBillOutput.textContent = `₹${totalBill.toFixed(2)}`;
-            billPerPersonOutput.textContent = `₹${billPerPerson.toFixed(2)}`;
+            totalBillOutput.textContent = `Ksh${totalBill.toFixed(2)}`;
+            billPerPersonOutput.textContent = `Ksh${billPerPerson.toFixed(2)}`;
         } catch (error) {
             alert('An error occurred while calculating the bill. Please try again.');
             console.error(error); 

@@ -1,6 +1,6 @@
 // document.addEventListener('DOMContentLoaded', function() {
     // document.getElementById('roi-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+        // event.preventDefault();
         calculateROI();
     });
 

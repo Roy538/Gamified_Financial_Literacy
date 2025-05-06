@@ -12,7 +12,7 @@
     // const returned = parseFloat(document.getElementById('return').value);
 
     // if (isNaN(invested) || isNaN(returned) || invested <= 0) {
-        alert('Please enter valid positive numbers for both fields.');
+        // alert('Please enter valid positive numbers for both fields.');
         return;
     }
 

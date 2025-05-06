@@ -16,7 +16,7 @@
         // return;
     // }
 
-    // const gl = returned - invested;
+    const gl = returned - invested;
     // const roi = (gl / invested) * 100;
 
     // document.getElementById('gl').textContent = `Gain: Ksh${gl.toFixed(2)}`;

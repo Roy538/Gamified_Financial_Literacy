@@ -8,7 +8,7 @@
 // });
 
 // function calculateROI() {
-    const invested = parseFloat(document.getElementById('invested').value);
+    // const invested = parseFloat(document.getElementById('invested').value);
     const returned = parseFloat(document.getElementById('return').value);
 
     if (isNaN(invested) || isNaN(returned) || invested <= 0) {

@@ -5,7 +5,7 @@
     // });
 
     // document.getElementById('clearBtn').addEventListener('click', clearROI);
-});
+// });
 
 function calculateROI() {
     const invested = parseFloat(document.getElementById('invested').value);

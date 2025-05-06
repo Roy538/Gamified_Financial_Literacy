@@ -13,7 +13,7 @@
 
     // if (isNaN(invested) || isNaN(returned) || invested <= 0) {
         // alert('Please enter valid positive numbers for both fields.');
-        // return;
+        return;
     // }
 
     const gl = returned - invested;

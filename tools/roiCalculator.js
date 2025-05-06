@@ -21,7 +21,7 @@
 
     // document.getElementById('gl').textContent = `Gain: Ksh${gl.toFixed(2)}`;
     // document.getElementById('result').textContent = `ROI: ${roi.toFixed(2)}%`;
-}
+// }
 
 function clearROI() {
     document.getElementById('roi-form').reset();

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('roi-form').addEventListener('submit', function(event) {
         event.preventDefault();
         calculateROI();

@@ -7,7 +7,7 @@
     // document.getElementById('clearBtn').addEventListener('click', clearROI);
 // });
 
-function calculateROI() {
+// function calculateROI() {
     const invested = parseFloat(document.getElementById('invested').value);
     const returned = parseFloat(document.getElementById('return').value);
 

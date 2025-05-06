@@ -9,7 +9,7 @@
 
 // function calculateROI() {
     // const invested = parseFloat(document.getElementById('invested').value);
-    // const returned = parseFloat(document.getElementById('return').value);
+    const returned = parseFloat(document.getElementById('return').value);
 
     if (isNaN(invested) || isNaN(returned) || invested <= 0) {
         alert('Please enter valid positive numbers for both fields.');

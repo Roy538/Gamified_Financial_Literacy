@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('roi-form').addEventListener('submit', function(event) {
         event.preventDefault();
         calculateROI();
-    // });
+    });
 
     // document.getElementById('clearBtn').addEventListener('click', clearROI);
 // });

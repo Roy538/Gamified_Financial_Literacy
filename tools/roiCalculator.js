@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         calculateROI();
     });
 
-    // document.getElementById('clearBtn').addEventListener('click', clearROI);
+    document.getElementById('clearBtn').addEventListener('click', clearROI);
 // });
 
 function calculateROI() {

@@ -73,7 +73,7 @@ FinVeda/
 <!-- 3. **Clone the forked repository** -->
 
 ```bash
-git clone https://github.com/<your-github-username>/FinVeda.git
+# git clone https://github.com/<your-github-username>/FinVeda.git
 ```
   
 4. **Navigate to the project directory**

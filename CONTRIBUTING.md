@@ -62,9 +62,9 @@ FinVeda/
 
 <!-- <br> -->
 
-<!-- # First Pull Request ✨ -->
+# First Pull Request ✨
 
-<!-- 1. **Star this repository** -->
+1. **Star this repository**
     Click on the top right corner marked as **Stars** at last.
 
 2. **Fork this repository**

@@ -8,7 +8,7 @@
 
 <!-- If you're new to Git and GitHub, no worries! Here are some useful resources: -->
 
-- [Forking a Repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+<!-- - [Forking a Repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) -->
 - [Cloning a Repository](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
 - [How to Create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
 - [Getting Started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)

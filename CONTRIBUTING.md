@@ -207,7 +207,7 @@ To report an issue, follow these steps:
 2. Provide a clear and concise description of the issue.
 3. **Avoid spamming** to claim an issue. Patience is key! 😀
 4. Wait until someone looks into your report.
-5. Begin working on the issue only after you have been assigned to it. 🚀
+<!-- 5. Begin working on the issue only after you have been assigned to it. 🚀 -->
 
 <br>
 

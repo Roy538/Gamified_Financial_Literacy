@@ -6,7 +6,7 @@
 
 <!-- # Need Help with the Basics? 🤔 -->
 
-If you're new to Git and GitHub, no worries! Here are some useful resources:
+<!-- If you're new to Git and GitHub, no worries! Here are some useful resources: -->
 
 - [Forking a Repository](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 - [Cloning a Repository](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)

@@ -2,9 +2,9 @@
 
 <!-- Welcome to our project! We're thrilled to have you contribute. Your efforts, big or small, make a difference. Please ensure that you follow our [Code of Conduct](CODE_OF_CONDUCT.md) in all interactions. -->
 
-<!-- <br> -->
+<br>
 
-<!-- # Need Help with the Basics? 🤔 -->
+# Need Help with the Basics? 🤔
 
 If you're new to Git and GitHub, no worries! Here are some useful resources:
 

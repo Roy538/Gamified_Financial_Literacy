@@ -76,7 +76,7 @@ FinVeda/
 # git clone https://github.com/<your-github-username>/FinVeda.git
 ```
   
-4. **Navigate to the project directory**
+<!-- 4. **Navigate to the project directory** -->
 
 ```bash
 cd FinVeda

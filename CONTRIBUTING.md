@@ -211,7 +211,7 @@ To report an issue, follow these steps:
 
 <br>
 
-# Thank you for contributing 💗
+<!-- # Thank you for contributing 💗 -->
 
 We truly appreciate your time and effort to help improve our project. Feel free to reach out if you have any questions or need guidance. Happy coding! 🚀
 

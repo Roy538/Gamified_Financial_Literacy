@@ -16,7 +16,7 @@
 
 <!-- <br> -->
 
-# Project Structure 📂
+<!-- # Project Structure 📂 -->
 
 ```bash
 FinVeda/

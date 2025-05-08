@@ -60,7 +60,7 @@ FinVeda/
 └── trends.html               # Trends or analytics page
 ```
 
-<!-- <br> -->
+<br>
 
 # First Pull Request ✨
 

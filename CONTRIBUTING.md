@@ -70,7 +70,7 @@ FinVeda/
 <!-- 2. **Fork this repository** -->
     Click on the top right corner marked as **Fork** at second last.
 
-3. **Clone the forked repository**
+<!-- 3. **Clone the forked repository** -->
 
 ```bash
 git clone https://github.com/<your-github-username>/FinVeda.git

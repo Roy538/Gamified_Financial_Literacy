@@ -47,6 +47,6 @@ document
     };
 
     if (file) {
-      // reader.readAsDataURL(file);
+      reader.readAsDataURL(file);
     // }
   // });

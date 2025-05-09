@@ -12,7 +12,7 @@ document
     event.preventDefault(); // Prevent form submission
 
     // Get updated values
-    const updatedUsername = document.getElementById("username").value;
+    // const updatedUsername = document.getElementById("username").value;
     // const updatedEmail = document.getElementById("email").value;
     // const updatedBio = document.getElementById("bio").value;
 

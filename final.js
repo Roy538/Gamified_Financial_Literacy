@@ -37,7 +37,7 @@ document.getElementById("cancelButton").addEventListener("click", function () {
 
 // Handle image upload
 document
-  .getElementById("imageUpload")
+  // .getElementById("imageUpload")
   .addEventListener("change", function (event) {
     const file = event.target.files[0];
     const reader = new FileReader();

@@ -46,7 +46,7 @@ document
       document.getElementById("profileImage").src = e.target.result; // Update the image src to the new file
     };
 
-    if (file) {
+    // if (file) {
       // reader.readAsDataURL(file);
     // }
   // });

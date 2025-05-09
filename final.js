@@ -17,7 +17,7 @@ document
     const updatedBio = document.getElementById("bio").value;
 
   //   // Update the displayed values
-    document.getElementById("displayUsername").textContent = updatedUsername;
+    // document.getElementById("displayUsername").textContent = updatedUsername;
     document.getElementById("displayEmail").textContent = updatedEmail;
     document.getElementById("displayBio").textContent = updatedBio;
 

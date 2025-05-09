@@ -48,5 +48,5 @@ document
 
     if (file) {
       reader.readAsDataURL(file);
-    // }
+    }
   // });

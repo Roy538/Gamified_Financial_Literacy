@@ -29,7 +29,7 @@
 <!-- ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) -->
 <!-- ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white) -->
 
-###  Say 👋🏼 to Arth Sathi, your AI-powered financial companion
+<!-- ###  Say 👋🏼 to Arth Sathi, your AI-powered financial companion -->
 
 https://github.com/user-attachments/assets/44ddffa1-70b6-43d6-9438-3181f25dd0ad
 

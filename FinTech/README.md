@@ -43,7 +43,7 @@
 3. [💵 How to Contribute](#-how-to-contribute)
 4. [💗 Contributors](#-contributors)
 5. [🛠️ Troubleshooting](#️-troubleshooting)
-6. [🥑 License](#-license)
+<!-- 6. [🥑 License](#-license) -->
 <!-- 7. [⭐ Star the Repo!](#-star-the-repo) -->
    
 ---

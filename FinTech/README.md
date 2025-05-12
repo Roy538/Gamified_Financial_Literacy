@@ -38,7 +38,7 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## 📑 Table of Contents
-1. [🤔 Problem](#-problem)
+<!-- 1. [🤔 Problem](#-problem) -->
 <!-- 2. [🌟 Features](#-features) -->
 <!-- 3. [💵 How to Contribute](#-how-to-contribute) -->
 <!-- 4. [💗 Contributors](#-contributors) -->

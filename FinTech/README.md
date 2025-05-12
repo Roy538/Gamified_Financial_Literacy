@@ -40,7 +40,7 @@
 ## 📑 Table of Contents
 1. [🤔 Problem](#-problem)
 2. [🌟 Features](#-features)
-3. [💵 How to Contribute](#-how-to-contribute)
+<!-- 3. [💵 How to Contribute](#-how-to-contribute) -->
 <!-- 4. [💗 Contributors](#-contributors) -->
 <!-- 5. [🛠️ Troubleshooting](#️-troubleshooting) -->
 <!-- 6. [🥑 License](#-license) -->

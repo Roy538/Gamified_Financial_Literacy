@@ -10,7 +10,7 @@
             <td><b>🔕 Close PRs</b></td>
         </tr>
      </thead>
-    <tbody>
+    <!-- <tbody> -->
          <tr>
             <td><img alt="Stars" src="https://img.shields.io/github/stars/Roy538/FinTech?style=flat&logo=github"/></td>
              <td><img alt="Forks" src="https://img.shields.io/github/forks/Roy538/FinTech?style=flat&logo=github"/></td>

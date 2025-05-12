@@ -31,7 +31,7 @@
 
 <!-- ###  Say 👋🏼 to Arth Sathi, your AI-powered financial companion -->
 
-https://github.com/user-attachments/assets/44ddffa1-70b6-43d6-9438-3181f25dd0ad
+<!-- https://github.com/user-attachments/assets/44ddffa1-70b6-43d6-9438-3181f25dd0ad -->
 
 </div>
 

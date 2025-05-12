@@ -44,7 +44,7 @@
 <!-- 4. [💗 Contributors](#-contributors) -->
 <!-- 5. [🛠️ Troubleshooting](#️-troubleshooting) -->
 <!-- 6. [🥑 License](#-license) -->
-<!-- 7. [⭐ Star the Repo!](#-star-the-repo) -->
+7. [⭐ Star the Repo!](#-star-the-repo)
    
 ---
 

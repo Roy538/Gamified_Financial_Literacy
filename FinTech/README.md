@@ -17,7 +17,7 @@
             <!-- <td><img alt="Issues" src="https://img.shields.io/github/issues/Roy538/FinTech?style=flat&logo=github"/></td> -->
             <!-- <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/Roy538/FinTech?style=flat&logo=github"/></td> -->
            <!-- <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed//Fin?style=flat&color=critical&logo=github"/></td> -->
-        </tr>
+        <!-- </tr> -->
     </tbody>
 </table>
    

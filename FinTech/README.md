@@ -131,7 +131,7 @@ We want to extend our heartfelt gratitude to all the amazing contributors who ha
 
 <div align='left'>
 
-[![Stargazers repo roster for @ayush-that/FinVeda](https://reporoster.com/stars/ayush-that/FinVeda)](https://github.com/ayush-that/FinVeda/stargazers)
+[![Stargazers repo roster for @ayush-that/FinVeda](https://reporoster.com/stars/ayush-that/FinVeda)](https://github.com/ayush-/FinVeda/stargazers)
 
 </div>
 

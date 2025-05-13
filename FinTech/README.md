@@ -187,4 +187,4 @@ If you find this project useful and would like to support the project, please co
 
 ---
 
-Feel free to reach out via any of the platforms above!
+<!-- Feel free to reach out via any of the platforms above! -->

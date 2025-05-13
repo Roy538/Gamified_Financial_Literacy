@@ -174,7 +174,7 @@ FinVeda is free and open-source software licensed under the GNU General Public L
 If you find this project useful and would like to support the project, please consider giving it a ⭐ star on GitHub! Your support helps us grow and improve. Thank you! 🙌
 
 <h3 align="center">Keep learning and exploring! 🚀</h3>
-<h3 align="center">Happy coding! 👩‍💻🎉 </h3>
+<!-- <h3 align="center">Happy coding! 👩‍💻🎉 </h3> -->
 
 
 ## Connect with Me 🌐

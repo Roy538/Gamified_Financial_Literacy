@@ -177,7 +177,7 @@ FinVeda is free and open-source software licensed under the GNU General Public L
 <!-- <h3 align="center">Happy coding! 👩‍💻🎉 </h3> -->
 
 
-## Connect with Me 🌐
+<!-- ## Connect with Me 🌐 -->
 
 <!-- [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mauriceroy538@gmail.com) -->
 <!-- [![X (formerly Twitter)](https://img.shields.io/badge/X-1DA1F2?style=flat-square&logo=x&logoColor=white)](https://x.com/shydev69) -->

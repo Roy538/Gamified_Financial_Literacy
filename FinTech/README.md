@@ -166,7 +166,7 @@ If you encounter any issues while using FinVeda, here are some common solutions:
 Feel free to reach out via the FinVeda community channels for more support. Happy learning! 
 
 
-### 🥑 License
+<!-- ### 🥑 License -->
 
 <!-- FinVeda is free and open-source software licensed under the GNU General Public License v3.0. It was built at IIT Jammu's Udyamitsav'24 Hackathon where it stood first in the GenAI track and third overall. -->
 

@@ -179,7 +179,7 @@ If you find this project useful and would like to support the project, please co
 
 ## Connect with Me 🌐
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mauriceroy538@gmail.com)
+<!-- [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mauriceroy538@gmail.com) -->
 <!-- [![X (formerly Twitter)](https://img.shields.io/badge/X-1DA1F2?style=flat-square&logo=x&logoColor=white)](https://x.com/shydev69) -->
 <!-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-that/) -->
 <!-- [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ayush-that) -->

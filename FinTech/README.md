@@ -137,7 +137,7 @@ We want to extend our heartfelt gratitude to all the amazing contributors who ha
 
 <!-- <picture> -->
       <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ayush-that/FinVeda&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ayush-that/FinVeda&type=Date" />
+      <!-- <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ayush-that/FinVeda&type=Date" /> -->
       <!-- <img align="center" alt="Star History Chart" src="https://api.star-history.com/svg?repos=ayush-that/FinVeda&type=Date" /> -->
 <!-- </picture> -->
 

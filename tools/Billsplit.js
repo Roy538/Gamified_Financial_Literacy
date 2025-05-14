@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // }
     // });
 
-    document.getElementById('clearBtn5').addEventListener('click', function () {
+    // document.getElementById('clearBtn5').addEventListener('click', function () {
         billSubtotalInput.value = '';
         tipPercentageInput.value = '';
         numberOfPersonsInput.value = '';

@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // alert('An error occurred while calculating the bill. Please try again.');
             // console.error(error); 
         // }
-    // });
+    });
 
     // document.getElementById('clearBtn5').addEventListener('click', function () {
         // billSubtotalInput.value = '';

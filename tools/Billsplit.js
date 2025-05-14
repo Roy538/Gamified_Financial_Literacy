@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         try {
             const totalTip = (billSubtotal * tipPercentage) / 100;
-            // const totalBill = billSubtotal + totalTip;
-            // const billPerPerson = totalBill / numberOfPersons;
+            const totalBill = billSubtotal + totalTip;
+            const billPerPerson = totalBill / numberOfPersons;
 
             totalBillOutput.textContent = `Ksh${totalBill.toFixed(2)}`;
             billPerPersonOutput.textContent = `Ksh${billPerPerson.toFixed(2)}`;

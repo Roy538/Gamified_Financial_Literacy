@@ -15,7 +15,7 @@
     // const counterElement = document.querySelector('.website-counter');
     // const count = incrementVisitorCount();
     counterElement.textContent = count;
-  }
+  // }
   
   // Call the display function when the page loads
   document.addEventListener('DOMContentLoaded', displayVisitorCount);

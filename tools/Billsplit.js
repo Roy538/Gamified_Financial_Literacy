@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const billSubtotalInput = document.getElementById('billSubtotal');
     const tipPercentageInput = document.getElementById('tipPercentage');
     const numberOfPersonsInput = document.getElementById('numberOfPersons');

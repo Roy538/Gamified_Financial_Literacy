@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // document.getElementById('calculateBtn5').addEventListener('click', function () {
         // const billSubtotal = parseFloat(billSubtotalInput.value);
-        const tipPercentage = parseFloat(tipPercentageInput.value);
+        // const tipPercentage = parseFloat(tipPercentageInput.value);
         const numberOfPersons = parseInt(numberOfPersonsInput.value);
 
         let errorMessage = '';

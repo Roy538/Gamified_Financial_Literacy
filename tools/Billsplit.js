@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let errorMessage = '';
 
-        // if (isNaN(billSubtotal) || billSubtotal < 0) {
+        if (isNaN(billSubtotal) || billSubtotal < 0) {
             // errorMessage += 'Please enter a valid positive number for Bill Subtotal.\n';
         // }
 

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const tipPercentageInput = document.getElementById('tipPercentage');
     const numberOfPersonsInput = document.getElementById('numberOfPersons');
     const totalBillOutput = document.getElementById('totalBill');
-    const billPerPersonOutput = document.getElementById('billPerPerson');
+    // const billPerPersonOutput = document.getElementById('billPerPerson');
 
     document.getElementById('calculateBtn5').addEventListener('click', function () {
         const billSubtotal = parseFloat(billSubtotalInput.value);

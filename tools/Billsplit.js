@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const tipPercentage = parseFloat(tipPercentageInput.value);
         const numberOfPersons = parseInt(numberOfPersonsInput.value);
 
-        // let errorMessage = '';
+        let errorMessage = '';
 
         // if (isNaN(billSubtotal) || billSubtotal < 0) {
             // errorMessage += 'Please enter a valid positive number for Bill Subtotal.\n';

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const billSubtotalInput = document.getElementById('billSubtotal');
     const tipPercentageInput = document.getElementById('tipPercentage');
     const numberOfPersonsInput = document.getElementById('numberOfPersons');
-    // const totalBillOutput = document.getElementById('totalBill');
+    const totalBillOutput = document.getElementById('totalBill');
     // const billPerPersonOutput = document.getElementById('billPerPerson');
 
     // document.getElementById('calculateBtn5').addEventListener('click', function () {

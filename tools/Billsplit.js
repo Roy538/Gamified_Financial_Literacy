@@ -49,4 +49,4 @@ document.addEventListener('DOMContentLoaded', function () {
         totalBillOutput.textContent = 'Ksh00.00';
         billPerPersonOutput.textContent = 'Ksh00.00';
     });
-});
+// });

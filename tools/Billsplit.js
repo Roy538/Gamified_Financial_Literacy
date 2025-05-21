@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (errorMessage) {
             alert(errorMessage);
-            // return;
+            return;
         }
 
         try {

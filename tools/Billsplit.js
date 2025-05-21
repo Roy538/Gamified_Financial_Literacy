@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
             errorMessage += 'Please enter a valid positive number for Bill Subtotal.\n';
         }
 
-        // if (isNaN(tipPercentage) || tipPercentage < 0 || tipPercentage > 100) {
-            // errorMessage += 'Please enter a valid Tip Percentage (0-100).\n';
+        if (isNaN(tipPercentage) || tipPercentage < 0 || tipPercentage > 100) {
+            errorMessage += 'Please enter a valid Tip Percentage (0-100).\n';
         }
 
         if (isNaN(numberOfPersons) || numberOfPersons <= 0) {

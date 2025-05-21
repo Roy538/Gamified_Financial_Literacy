@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             errorMessage += 'Please enter a valid number of persons (greater than 0).\n';
         // }
 
-        // if (errorMessage) {
+        if (errorMessage) {
             alert(errorMessage);
             // return;
         }

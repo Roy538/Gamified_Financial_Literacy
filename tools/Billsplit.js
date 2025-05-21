@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (errorMessage) {
-            alert(errorMessage);
-            return;
+            // alert(errorMessage);
+            // return;
         // }
 
         // try {

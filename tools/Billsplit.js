@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (isNaN(tipPercentage) || tipPercentage < 0 || tipPercentage > 100) {
-            errorMessage += 'Please enter a valid Tip Percentage (0-100).\n';
+            // errorMessage += 'Please enter a valid Tip Percentage (0-100).\n';
         // }
 
         // if (isNaN(numberOfPersons) || numberOfPersons <= 0) {

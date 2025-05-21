@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // document.getElementById('clearBtn5').addEventListener('click', function () {
         billSubtotalInput.value = '';
-        // tipPercentageInput.value = '';
+        tipPercentageInput.value = '';
         numberOfPersonsInput.value = '';
         totalBillOutput.textContent = 'Ksh00.00';
         billPerPersonOutput.textContent = 'Ksh00.00';

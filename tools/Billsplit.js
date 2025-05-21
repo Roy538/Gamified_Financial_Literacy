@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // billSubtotalInput.value = '';
         // tipPercentageInput.value = '';
         // numberOfPersonsInput.value = '';
-        // totalBillOutput.textContent = 'Ksh00.00';
+        totalBillOutput.textContent = 'Ksh00.00';
         billPerPersonOutput.textContent = 'Ksh00.00';
     });
 });

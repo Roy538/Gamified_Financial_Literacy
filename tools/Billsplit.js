@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (errorMessage) {
             alert(errorMessage);
             return;
-        }
+        // }
 
         // try {
             // const totalTip = (billSubtotal * tipPercentage) / 100;

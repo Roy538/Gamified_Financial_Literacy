@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // }
 
         // if (isNaN(numberOfPersons) || numberOfPersons <= 0) {
-            // errorMessage += 'Please enter a valid number of persons (greater than 0).\n';
+            errorMessage += 'Please enter a valid number of persons (greater than 0).\n';
         // }
 
         // if (errorMessage) {

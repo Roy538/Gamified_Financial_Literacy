@@ -1,6 +1,6 @@
 <!-- # Security Policy -->
 
-## Supported Versions
+<!-- ## Supported Versions -->
 We take security seriously and aim to promptly address any issues. Here is the current status of our support for various versions of the website.
 
 | Version       | Supported          |

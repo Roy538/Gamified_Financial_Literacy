@@ -8,7 +8,7 @@
 <!-- | v1.x.x        | :white_check_mark:  | -->
 <!-- | v0.x.x        | :x:                | -->
 
-## Reporting a Vulnerability
+<!-- ## Reporting a Vulnerability -->
 
 If you believe you've discovered a security vulnerability on our financial literacy website, please follow the steps below to report it.
 

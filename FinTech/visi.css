@@ -27,7 +27,7 @@
   }
   
   /* .visitor-counter div:first-child { */
-    /* margin-bottom: 5px; */
+    margin-bottom: 5px;
     font-size: 14px; /* Adjusted for clarity */
     letter-spacing: 1px; /* Increased spacing for readability */
   }

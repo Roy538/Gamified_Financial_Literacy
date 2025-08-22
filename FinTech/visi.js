@@ -13,7 +13,7 @@
   // Function to display the count
   function displayVisitorCount() {
     const counterElement = document.querySelector('.website-counter');
-    // const count = incrementVisitorCount();
+    const count = incrementVisitorCount();
     counterElement.textContent = count;
   }
   

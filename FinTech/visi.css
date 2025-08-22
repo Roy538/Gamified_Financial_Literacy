@@ -26,7 +26,7 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
   }
   
-  /* .visitor-counter div:first-child { */
+  .visitor-counter div:first-child {
     margin-bottom: 5px;
     font-size: 14px; /* Adjusted for clarity */
     letter-spacing: 1px; /* Increased spacing for readability */

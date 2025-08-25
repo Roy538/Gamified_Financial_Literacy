@@ -112,7 +112,7 @@ Fintech is a dynamic financial literacy app that'll help you Learn finance with 
   <img src="https://contrib.rocks/image?repo=Roy538/Fintech" />
 </a>
 
-#### A Big Thank You to Our Contributors! 🎉👏
+<!-- #### A Big Thank You to Our Contributors! 🎉👏 -->
 
 We want to extend our heartfelt gratitude to all the amazing contributors who have dedicated their time and effort to make FinVeda a success! Your hard work and commitment to excellence are what drive this project forward. Together, we are building something great! Thank you for being a part of our community! ❤️✨
 

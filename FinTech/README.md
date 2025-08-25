@@ -147,7 +147,7 @@ We want to extend our heartfelt gratitude to all the amazing contributors who ha
 
 If you encounter any issues while using FinVeda, here are some common solutions:
 
-1. **Installation and Setup Errors**
+<!-- 1. **Installation and Setup Errors** -->
    <!-- - **Issue**: Errors during installation or setup. -->
    <!-- - **Solution**: Ensure all dependencies are installed. Run `npm install` to install any missing packages. Check for Node.js version compatibility. -->
 

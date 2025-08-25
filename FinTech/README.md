@@ -108,7 +108,7 @@ Fintech is a dynamic financial literacy app that'll help you Learn finance with 
     <img src="https://api.vaunt.dev/v1/github/entities/Roy538/repositories/Fintech/contributors?format=svg&limit=54" width="700" height="250" />
 </p>
 
-<a href="https://github.com/ayush-that/FinVeda/graphs/contributors">
+<a href="https://github.com/ayush-/FinVeda/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ayush-that/FinVeda" />
 </a>
 

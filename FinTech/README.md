@@ -171,7 +171,7 @@ Feel free to reach out via the Fintech community channels for more support. Happ
 <!-- FinVeda is free and open-source software licensed under the GNU General Public License v3.0. It was built at IIT Jammu's Udyamitsav'24 Hackathon where it stood first in the GenAI track and third overall. -->
 
 <!-- ### ⭐ Star the Repo! -->
-If you find this project useful and would like to support the project, please consider giving it a ⭐ star on GitHub! Your support helps us grow and improve. Thank you! 🙌
+<!-- If you find this project useful and would like to support the project, please consider giving it a ⭐ star on GitHub! Your support helps us grow and improve. Thank you! 🙌 -->
 
 <h3 align="center">Keep learning and exploring! 🚀</h3>
 <h3 align="center">Happy coding! 👩‍💻🎉 </h3>

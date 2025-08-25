@@ -163,7 +163,7 @@ If you encounter any issues while using FinVeda, here are some common solutions:
    - Check the [Issues](https://github.com/Roy538/Fintech/issues) page for similar problems or create a new issue.
    - For additional help, visit our community channels.
 
-Feel free to reach out via the Fintech community channels for more support. Happy learning! 
+<!-- Feel free to reach out via the Fintech community channels for more support. Happy learning!  -->
 
 
 <!-- ### 🥑 License -->

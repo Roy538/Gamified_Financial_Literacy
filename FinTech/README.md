@@ -153,7 +153,7 @@ If you encounter any issues while using FinVeda, here are some common solutions:
 
 2. **Dependency Conflicts**
    - **Issue**: Conflicts between dependencies.
-   - **Solution**: Update or downgrade conflicting packages as necessary. Use `npm install --force` to bypass issues, but be cautious of potential side effects.
+   <!-- - **Solution**: Update or downgrade conflicting packages as necessary. Use `npm install --force` to bypass issues, but be cautious of potential side effects. -->
 
 3. **Configuration Problems**
    - **Issue**: Issues with configuring environment variables.

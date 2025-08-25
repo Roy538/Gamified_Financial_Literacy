@@ -109,7 +109,7 @@ Fintech is a dynamic financial literacy app that'll help you Learn finance with 
 </p>
 
 <a href="https://github.com/Roy538/Fintech/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Roy538/Fin" />
+  <img src="https://contrib.rocks/image?repo=Roy538/Fintech" />
 </a>
 
 #### A Big Thank You to Our Contributors! 🎉👏

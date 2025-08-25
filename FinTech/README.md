@@ -121,7 +121,7 @@ We want to extend our heartfelt gratitude to all the amazing contributors who ha
 
 ## 💗 Forkers
 
-[![Forkers repo roster for @Roy538/Fintech](https://reporoster.com/forks/Roy538/FinVeda)](https://github.com/-/FinVeda/network/members)
+[![Forkers repo roster for @Roy538/Fintech](https://reporoster.com/forks/Roy538/FinVeda)](https://github.com/Roy538/FinVeda/network/members)
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)

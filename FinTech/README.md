@@ -80,7 +80,7 @@ Fintech is a dynamic financial literacy app that'll help you Learn finance with 
    #### 1. Fork the repository to your GitHub account.
    #### 2. Clone the forked repository to your local machine.
    ```bash
-   git clone https://github.com/ayush-that/FinVeda.git
+   git clone https://github.com/ayush-that/Fintech.git
    ```
    #### 3. Create a new branch for your changes.
    ```bash

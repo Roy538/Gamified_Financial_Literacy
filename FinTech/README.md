@@ -160,7 +160,7 @@ If you encounter any issues while using FinVeda, here are some common solutions:
    - **Solution**: Double-check your `.env` file configurations. Refer to `.env.example` for the correct variable setup.
 
 4. **External Resources**
-   - Check the [Issues](https://github.com/-/FinVeda/issues) page for similar problems or create a new issue.
+   - Check the [Issues](https://github.com/Roy538/FinVeda/issues) page for similar problems or create a new issue.
    - For additional help, visit our community channels.
 
 Feel free to reach out via the FinVeda community channels for more support. Happy learning! 

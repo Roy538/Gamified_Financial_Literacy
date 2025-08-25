@@ -53,7 +53,7 @@
 According to a survey by the OECD, <b>only 38% of adults DevRoy are financially literate</b>. Finveda aims to solve this problem by providing a platform for financial literacy education.
 
 ### 🌟 Features
-FinVeda is a dynamic financial literacy app that'll help you Learn finance with finesse.
+Fintech is a dynamic financial literacy app that'll help you Learn finance with finesse.
 <strong>
 - AI-Powered Consultant
 - Financial Blogs and quizzes 

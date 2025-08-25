@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://fin-veda.netlify.app/" target="_blank" title="Go to the Fintech website"><img height="256px" alt="FinVeda logo" src="https://github.com/user-attachments/assets/5e45e1f4-7e0d-45b1-914d-80b6ab77ddd8"></a>
+<a href="https://fintech.netlify.app/" target="_blank" title="Go to the Fintech website"><img height="256px" alt="FinVeda logo" src="https://github.com/user-attachments/assets/5e45e1f4-7e0d-45b1-914d-80b6ab77ddd8"></a>
 <table align="center">
     <thead align="center">
         <tr border: 2px;>
